@@ -1,15 +1,19 @@
+//  This file is part of the OpenLibraClient package.
 //
 //  Criteria.m
 //  OpenLibraClient
 //
-//  Created by Víctor Berga on 21/08/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
+//  Created by Víctor Berga on 21/08/11 <victor@victorberga.com>.
+//  Copyright 2011 Víctor Berga. All rights reserved.
+// 
+//  For the full copyright and license information, please view the LICENSE
+//  file that was distributed with this source code.
 
 #import "Criteria.h"
 
 @interface Criteria(Private)
 
+- (NSString *)addValuesTo:(NSString *)string;
 - (NSString *)addOrderTo:(NSString *)string;
 - (NSString *)addMaxItemsTo:(NSString *)string;
 - (NSString *)addSinceTo:(NSString *)string;
@@ -54,6 +58,28 @@
 
 #pragma mark -
 #pragma mark Private Instance Methods
+
+- (NSString *)addValuesTo:(NSString *)string
+{
+    id value;
+    
+    value = [_values objectAtIndex:FieldId];
+    if (value != [NSNull null]) {
+        string = [string stringByAppendingFormat:@"&id=%@", value];
+    }
+
+    value = [_values objectAtIndex:FieldTitle];
+    if (value != [NSNull null]) {
+        string = [string stringByAppendingFormat:@"&title=\"%@\"", value];
+    }
+    
+    value = [_values objectAtIndex:FieldAuthor];
+    if (value != [NSNull null]) {
+        string = [string stringByAppendingFormat:@"&author=\"%@\"", value];
+    }
+    
+    return string;
+}
 
 - (NSString *)addOrderTo:(NSString *)string
 {
@@ -134,6 +160,7 @@
     NSString *parametersString = [[[NSString alloc] init] 
                                   autorelease];
     
+    parametersString = [self addValuesTo:parametersString];
     parametersString = [self addOrderTo:parametersString];
     parametersString = [self addSinceTo:parametersString];
     parametersString = [self addMaxItemsTo:parametersString];

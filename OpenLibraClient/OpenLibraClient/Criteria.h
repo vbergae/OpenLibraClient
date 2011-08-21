@@ -61,6 +61,11 @@ typedef enum {
     SinceLastYear   = 4
 } Since;
 
+/**
+ Criteria class.
+ 
+ Defines the criteria searchs to make the request to OpenLibra API.
+ */
 @interface Criteria : NSObject {
 @private    
     int _maxItems;
@@ -69,13 +74,43 @@ typedef enum {
     NSMutableArray *_values;
 }
 
+/**
+ Number of items to show in the response
+ */
 @property (nonatomic, assign) int maxItems;
+/**
+ Order to sort the response
+ */
 @property (nonatomic, assign) Order order;
+/**
+ Since when a book is available
+ */
 @property (nonatomic, assign) Since since;
+/**
+ Array with all the values of the fields
+ */
 @property (nonatomic, readonly) NSArray *values;
 
+/**
+ Sets a value for the given field.
+ 
+ @param Field Field to set
+ @param NSString Value for the field
+ */
 - (void)setField:(Field)field withValue:(NSString *)value;
+
+/**
+ Resets the value of the given field to null.
+ 
+ @param Field Field to reset
+ */
 - (void)resetField:(Field)field;
+
+/**
+ Creates the string for the request url.
+ 
+ @return NSString String to use in the url request to api
+ */
 - (NSString *)requestParameters;
 
 @end

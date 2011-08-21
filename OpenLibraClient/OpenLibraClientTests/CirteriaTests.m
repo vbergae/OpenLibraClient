@@ -1,10 +1,13 @@
+//  This file is part of the OpenLibraClient package.
 //
 //  CirteriaTests.m
 //  OpenLibraClient
 //
-//  Created by Víctor Berga on 21/08/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
+//  Created by Víctor Berga on 21/08/11 <victor@victorberga.com>.
+//  Copyright 2011 Víctor Berga. All rights reserved.
+// 
+//  For the full copyright and license information, please view the LICENSE
+//  file that was distributed with this source code.
 
 #import "CirteriaTests.h"
 
@@ -128,36 +131,58 @@
     requestPath = [_criteria requestParameters];
     STAssertTrue([requestPath isEqualToString:expected], 
                  @"[5] Default request with sinze set to none fails");
-    
-    /*
 
-     
-     // Test order parameter
-     
-     //[6] Set order to desc
-     _criteria->setOrder(OrderDesc);
-     requestPath = _criteria->requestPath();
-     QVERIFY2("&order=z_a&num_items=10" == requestPath,
-     "[6] Set order to OrderDesc fails");
-     
-     //[7] Set order to newest
-     _criteria->setOrder(OrderNewest);
-     requestPath = _criteria->requestPath();
-     QVERIFY2("&order=newest&num_items=10" == requestPath,
-     "[7] Set order to OrderNewest fails");
-     
-     //[8] Set order to oldest
-     _criteria->setOrder(OrderOldest);
-     requestPath = _criteria->requestPath();
-     QVERIFY2("&order=oldest&num_items=10" == requestPath,
-     "[6] Set order to OrderOldest fails");
-     
-     //[9] Set order to asc
-     _criteria->setOrder(OrderAsc);
-     requestPath = _criteria->requestPath();
-     QVERIFY2("&order=a_z&num_items=10" == requestPath,
-     "[9] Set order to OrderAsc fails");
-     */
+    //[6] Set order to desc
+    [_criteria setOrder:OrderDesc];
+    expected = @"&order=z_a&num_items=10";
+    requestPath = [_criteria requestParameters];
+    STAssertTrue([requestPath isEqualToString:expected], 
+                 @"[6] Set order to OrderDesc fails");
+
+    //[7] Set order to newest
+    [_criteria setOrder:OrderNewest];
+    expected = @"&order=newest&num_items=10";
+    requestPath = [_criteria requestParameters];
+    STAssertTrue([requestPath isEqualToString:expected], 
+                 @"[7] Set order to OrderNewest fails");
+
+    //[8] Set order to oldest
+    [_criteria setOrder:OrderOldest];
+    expected = @"&order=oldest&num_items=10";
+    requestPath = [_criteria requestParameters];
+    STAssertTrue([requestPath isEqualToString:expected], 
+                 @"[8] Set order to OrderOldest fails");
+
+    //[9] Set order to asc
+    [_criteria setOrder:OrderAsc];
+    expected = @"&order=a_z&num_items=10";
+    requestPath = [_criteria requestParameters];
+    STAssertTrue([requestPath isEqualToString:expected], 
+                 @"[9] Set order to OrderAsc fails");
+    
+    //[10] Set id field to 100
+    [_criteria setField:FieldId withValue:@"100"];
+    expected = @"&id=100&order=a_z&num_items=10";
+    requestPath = [_criteria requestParameters];
+    STAssertTrue([requestPath isEqualToString:expected], 
+                 @"[10] Set field id to 100 fails");
+    [_criteria resetField:FieldId];
+    
+    //[11] Set title field to "some title"
+    [_criteria setField:FieldTitle withValue:@"some title"];
+    expected = @"&title=\"some title\"&order=a_z&num_items=10";
+    requestPath = [_criteria requestParameters];
+    STAssertTrue([requestPath isEqualToString:expected], 
+                 @"[11] Set field title to 'some title' fails");
+    [_criteria resetField:FieldTitle];
+    
+    //[12] Set title field to "author name"
+    [_criteria setField:FieldAuthor withValue:@"author name"];
+    expected = @"&author=\"author name\"&order=a_z&num_items=10";
+    requestPath = [_criteria requestParameters];
+    STAssertTrue([requestPath isEqualToString:expected], 
+                 @"[12] Set field author to 'author name' fails");
+    [_criteria resetField:FieldAuthor];
 }
 
 @end
