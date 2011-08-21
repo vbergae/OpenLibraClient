@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'OpenLibraClient' target in the 'OpenLibraClient' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

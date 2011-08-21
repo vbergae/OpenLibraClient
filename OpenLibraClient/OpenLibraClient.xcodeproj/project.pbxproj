@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC16BCEC140106D7004AC387 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC16BCEB140106D7004AC387 /* Foundation.framework */; };
+		CC16BCF2140106D7004AC387 /* OpenLibraClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CC16BCF1140106D7004AC387 /* OpenLibraClient.m */; };
+		CC16BCFA140106D7004AC387 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC16BCF9140106D7004AC387 /* SenTestingKit.framework */; };
+		CC16BCFC140106D7004AC387 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC16BCFB140106D7004AC387 /* UIKit.framework */; };
+		CC16BCFD140106D7004AC387 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC16BCEB140106D7004AC387 /* Foundation.framework */; };
+		CC16BCFF140106D7004AC387 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC16BCFE140106D7004AC387 /* CoreGraphics.framework */; };
+		CC16BD02140106D7004AC387 /* libOpenLibraClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC16BCE8140106D7004AC387 /* libOpenLibraClient.a */; };
+		CC16BD08140106D7004AC387 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC16BD06140106D7004AC387 /* InfoPlist.strings */; };
+		CC16BD0A140106D7004AC387 /* OpenLibraClientTests.h in Resources */ = {isa = PBXBuildFile; fileRef = CC16BD09140106D7004AC387 /* OpenLibraClientTests.h */; };
+		CC16BD0C140106D7004AC387 /* OpenLibraClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC16BD0B140106D7004AC387 /* OpenLibraClientTests.m */; };
+		CC16BD17140106FC004AC387 /* Criteria.h in Headers */ = {isa = PBXBuildFile; fileRef = CC16BD15140106FC004AC387 /* Criteria.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC16BD18140106FC004AC387 /* Criteria.m in Sources */ = {isa = PBXBuildFile; fileRef = CC16BD16140106FC004AC387 /* Criteria.m */; };
+		CC16BD1B14010708004AC387 /* Book.h in Headers */ = {isa = PBXBuildFile; fileRef = CC16BD1914010708004AC387 /* Book.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC16BD1C14010708004AC387 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = CC16BD1A14010708004AC387 /* Book.m */; };
+		CC16BD1D14010B3C004AC387 /* OpenLibraClient.h in Headers */ = {isa = PBXBuildFile; fileRef = CC16BCF0140106D7004AC387 /* OpenLibraClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC16BD2014010B8E004AC387 /* CirteriaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC16BD1F14010B8E004AC387 /* CirteriaTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC16BD00140106D7004AC387 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC16BCDF140106D7004AC387 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC16BCE7140106D7004AC387;
+			remoteInfo = OpenLibraClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CC16BCE8140106D7004AC387 /* libOpenLibraClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOpenLibraClient.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC16BCEB140106D7004AC387 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CC16BCEF140106D7004AC387 /* OpenLibraClient-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenLibraClient-Prefix.pch"; sourceTree = "<group>"; };
+		CC16BCF0140106D7004AC387 /* OpenLibraClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenLibraClient.h; sourceTree = "<group>"; };
+		CC16BCF1140106D7004AC387 /* OpenLibraClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenLibraClient.m; sourceTree = "<group>"; };
+		CC16BCF8140106D7004AC387 /* OpenLibraClientTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenLibraClientTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC16BCF9140106D7004AC387 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		CC16BCFB140106D7004AC387 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		CC16BCFE140106D7004AC387 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		CC16BD05140106D7004AC387 /* OpenLibraClientTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenLibraClientTests-Info.plist"; sourceTree = "<group>"; };
+		CC16BD07140106D7004AC387 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CC16BD09140106D7004AC387 /* OpenLibraClientTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenLibraClientTests.h; sourceTree = "<group>"; };
+		CC16BD0B140106D7004AC387 /* OpenLibraClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenLibraClientTests.m; sourceTree = "<group>"; };
+		CC16BD15140106FC004AC387 /* Criteria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Criteria.h; sourceTree = "<group>"; };
+		CC16BD16140106FC004AC387 /* Criteria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Criteria.m; sourceTree = "<group>"; };
+		CC16BD1914010708004AC387 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		CC16BD1A14010708004AC387 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		CC16BD1E14010B8E004AC387 /* CirteriaTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CirteriaTests.h; sourceTree = "<group>"; };
+		CC16BD1F14010B8E004AC387 /* CirteriaTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CirteriaTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC16BCE5140106D7004AC387 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC16BCEC140106D7004AC387 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC16BCF4140106D7004AC387 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC16BCFA140106D7004AC387 /* SenTestingKit.framework in Frameworks */,
+				CC16BCFC140106D7004AC387 /* UIKit.framework in Frameworks */,
+				CC16BCFD140106D7004AC387 /* Foundation.framework in Frameworks */,
+				CC16BCFF140106D7004AC387 /* CoreGraphics.framework in Frameworks */,
+				CC16BD02140106D7004AC387 /* libOpenLibraClient.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC16BCDD140106D7004AC387 = {
+			isa = PBXGroup;
+			children = (
+				CC16BCED140106D7004AC387 /* OpenLibraClient */,
+				CC16BD03140106D7004AC387 /* OpenLibraClientTests */,
+				CC16BCEA140106D7004AC387 /* Frameworks */,
+				CC16BCE9140106D7004AC387 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC16BCE9140106D7004AC387 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC16BCE8140106D7004AC387 /* libOpenLibraClient.a */,
+				CC16BCF8140106D7004AC387 /* OpenLibraClientTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC16BCEA140106D7004AC387 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC16BCEB140106D7004AC387 /* Foundation.framework */,
+				CC16BCF9140106D7004AC387 /* SenTestingKit.framework */,
+				CC16BCFB140106D7004AC387 /* UIKit.framework */,
+				CC16BCFE140106D7004AC387 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC16BCED140106D7004AC387 /* OpenLibraClient */ = {
+			isa = PBXGroup;
+			children = (
+				CC16BCF0140106D7004AC387 /* OpenLibraClient.h */,
+				CC16BCF1140106D7004AC387 /* OpenLibraClient.m */,
+				CC16BD15140106FC004AC387 /* Criteria.h */,
+				CC16BD16140106FC004AC387 /* Criteria.m */,
+				CC16BD1914010708004AC387 /* Book.h */,
+				CC16BD1A14010708004AC387 /* Book.m */,
+				CC16BCEE140106D7004AC387 /* Supporting Files */,
+			);
+			path = OpenLibraClient;
+			sourceTree = "<group>";
+		};
+		CC16BCEE140106D7004AC387 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC16BCEF140106D7004AC387 /* OpenLibraClient-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC16BD03140106D7004AC387 /* OpenLibraClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC16BD09140106D7004AC387 /* OpenLibraClientTests.h */,
+				CC16BD0B140106D7004AC387 /* OpenLibraClientTests.m */,
+				CC16BD1E14010B8E004AC387 /* CirteriaTests.h */,
+				CC16BD1F14010B8E004AC387 /* CirteriaTests.m */,
+				CC16BD04140106D7004AC387 /* Supporting Files */,
+			);
+			path = OpenLibraClientTests;
+			sourceTree = "<group>";
+		};
+		CC16BD04140106D7004AC387 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC16BD05140106D7004AC387 /* OpenLibraClientTests-Info.plist */,
+				CC16BD06140106D7004AC387 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CC16BCE6140106D7004AC387 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC16BD17140106FC004AC387 /* Criteria.h in Headers */,
+				CC16BD1B14010708004AC387 /* Book.h in Headers */,
+				CC16BD1D14010B3C004AC387 /* OpenLibraClient.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CC16BCE7140106D7004AC387 /* OpenLibraClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC16BD0F140106D7004AC387 /* Build configuration list for PBXNativeTarget "OpenLibraClient" */;
+			buildPhases = (
+				CC16BCE4140106D7004AC387 /* Sources */,
+				CC16BCE5140106D7004AC387 /* Frameworks */,
+				CC16BCE6140106D7004AC387 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenLibraClient;
+			productName = OpenLibraClient;
+			productReference = CC16BCE8140106D7004AC387 /* libOpenLibraClient.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CC16BCF7140106D7004AC387 /* OpenLibraClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC16BD12140106D7004AC387 /* Build configuration list for PBXNativeTarget "OpenLibraClientTests" */;
+			buildPhases = (
+				CC16BCF3140106D7004AC387 /* Sources */,
+				CC16BCF4140106D7004AC387 /* Frameworks */,
+				CC16BCF5140106D7004AC387 /* Resources */,
+				CC16BCF6140106D7004AC387 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC16BD01140106D7004AC387 /* PBXTargetDependency */,
+			);
+			name = OpenLibraClientTests;
+			productName = OpenLibraClientTests;
+			productReference = CC16BCF8140106D7004AC387 /* OpenLibraClientTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC16BCDF140106D7004AC387 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = CC16BCE2140106D7004AC387 /* Build configuration list for PBXProject "OpenLibraClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CC16BCDD140106D7004AC387;
+			productRefGroup = CC16BCE9140106D7004AC387 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC16BCE7140106D7004AC387 /* OpenLibraClient */,
+				CC16BCF7140106D7004AC387 /* OpenLibraClientTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC16BCF5140106D7004AC387 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC16BD08140106D7004AC387 /* InfoPlist.strings in Resources */,
+				CC16BD0A140106D7004AC387 /* OpenLibraClientTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CC16BCF6140106D7004AC387 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC16BCE4140106D7004AC387 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC16BCF2140106D7004AC387 /* OpenLibraClient.m in Sources */,
+				CC16BD18140106FC004AC387 /* Criteria.m in Sources */,
+				CC16BD1C14010708004AC387 /* Book.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC16BCF3140106D7004AC387 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC16BD0C140106D7004AC387 /* OpenLibraClientTests.m in Sources */,
+				CC16BD2014010B8E004AC387 /* CirteriaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC16BD01140106D7004AC387 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC16BCE7140106D7004AC387 /* OpenLibraClient */;
+			targetProxy = CC16BD00140106D7004AC387 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CC16BD06140106D7004AC387 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC16BD07140106D7004AC387 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC16BD0D140106D7004AC387 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CC16BD0E140106D7004AC387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC16BD10140106D7004AC387 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/OpenLibraClient.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenLibraClient/OpenLibraClient-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CC16BD11140106D7004AC387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/OpenLibraClient.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenLibraClient/OpenLibraClient-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CC16BD13140106D7004AC387 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenLibraClient/OpenLibraClient-Prefix.pch";
+				INFOPLIST_FILE = "OpenLibraClientTests/OpenLibraClientTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		CC16BD14140106D7004AC387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenLibraClient/OpenLibraClient-Prefix.pch";
+				INFOPLIST_FILE = "OpenLibraClientTests/OpenLibraClientTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC16BCE2140106D7004AC387 /* Build configuration list for PBXProject "OpenLibraClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC16BD0D140106D7004AC387 /* Debug */,
+				CC16BD0E140106D7004AC387 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC16BD0F140106D7004AC387 /* Build configuration list for PBXNativeTarget "OpenLibraClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC16BD10140106D7004AC387 /* Debug */,
+				CC16BD11140106D7004AC387 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CC16BD12140106D7004AC387 /* Build configuration list for PBXNativeTarget "OpenLibraClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC16BD13140106D7004AC387 /* Debug */,
+				CC16BD14140106D7004AC387 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC16BCDF140106D7004AC387 /* Project object */;
+}
