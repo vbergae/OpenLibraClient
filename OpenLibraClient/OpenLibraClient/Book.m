@@ -17,11 +17,13 @@
 @synthesize title   = _title;
 @synthesize author  = _author;
 
-- (id)init
+- (id)initWithDictionary:(NSDictionary *)dictionary
 {
     self = [super init];
     if (self) {
-        // Initialization code here.
+        _id         = [[dictionary valueForKey:ID_KEY] intValue];
+        _title      = [dictionary valueForKey:TITLE_KEY];
+        _author     = [dictionary valueForKey:AUTHOR_KEY];
     }
     
     return self;
@@ -37,6 +39,18 @@
     [self setAuthor:nil];
     
     [super dealloc];
+}
+
+#pragma mark -
+#pragma mark Debug methods
+
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"Book {\
+            id: %d \
+            title: %@ \
+            author: %@",
+            self.id, self.title, self.author];
 }
 
 @end

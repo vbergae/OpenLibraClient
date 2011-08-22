@@ -11,6 +11,10 @@
 
 #import <Foundation/Foundation.h>
 
+#define ID_KEY          @"ID"
+#define TITLE_KEY       @"title"
+#define AUTHOR_KEY      @"author"
+
 /**
  Class to represent a Book in the OpenLibra service.
  
@@ -36,5 +40,7 @@
  Book's author
  */
 @property (nonatomic, retain) NSString *author;
+
+- (id)initWithDictionary:(NSDictionary *)dictionary;
 
 @end
