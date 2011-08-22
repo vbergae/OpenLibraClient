@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:OpenLibraDesktop/OpenLibraDesktop.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:OpenLibraClient/OpenLibraClient.xcodeproj">
    </FileRef>
 </Workspace>
