@@ -9,6 +9,11 @@
 #import <SenTestingKit/SenTestingKit.h>
 #import "OpenLibraClient.h"
 
-@interface OpenLibraClientTests : SenTestCase
+@interface OpenLibraClientTests : SenTestCase {
+@private
+    OpenLibraClient *_client;
+}
+
+- (void)testServiceURLRequest;
 
 @end

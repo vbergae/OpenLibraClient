@@ -14,19 +14,35 @@
 {
     [super setUp];
     
-    // Set-up code here.
+    _client = [[OpenLibraClient alloc] init];
+    STAssertNotNil(_client, @"OpenLibraClient not instantiated");
 }
 
 - (void)tearDown
 {
-    // Tear-down code here.
+    [_client release];
+    _client = nil;
     
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testServiceURLRequest
 {
-    //STFail(@"Unit tests are not implemented yet in OpenLibraClientTests");
+    NSURL *expected;
+    NSURL *returned;
+    
+    // [0] Default URL Request
+    expected = [NSURL  URLWithString:@"http://openlibra.com/api/v1/get/?&order=a_z&num_items=10"];
+    returned = [_client.serviceURLRequest URL];
+    STAssertTrue([returned isEqual:expected],
+                 @"[0] Default url request fails");
+    
+    // [1] Request for book with id 589
+    [_client.criteria setField:FieldId withValue:@"589"];
+    expected = [NSURL URLWithString:@"http://openlibra.com/api/v1/get/?&id=589&order=a_z&num_items=10"];
+    returned = [_client.serviceURLRequest URL];
+    STAssertTrue([returned isEqual:expected],
+                 @"[1] Request for book with id 589 fails");
 }
 
 @end
