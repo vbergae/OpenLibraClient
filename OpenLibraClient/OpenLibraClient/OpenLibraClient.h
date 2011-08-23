@@ -11,54 +11,12 @@
 
 #import <Foundation/Foundation.h>
 
+#import "OpenLibraClientDelegate.h"
 #import "Criteria.h"
 #import "Book.h"
-#import "SBJson.h"
 
 #define API_HOST    @"openlibra.com"
 #define API_PATH    @"/api/v1/get/?"
-
-@class OpenLibraClient;
-
-/**
- Messages sent to delegate while OpenLibreClient proccess the request to API
- */
-@protocol OpenLibraDelegate <NSObject>
-
-/**
- Sent when OpenLibraClient will start a connection to service
- 
- @param OpenLibraClient Sender
- */
-- (void)willStartConnection:(OpenLibraClient *)client;
-
-/**
- Sent when OpenLibraClient did start a connection to service
- 
- @param OpenLibraClient Sender
- @param NSURLConnection Connection object
- */
-- (void)openLibraClient:(OpenLibraClient *)client
-     didStartConnection:(NSURLConnection *)connection;
-
-/**
- Sent when the request fails
- 
- @param OpenLibraClient Sender
- @param NSError Encapsulates error information
- */
-- (void)openLibraClient:(OpenLibraClient *)client
-didFailConnectionWithError:(NSError *)error;
-
-/**
- Sent when OpenLibraClient did finish to fetch the request
- 
- @param OpenLibraClient Sender
- @param NSArray All books returned by the service
- */
-- (void)openLibraClientDidFinishLoading:(OpenLibraClient *)client;
-
-@end
 
 /**
  OpenLibraClient is the main class to fetch requests to OpenLibra Service.
@@ -75,10 +33,6 @@ didFailConnectionWithError:(NSError *)error;
  Criteria to make a request to OpenLibra service.
  */
 @property (nonatomic, retain) Criteria *criteria;
-/**
- URL Request for the OpenLibra Service
- */
-@property (nonatomic, readonly) NSURLRequest *serviceURLRequest;
 /**
  Array with all books returned by the service
  */

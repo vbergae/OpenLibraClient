@@ -10,13 +10,13 @@
 //  file that was distributed with this source code.
 
 #import "OpenLibraClient.h"
+#import "SBJson.h"
 
 @implementation OpenLibraClient
 
-@synthesize criteria = _criteria;
-@dynamic serviceURLRequest;
-@synthesize books = _books;
-@synthesize delegate = _delegate;
+@synthesize criteria    = _criteria;
+@synthesize books       = _books;
+@synthesize delegate    = _delegate;
 
 - (id)init
 {
@@ -85,7 +85,9 @@
                                              code:1 
                                          userInfo:nil];
         
-        if ([self.delegate respondsToSelector:@selector(openLibraClient:didFailConnectionWithError:)]) {
+        if ([self.delegate respondsToSelector:
+             @selector(openLibraClient:didFailConnectionWithError:)]) 
+        {
             [self.delegate openLibraClient:self 
                 didFailConnectionWithError:error];
         }
@@ -107,6 +109,7 @@
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
+    // Check reponse syntax
     NSString *jsonString = [[NSString alloc] initWithData:_responseData 
                                                  encoding:NSUTF8StringEncoding];
     jsonString = [jsonString substringFromIndex:1]; 
@@ -121,8 +124,6 @@
     for (NSDictionary *book in booksRaw) {
         [_books addObject:[[Book alloc] initWithDictionary:book]];
     }
-    
-    NSLog(@"BOOKS: %@", self.books);
     
     // Clean up data
     [connection release];
@@ -143,8 +144,9 @@
     [_responseData release];
     _responseData = nil;
     
-    if ([self.delegate 
-         respondsToSelector:@selector(openLibraClient:didFailConnectionWithError:)]) {
+    if ([self.delegate respondsToSelector:
+         @selector(openLibraClient:didFailConnectionWithError:)]) 
+    {
         [self.delegate openLibraClient:self 
             didFailConnectionWithError:error];
     }
