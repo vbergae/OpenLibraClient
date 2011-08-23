@@ -679,9 +679,9 @@
 				</dict>
 			</array>
 		</dict>
-		<real>335786263.94268101</real>
+		<real>335808283.86712903</real>
 		<string>{0, 1394}</string>
-		<string>{431, 0}</string>
+		<string>{548, 0}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -4119,10 +4119,10 @@
 				</dict>
 			</array>
 		</dict>
-		<real>335786283.19069302</real>
-		<string>{2494, 1598}</string>
-		<string>{3622, 0}</string>
-		<string>-connectionDidFinishLoading:</string>
+		<real>335808283.952645</real>
+		<string>{2579, 1556}</string>
+		<string>{4126, 0}</string>
+		<string>-connection:didFailWithError:</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -4408,9 +4408,9 @@
 				</dict>
 			</array>
 		</dict>
-		<real>335786283.19047201</real>
+		<real>335808283.95237201</real>
 		<string>{0, 1394}</string>
-		<string>{431, 0}</string>
+		<string>{548, 0}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
