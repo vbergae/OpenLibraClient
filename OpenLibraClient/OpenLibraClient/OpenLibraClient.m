@@ -16,6 +16,7 @@
 @synthesize criteria = _criteria;
 @dynamic serviceURLRequest;
 @synthesize books = _books;
+@synthesize delegate = _delegate;
 
 - (id)init
 {
@@ -64,13 +65,30 @@
 
 - (void)fetchRequest
 {
+    if ([self.delegate respondsToSelector:@selector(willStartConnection:)]) {
+        [self.delegate willStartConnection:self];
+    }
+    
     NSURLConnection *theConnection = [[NSURLConnection alloc] 
                                       initWithRequest:self.serviceURLRequest
                                       delegate:self 
                                       startImmediately:YES];
     
+    if ([self.delegate 
+         respondsToSelector:@selector(openLibraClient:didStartConnection:)]) {
+        [self.delegate openLibraClient:self 
+                    didStartConnection:theConnection];
+    }
+    
     if (!theConnection) {
-        // Inform on error
+        NSError *error = [NSError errorWithDomain:@"ConnectionError" 
+                                             code:1 
+                                         userInfo:nil];
+        
+        if ([self.delegate respondsToSelector:@selector(openLibraClient:didFailConnectionWithError:)]) {
+            [self.delegate openLibraClient:self 
+                didFailConnectionWithError:error];
+        }
     }
 }
 
@@ -110,6 +128,12 @@
     [connection release];
     [_responseData release];
     _responseData = nil;
+    
+    // Send message to delegate
+    if ([self.delegate 
+         respondsToSelector:@selector(openLibraClientDidFinishLoading:)]) {
+        [self.delegate openLibraClientDidFinishLoading:self];
+    }
 }
 
 - (void)connection:(NSURLConnection *)connection 

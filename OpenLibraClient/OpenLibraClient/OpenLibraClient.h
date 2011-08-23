@@ -18,6 +18,48 @@
 #define API_HOST    @"openlibra.com"
 #define API_PATH    @"/api/v1/get/?"
 
+@class OpenLibraClient;
+
+/**
+ Messages sent to delegate while OpenLibreClient proccess the request to API
+ */
+@protocol OpenLibraDelegate <NSObject>
+
+/**
+ Sent when OpenLibraClient will start a connection to service
+ 
+ @param OpenLibraClient Sender
+ */
+- (void)willStartConnection:(OpenLibraClient *)client;
+
+/**
+ Sent when OpenLibraClient did start a connection to service
+ 
+ @param OpenLibraClient Sender
+ @param NSURLConnection Connection object
+ */
+- (void)openLibraClient:(OpenLibraClient *)client
+     didStartConnection:(NSURLConnection *)connection;
+
+/**
+ Sent when the request fails
+ 
+ @param OpenLibraClient Sender
+ @param NSError Encapsulates error information
+ */
+- (void)openLibraClient:(OpenLibraClient *)client
+didFailConnectionWithError:(NSError *)error;
+
+/**
+ Sent when OpenLibraClient did finish to fetch the request
+ 
+ @param OpenLibraClient Sender
+ @param NSArray All books returned by the service
+ */
+- (void)openLibraClientDidFinishLoading:(OpenLibraClient *)client;
+
+@end
+
 /**
  OpenLibraClient is the main class to fetch requests to OpenLibra Service.
  */
@@ -26,6 +68,7 @@
     Criteria *_criteria;
     NSMutableData *_responseData;
     NSMutableArray *_books;
+    id<OpenLibraDelegate> _delegate;
 }
 
 /**
@@ -40,6 +83,10 @@
  Array with all books returned by the service
  */
 @property (nonatomic, readonly) NSArray *books;
+/**
+ Delegate object which implements OpenLibraDelegate
+ */
+@property (nonatomic, assign) id<OpenLibraDelegate> delegate;
 
 /**
  Initializer. 
