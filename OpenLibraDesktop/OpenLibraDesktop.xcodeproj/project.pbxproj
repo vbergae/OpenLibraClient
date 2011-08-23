@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC16BD88140154B5004AC387 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC16BD87140154B5004AC387 /* Cocoa.framework */; };
+		CC16BD92140154B5004AC387 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC16BD90140154B5004AC387 /* InfoPlist.strings */; };
+		CC16BD94140154B5004AC387 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC16BD93140154B5004AC387 /* main.m */; };
+		CC16BD98140154B5004AC387 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CC16BD96140154B5004AC387 /* Credits.rtf */; };
+		CC16BD9B140154B5004AC387 /* OpenLibraDesktopAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC16BD9A140154B5004AC387 /* OpenLibraDesktopAppDelegate.m */; };
+		CC16BD9E140154B6004AC387 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC16BD9C140154B6004AC387 /* MainMenu.xib */; };
+		CC16BDA6140154B6004AC387 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC16BDA5140154B6004AC387 /* SenTestingKit.framework */; };
+		CC16BDA7140154B6004AC387 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC16BD87140154B5004AC387 /* Cocoa.framework */; };
+		CC16BDAF140154B6004AC387 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC16BDAD140154B6004AC387 /* InfoPlist.strings */; };
+		CC16BDB1140154B6004AC387 /* OpenLibraDesktopTests.h in Resources */ = {isa = PBXBuildFile; fileRef = CC16BDB0140154B6004AC387 /* OpenLibraDesktopTests.h */; };
+		CC16BDB3140154B6004AC387 /* OpenLibraDesktopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC16BDB2140154B6004AC387 /* OpenLibraDesktopTests.m */; };
+		CC16BDD9140182EC004AC387 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = CC16BDC3140182C5004AC387 /* NSObject+SBJson.m */; };
+		CC16BDDA140182EC004AC387 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CC16BDC6140182C5004AC387 /* SBJsonParser.m */; };
+		CC16BDDB140182EC004AC387 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CC16BDC8140182C5004AC387 /* SBJsonStreamParser.m */; };
+		CC16BDDC140182EC004AC387 /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = CC16BDCA140182C5004AC387 /* SBJsonStreamParserAccumulator.m */; };
+		CC16BDDD140182EC004AC387 /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = CC16BDCC140182C5004AC387 /* SBJsonStreamParserState.m */; };
+		CC16BDDE140182EC004AC387 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = CC16BDCE140182C5004AC387 /* SBJsonStreamWriter.m */; };
+		CC16BDDF140182EC004AC387 /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = CC16BDD0140182C5004AC387 /* SBJsonStreamWriterAccumulator.m */; };
+		CC16BDE0140182EC004AC387 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = CC16BDD2140182C5004AC387 /* SBJsonStreamWriterState.m */; };
+		CC16BDE1140182EC004AC387 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = CC16BDD4140182C5004AC387 /* SBJsonTokeniser.m */; };
+		CC16BDE2140182EC004AC387 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = CC16BDD6140182C5004AC387 /* SBJsonUTF8Stream.m */; };
+		CC16BDE3140182EC004AC387 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = CC16BDD8140182C5004AC387 /* SBJsonWriter.m */; };
+		CC16BDE714018327004AC387 /* OpenLibraClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CC16BDE414018327004AC387 /* OpenLibraClient.m */; };
+		CC16BDE814018327004AC387 /* Criteria.m in Sources */ = {isa = PBXBuildFile; fileRef = CC16BDE514018327004AC387 /* Criteria.m */; };
+		CC16BDE914018327004AC387 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = CC16BDE614018327004AC387 /* Book.m */; };
+		CC16BDEB140184CA004AC387 /* OpenLibraClient.h in Frameworks */ = {isa = PBXBuildFile; fileRef = CC16BDEA140184A8004AC387 /* OpenLibraClient.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC16BDA8140154B6004AC387 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC16BD7A140154B5004AC387 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC16BD82140154B5004AC387;
+			remoteInfo = OpenLibraDesktop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CC16BD83140154B5004AC387 /* OpenLibraDesktop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenLibraDesktop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC16BD87140154B5004AC387 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		CC16BD8A140154B5004AC387 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		CC16BD8B140154B5004AC387 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CC16BD8C140154B5004AC387 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CC16BD8F140154B5004AC387 /* OpenLibraDesktop-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenLibraDesktop-Info.plist"; sourceTree = "<group>"; };
+		CC16BD91140154B5004AC387 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CC16BD93140154B5004AC387 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CC16BD95140154B5004AC387 /* OpenLibraDesktop-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenLibraDesktop-Prefix.pch"; sourceTree = "<group>"; };
+		CC16BD97140154B5004AC387 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		CC16BD99140154B5004AC387 /* OpenLibraDesktopAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenLibraDesktopAppDelegate.h; sourceTree = "<group>"; };
+		CC16BD9A140154B5004AC387 /* OpenLibraDesktopAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenLibraDesktopAppDelegate.m; sourceTree = "<group>"; };
+		CC16BD9D140154B6004AC387 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CC16BDA4140154B6004AC387 /* OpenLibraDesktopTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenLibraDesktopTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC16BDA5140154B6004AC387 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		CC16BDAC140154B6004AC387 /* OpenLibraDesktopTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenLibraDesktopTests-Info.plist"; sourceTree = "<group>"; };
+		CC16BDAE140154B6004AC387 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CC16BDB0140154B6004AC387 /* OpenLibraDesktopTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenLibraDesktopTests.h; sourceTree = "<group>"; };
+		CC16BDB2140154B6004AC387 /* OpenLibraDesktopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenLibraDesktopTests.m; sourceTree = "<group>"; };
+		CC16BDBC140154CF004AC387 /* MacOpenLibraClient.dylib */ = {isa = PBXFileReference; lastKnownFileType = file; name = MacOpenLibraClient.dylib; path = ../OpenLibraClient/build/Release/MacOpenLibraClient.dylib; sourceTree = "<group>"; };
+		CC16BDC2140182C5004AC387 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+SBJson.h"; path = "../../../json-framework/Classes/NSObject+SBJson.h"; sourceTree = "<group>"; };
+		CC16BDC3140182C5004AC387 /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+SBJson.m"; path = "../../../json-framework/Classes/NSObject+SBJson.m"; sourceTree = "<group>"; };
+		CC16BDC4140182C5004AC387 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJson.h; path = "../../../json-framework/Classes/SBJson.h"; sourceTree = "<group>"; };
+		CC16BDC5140182C5004AC387 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonParser.h; path = "../../../json-framework/Classes/SBJsonParser.h"; sourceTree = "<group>"; };
+		CC16BDC6140182C5004AC387 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonParser.m; path = "../../../json-framework/Classes/SBJsonParser.m"; sourceTree = "<group>"; };
+		CC16BDC7140182C5004AC387 /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParser.h; path = "../../../json-framework/Classes/SBJsonStreamParser.h"; sourceTree = "<group>"; };
+		CC16BDC8140182C5004AC387 /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParser.m; path = "../../../json-framework/Classes/SBJsonStreamParser.m"; sourceTree = "<group>"; };
+		CC16BDC9140182C5004AC387 /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParserAccumulator.h; path = "../../../json-framework/Classes/SBJsonStreamParserAccumulator.h"; sourceTree = "<group>"; };
+		CC16BDCA140182C5004AC387 /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParserAccumulator.m; path = "../../../json-framework/Classes/SBJsonStreamParserAccumulator.m"; sourceTree = "<group>"; };
+		CC16BDCB140182C5004AC387 /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParserState.h; path = "../../../json-framework/Classes/SBJsonStreamParserState.h"; sourceTree = "<group>"; };
+		CC16BDCC140182C5004AC387 /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParserState.m; path = "../../../json-framework/Classes/SBJsonStreamParserState.m"; sourceTree = "<group>"; };
+		CC16BDCD140182C5004AC387 /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamWriter.h; path = "../../../json-framework/Classes/SBJsonStreamWriter.h"; sourceTree = "<group>"; };
+		CC16BDCE140182C5004AC387 /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamWriter.m; path = "../../../json-framework/Classes/SBJsonStreamWriter.m"; sourceTree = "<group>"; };
+		CC16BDCF140182C5004AC387 /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamWriterAccumulator.h; path = "../../../json-framework/Classes/SBJsonStreamWriterAccumulator.h"; sourceTree = "<group>"; };
+		CC16BDD0140182C5004AC387 /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamWriterAccumulator.m; path = "../../../json-framework/Classes/SBJsonStreamWriterAccumulator.m"; sourceTree = "<group>"; };
+		CC16BDD1140182C5004AC387 /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamWriterState.h; path = "../../../json-framework/Classes/SBJsonStreamWriterState.h"; sourceTree = "<group>"; };
+		CC16BDD2140182C5004AC387 /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamWriterState.m; path = "../../../json-framework/Classes/SBJsonStreamWriterState.m"; sourceTree = "<group>"; };
+		CC16BDD3140182C5004AC387 /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonTokeniser.h; path = "../../../json-framework/Classes/SBJsonTokeniser.h"; sourceTree = "<group>"; };
+		CC16BDD4140182C5004AC387 /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonTokeniser.m; path = "../../../json-framework/Classes/SBJsonTokeniser.m"; sourceTree = "<group>"; };
+		CC16BDD5140182C5004AC387 /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonUTF8Stream.h; path = "../../../json-framework/Classes/SBJsonUTF8Stream.h"; sourceTree = "<group>"; };
+		CC16BDD6140182C5004AC387 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonUTF8Stream.m; path = "../../../json-framework/Classes/SBJsonUTF8Stream.m"; sourceTree = "<group>"; };
+		CC16BDD7140182C5004AC387 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonWriter.h; path = "../../../json-framework/Classes/SBJsonWriter.h"; sourceTree = "<group>"; };
+		CC16BDD8140182C5004AC387 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonWriter.m; path = "../../../json-framework/Classes/SBJsonWriter.m"; sourceTree = "<group>"; };
+		CC16BDE414018327004AC387 /* OpenLibraClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OpenLibraClient.m; path = ../OpenLibraClient/OpenLibraClient/OpenLibraClient.m; sourceTree = "<group>"; };
+		CC16BDE514018327004AC387 /* Criteria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Criteria.m; path = ../OpenLibraClient/OpenLibraClient/Criteria.m; sourceTree = "<group>"; };
+		CC16BDE614018327004AC387 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Book.m; path = ../OpenLibraClient/OpenLibraClient/Book.m; sourceTree = "<group>"; };
+		CC16BDEA140184A8004AC387 /* OpenLibraClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenLibraClient.h; path = ../OpenLibraClient/OpenLibraClient/OpenLibraClient.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC16BD80140154B5004AC387 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC16BD88140154B5004AC387 /* Cocoa.framework in Frameworks */,
+				CC16BDEB140184CA004AC387 /* OpenLibraClient.h in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC16BDA0140154B6004AC387 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC16BDA6140154B6004AC387 /* SenTestingKit.framework in Frameworks */,
+				CC16BDA7140154B6004AC387 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC16BD78140154B5004AC387 = {
+			isa = PBXGroup;
+			children = (
+				CC16BDE414018327004AC387 /* OpenLibraClient.m */,
+				CC16BDEA140184A8004AC387 /* OpenLibraClient.h */,
+				CC16BDE514018327004AC387 /* Criteria.m */,
+				CC16BDE614018327004AC387 /* Book.m */,
+				CC16BDC1140182C5004AC387 /* SBJSON */,
+				CC16BD8D140154B5004AC387 /* OpenLibraDesktop */,
+				CC16BDAA140154B6004AC387 /* OpenLibraDesktopTests */,
+				CC16BD86140154B5004AC387 /* Frameworks */,
+				CC16BD84140154B5004AC387 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC16BD84140154B5004AC387 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC16BD83140154B5004AC387 /* OpenLibraDesktop.app */,
+				CC16BDA4140154B6004AC387 /* OpenLibraDesktopTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC16BD86140154B5004AC387 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC16BDBC140154CF004AC387 /* MacOpenLibraClient.dylib */,
+				CC16BD87140154B5004AC387 /* Cocoa.framework */,
+				CC16BDA5140154B6004AC387 /* SenTestingKit.framework */,
+				CC16BD89140154B5004AC387 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC16BD89140154B5004AC387 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC16BD8A140154B5004AC387 /* AppKit.framework */,
+				CC16BD8B140154B5004AC387 /* CoreData.framework */,
+				CC16BD8C140154B5004AC387 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		CC16BD8D140154B5004AC387 /* OpenLibraDesktop */ = {
+			isa = PBXGroup;
+			children = (
+				CC16BD99140154B5004AC387 /* OpenLibraDesktopAppDelegate.h */,
+				CC16BD9A140154B5004AC387 /* OpenLibraDesktopAppDelegate.m */,
+				CC16BD9C140154B6004AC387 /* MainMenu.xib */,
+				CC16BD8E140154B5004AC387 /* Supporting Files */,
+			);
+			path = OpenLibraDesktop;
+			sourceTree = "<group>";
+		};
+		CC16BD8E140154B5004AC387 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC16BD8F140154B5004AC387 /* OpenLibraDesktop-Info.plist */,
+				CC16BD90140154B5004AC387 /* InfoPlist.strings */,
+				CC16BD93140154B5004AC387 /* main.m */,
+				CC16BD95140154B5004AC387 /* OpenLibraDesktop-Prefix.pch */,
+				CC16BD96140154B5004AC387 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC16BDAA140154B6004AC387 /* OpenLibraDesktopTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC16BDB0140154B6004AC387 /* OpenLibraDesktopTests.h */,
+				CC16BDB2140154B6004AC387 /* OpenLibraDesktopTests.m */,
+				CC16BDAB140154B6004AC387 /* Supporting Files */,
+			);
+			path = OpenLibraDesktopTests;
+			sourceTree = "<group>";
+		};
+		CC16BDAB140154B6004AC387 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC16BDAC140154B6004AC387 /* OpenLibraDesktopTests-Info.plist */,
+				CC16BDAD140154B6004AC387 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC16BDC1140182C5004AC387 /* SBJSON */ = {
+			isa = PBXGroup;
+			children = (
+				CC16BDC2140182C5004AC387 /* NSObject+SBJson.h */,
+				CC16BDC3140182C5004AC387 /* NSObject+SBJson.m */,
+				CC16BDC4140182C5004AC387 /* SBJson.h */,
+				CC16BDC5140182C5004AC387 /* SBJsonParser.h */,
+				CC16BDC6140182C5004AC387 /* SBJsonParser.m */,
+				CC16BDC7140182C5004AC387 /* SBJsonStreamParser.h */,
+				CC16BDC8140182C5004AC387 /* SBJsonStreamParser.m */,
+				CC16BDC9140182C5004AC387 /* SBJsonStreamParserAccumulator.h */,
+				CC16BDCA140182C5004AC387 /* SBJsonStreamParserAccumulator.m */,
+				CC16BDCB140182C5004AC387 /* SBJsonStreamParserState.h */,
+				CC16BDCC140182C5004AC387 /* SBJsonStreamParserState.m */,
+				CC16BDCD140182C5004AC387 /* SBJsonStreamWriter.h */,
+				CC16BDCE140182C5004AC387 /* SBJsonStreamWriter.m */,
+				CC16BDCF140182C5004AC387 /* SBJsonStreamWriterAccumulator.h */,
+				CC16BDD0140182C5004AC387 /* SBJsonStreamWriterAccumulator.m */,
+				CC16BDD1140182C5004AC387 /* SBJsonStreamWriterState.h */,
+				CC16BDD2140182C5004AC387 /* SBJsonStreamWriterState.m */,
+				CC16BDD3140182C5004AC387 /* SBJsonTokeniser.h */,
+				CC16BDD4140182C5004AC387 /* SBJsonTokeniser.m */,
+				CC16BDD5140182C5004AC387 /* SBJsonUTF8Stream.h */,
+				CC16BDD6140182C5004AC387 /* SBJsonUTF8Stream.m */,
+				CC16BDD7140182C5004AC387 /* SBJsonWriter.h */,
+				CC16BDD8140182C5004AC387 /* SBJsonWriter.m */,
+			);
+			name = SBJSON;
+			path = ../OpenLibraClient/OpenLibraClient;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC16BD82140154B5004AC387 /* OpenLibraDesktop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC16BDB6140154B6004AC387 /* Build configuration list for PBXNativeTarget "OpenLibraDesktop" */;
+			buildPhases = (
+				CC16BD7F140154B5004AC387 /* Sources */,
+				CC16BD80140154B5004AC387 /* Frameworks */,
+				CC16BD81140154B5004AC387 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenLibraDesktop;
+			productName = OpenLibraDesktop;
+			productReference = CC16BD83140154B5004AC387 /* OpenLibraDesktop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC16BDA3140154B6004AC387 /* OpenLibraDesktopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC16BDB9140154B6004AC387 /* Build configuration list for PBXNativeTarget "OpenLibraDesktopTests" */;
+			buildPhases = (
+				CC16BD9F140154B6004AC387 /* Sources */,
+				CC16BDA0140154B6004AC387 /* Frameworks */,
+				CC16BDA1140154B6004AC387 /* Resources */,
+				CC16BDA2140154B6004AC387 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC16BDA9140154B6004AC387 /* PBXTargetDependency */,
+			);
+			name = OpenLibraDesktopTests;
+			productName = OpenLibraDesktopTests;
+			productReference = CC16BDA4140154B6004AC387 /* OpenLibraDesktopTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC16BD7A140154B5004AC387 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = CC16BD7D140154B5004AC387 /* Build configuration list for PBXProject "OpenLibraDesktop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CC16BD78140154B5004AC387;
+			productRefGroup = CC16BD84140154B5004AC387 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC16BD82140154B5004AC387 /* OpenLibraDesktop */,
+				CC16BDA3140154B6004AC387 /* OpenLibraDesktopTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC16BD81140154B5004AC387 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC16BD92140154B5004AC387 /* InfoPlist.strings in Resources */,
+				CC16BD98140154B5004AC387 /* Credits.rtf in Resources */,
+				CC16BD9E140154B6004AC387 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC16BDA1140154B6004AC387 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC16BDAF140154B6004AC387 /* InfoPlist.strings in Resources */,
+				CC16BDB1140154B6004AC387 /* OpenLibraDesktopTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CC16BDA2140154B6004AC387 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC16BD7F140154B5004AC387 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC16BD94140154B5004AC387 /* main.m in Sources */,
+				CC16BD9B140154B5004AC387 /* OpenLibraDesktopAppDelegate.m in Sources */,
+				CC16BDD9140182EC004AC387 /* NSObject+SBJson.m in Sources */,
+				CC16BDDA140182EC004AC387 /* SBJsonParser.m in Sources */,
+				CC16BDDB140182EC004AC387 /* SBJsonStreamParser.m in Sources */,
+				CC16BDDC140182EC004AC387 /* SBJsonStreamParserAccumulator.m in Sources */,
+				CC16BDDD140182EC004AC387 /* SBJsonStreamParserState.m in Sources */,
+				CC16BDDE140182EC004AC387 /* SBJsonStreamWriter.m in Sources */,
+				CC16BDDF140182EC004AC387 /* SBJsonStreamWriterAccumulator.m in Sources */,
+				CC16BDE0140182EC004AC387 /* SBJsonStreamWriterState.m in Sources */,
+				CC16BDE1140182EC004AC387 /* SBJsonTokeniser.m in Sources */,
+				CC16BDE714018327004AC387 /* OpenLibraClient.m in Sources */,
+				CC16BDE814018327004AC387 /* Criteria.m in Sources */,
+				CC16BDE914018327004AC387 /* Book.m in Sources */,
+				CC16BDE2140182EC004AC387 /* SBJsonUTF8Stream.m in Sources */,
+				CC16BDE3140182EC004AC387 /* SBJsonWriter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC16BD9F140154B6004AC387 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC16BDB3140154B6004AC387 /* OpenLibraDesktopTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC16BDA9140154B6004AC387 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC16BD82140154B5004AC387 /* OpenLibraDesktop */;
+			targetProxy = CC16BDA8140154B6004AC387 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CC16BD90140154B5004AC387 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC16BD91140154B5004AC387 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CC16BD96140154B5004AC387 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC16BD97140154B5004AC387 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		CC16BD9C140154B6004AC387 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC16BD9D140154B6004AC387 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		CC16BDAD140154B6004AC387 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC16BDAE140154B6004AC387 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC16BDB4140154B6004AC387 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CC16BDB5140154B6004AC387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CC16BDB7140154B6004AC387 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenLibraDesktop/OpenLibraDesktop-Prefix.pch";
+				INFOPLIST_FILE = "OpenLibraDesktop/OpenLibraDesktop-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CC16BDB8140154B6004AC387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenLibraDesktop/OpenLibraDesktop-Prefix.pch";
+				INFOPLIST_FILE = "OpenLibraDesktop/OpenLibraDesktop-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CC16BDBA140154B6004AC387 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OpenLibraDesktop.app/Contents/MacOS/OpenLibraDesktop";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenLibraDesktop/OpenLibraDesktop-Prefix.pch";
+				INFOPLIST_FILE = "OpenLibraDesktopTests/OpenLibraDesktopTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		CC16BDBB140154B6004AC387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OpenLibraDesktop.app/Contents/MacOS/OpenLibraDesktop";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenLibraDesktop/OpenLibraDesktop-Prefix.pch";
+				INFOPLIST_FILE = "OpenLibraDesktopTests/OpenLibraDesktopTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC16BD7D140154B5004AC387 /* Build configuration list for PBXProject "OpenLibraDesktop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC16BDB4140154B6004AC387 /* Debug */,
+				CC16BDB5140154B6004AC387 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC16BDB6140154B6004AC387 /* Build configuration list for PBXNativeTarget "OpenLibraDesktop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC16BDB7140154B6004AC387 /* Debug */,
+				CC16BDB8140154B6004AC387 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CC16BDB9140154B6004AC387 /* Build configuration list for PBXNativeTarget "OpenLibraDesktopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC16BDBA140154B6004AC387 /* Debug */,
+				CC16BDBB140154B6004AC387 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC16BD7A140154B5004AC387 /* Project object */;
+}
