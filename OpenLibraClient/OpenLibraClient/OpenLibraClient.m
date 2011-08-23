@@ -143,9 +143,11 @@
     [_responseData release];
     _responseData = nil;
     
-    NSLog(@"Connection failed! Error - %@ %@",
-          [error localizedDescription],
-          [[error userInfo] objectForKey:NSURLErrorFailingURLStringErrorKey]);
+    if ([self.delegate 
+         respondsToSelector:@selector(openLibraClient:didFailConnectionWithError:)]) {
+        [self.delegate openLibraClient:self 
+            didFailConnectionWithError:error];
+    }
 }
 
 @end
