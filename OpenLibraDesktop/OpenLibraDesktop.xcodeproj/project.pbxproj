@@ -51,7 +51,7 @@
 		CC16BDAE140154B6004AC387 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CC16BDB0140154B6004AC387 /* OpenLibraDesktopTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenLibraDesktopTests.h; sourceTree = "<group>"; };
 		CC16BDB2140154B6004AC387 /* OpenLibraDesktopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenLibraDesktopTests.m; sourceTree = "<group>"; };
-		CCA099B91404431B0069F761 /* MacOpenLibraClient.dylib */ = {isa = PBXFileReference; lastKnownFileType = file; name = MacOpenLibraClient.dylib; path = ../OpenLibraClient/build/Release/MacOpenLibraClient.dylib; sourceTree = "<group>"; };
+		CCA099B91404431B0069F761 /* MacOpenLibraClient.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = MacOpenLibraClient.dylib; path = ../OpenLibraClient/build/Release/MacOpenLibraClient.dylib; sourceTree = "<group>"; };
 		CCA09A0414044E440069F761 /* OpenLibra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenLibra.h; path = ../OpenLibraClient/OpenLibraClient/OpenLibra.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -346,7 +346,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -366,7 +366,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				SDKROOT = macosx;
 			};
 			name = Release;
