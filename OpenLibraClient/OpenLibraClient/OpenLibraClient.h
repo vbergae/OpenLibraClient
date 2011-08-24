@@ -41,6 +41,10 @@
  Delegate object which implements OpenLibraDelegate
  */
 @property (nonatomic, assign) id<OpenLibraDelegate> delegate;
+/**
+ Returns generated NSURLRequest object using Criteria values.
+ */
+@property (nonatomic, readonly) NSURLRequest *serviceURLRequest;
 
 /**
  Initializer. 

@@ -17,6 +17,7 @@
 @synthesize criteria    = _criteria;
 @synthesize books       = _books;
 @synthesize delegate    = _delegate;
+@dynamic serviceURLRequest;
 
 - (id)init
 {
