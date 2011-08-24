@@ -155,6 +155,13 @@
     [_values replaceObjectAtIndex:field withObject:[NSNull null]];
 }
 
+- (void)resetAllFields
+{
+    for (int i = 0; i < [_values count]; ++i) {
+        [self resetField:i];
+    }
+}
+
 - (NSString *)requestParameters
 {
     NSString *parametersString = [[[NSString alloc] init] 

@@ -20,6 +20,7 @@
 
 - (void)testSetFieldWithValue;
 - (void)testResetField;
+- (void)testResetAllFields;
 - (void)testRequestParameters;
 
 @end

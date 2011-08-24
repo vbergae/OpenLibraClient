@@ -86,6 +86,15 @@
                    @"Inserting out of range field show throw an exception");
 }
 
+- (void)testResetAllFields
+{
+    [_criteria resetAllFields];
+    
+    for (id value in _criteria.values) {
+        STAssertTrue(value == [NSNull null], @"Reset all values fails");
+    }
+}
+
 - (void)testRequestParameters
 {
     NSString *requestPath;

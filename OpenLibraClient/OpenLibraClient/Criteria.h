@@ -107,6 +107,11 @@ typedef enum {
 - (void)resetField:(Field)field;
 
 /**
+ Resets all fields.
+ */
+- (void)resetAllFields;
+
+/**
  Creates the string for the request url.
  
  @return NSString String to use in the url request to api
