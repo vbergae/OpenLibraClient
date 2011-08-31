@@ -17,6 +17,7 @@
 - (NSString *)addOrderTo:(NSString *)string;
 - (NSString *)addMaxItemsTo:(NSString *)string;
 - (NSString *)addSinceTo:(NSString *)string;
++ (NSArray *)ApiFieldNames;
 
 @end
 
@@ -31,10 +32,12 @@
 {
     self = [super init];
     if (self) {
+        // Setup initial values
         [self setMaxItems:DEFAULT_MAX_ITEMS];
         [self setOrder:DEFAULT_ORDER];
         [self setSince:DEFAULT_SINCE];
         
+        // Setup initial field values
         _values = [[NSMutableArray alloc] initWithCapacity:FIELDS_COUNT];
         for (int i = 0; i < FIELDS_COUNT; i++) {
             [_values insertObject:[NSNull null] 
@@ -62,20 +65,19 @@
 - (NSString *)addValuesTo:(NSString *)string
 {
     id value;
-    
-    value = [_values objectAtIndex:FieldId];
-    if (value != [NSNull null]) {
-        string = [string stringByAppendingFormat:@"&id=%@", value];
-    }
-
-    value = [_values objectAtIndex:FieldTitle];
-    if (value != [NSNull null]) {
-        string = [string stringByAppendingFormat:@"&title=\"%@\"", value];
-    }
-    
-    value = [_values objectAtIndex:FieldAuthor];
-    if (value != [NSNull null]) {
-        string = [string stringByAppendingFormat:@"&author=\"%@\"", value];
+    for (int i = 0; i < FIELDS_COUNT; ++i) {
+        value = [_values objectAtIndex:i];
+        
+        if (value != [NSNull null]) {
+            NSString *field = [[Criteria ApiFieldNames] objectAtIndex:i];
+            
+            if ([value rangeOfString:@" "].location != NSNotFound) {
+                value = [NSString stringWithFormat:@"\"%@\"", value]; 
+            }
+            
+            string = [string stringByAppendingFormat:@"&%@=%@", 
+                      field, value];            
+        }
     }
     
     return string;
@@ -173,6 +175,56 @@
     parametersString = [self addMaxItemsTo:parametersString];
     
     return parametersString;
+}
+
+#pragma mark -
+#pragma mark Class methods
+
++ (NSArray *)ApiFieldNames
+{
+    NSMutableArray *fields = [NSMutableArray arrayWithCapacity:FIELDS_COUNT];
+    
+    for (int i = 0; i < FIELDS_COUNT; ++i) {
+        switch (i) {
+            case FieldId:
+                [fields insertObject:@"id" atIndex:i];
+                break;                
+            case FieldTitle:
+                [fields insertObject:@"title" atIndex:i];
+                break;                
+            case FieldAuthor:
+                [fields insertObject:@"author" atIndex:i];
+                break;
+            case FieldPublisher:
+                [fields insertObject:@"publisher" atIndex:i];
+                break;
+            case FieldPublisherDate:
+                [fields insertObject:@"publisher_date" atIndex:i];
+                break;
+            case FieldLang:
+                [fields insertObject:@"lang" atIndex:i];
+                break;
+            case FieldKeyworkd:
+                [fields insertObject:@"keywork" atIndex:i];
+                break;
+            case FieldCategory:
+                [fields insertObject:@"category" atIndex:i];
+                break;
+            case FieldCategoryId:
+                [fields insertObject:@"category_id" atIndex:i];
+                break;
+            case FieldSubcategory:
+                [fields insertObject:@"subcategory" atIndex:i];
+                break;
+            case FieldCriteria:
+                [fields insertObject:@"criteria" atIndex:i];
+                break; 
+            default:
+                break;
+        }
+    }
+    
+    return fields;
 }
 
 @end

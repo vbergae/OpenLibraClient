@@ -14,7 +14,7 @@
 /**
  Current number fields wicht Criteria supports
  */
-#define FIELDS_COUNT        3
+#define FIELDS_COUNT        11
 /**
  Default max results
  */
@@ -33,9 +33,17 @@
  Enum with the fields names
  */
 typedef enum {
-    FieldId         = 0,
-    FieldTitle      = 1,
-    FieldAuthor     = 2
+    FieldId             = 0,
+    FieldTitle          = 1,
+    FieldAuthor         = 2,
+    FieldPublisher      = 3,
+    FieldPublisherDate  = 4,
+    FieldLang           = 5,
+    FieldKeyworkd       = 6,
+    FieldCategory       = 7,
+    FieldCategoryId     = 8,
+    FieldSubcategory    = 9,
+    FieldCriteria       = 10
 } Field;
 
 /**
