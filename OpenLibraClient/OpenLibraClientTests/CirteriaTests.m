@@ -60,7 +60,7 @@
     value = [_criteria.values objectAtIndex:FieldTitle];
     STAssertTrue(value == expected, @"Fails setting FieldTitle valye");
     
-    STAssertThrows([_criteria setField:10 withValue:@"exception"],
+    STAssertThrows([_criteria setField:20 withValue:@"exception"],
                    @"Inserting out of range field show throw an exception");
     STAssertThrows([_criteria setField:-10 withValue:@"exception"],
                    @"Inserting out of range field show throw an exception");
@@ -80,7 +80,7 @@
     value = [_criteria.values objectAtIndex:FieldId];
     STAssertTrue(value == [NSNull null], @"Reset field fails");
 
-    STAssertThrows([_criteria setField:10 withValue:@"exception"],
+    STAssertThrows([_criteria setField:20 withValue:@"exception"],
                    @"Inserting out of range field show throw an exception");
     STAssertThrows([_criteria setField:-10 withValue:@"exception"],
                    @"Inserting out of range field show throw an exception");
