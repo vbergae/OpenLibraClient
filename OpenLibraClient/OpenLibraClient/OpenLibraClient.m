@@ -54,10 +54,12 @@
 
 - (NSURLRequest *)serviceURLRequest
 {
-    NSString *urlString = [NSString stringWithFormat:@"http://%@%@%@",
+    NSString *urlString = [[NSString stringWithFormat:@"http://%@%@%@",
                            API_HOST, API_PATH, 
-                           [self.criteria requestParameters]];
-    
+                           [self.criteria requestParameters]] 
+                           stringByAddingPercentEscapesUsingEncoding:
+                           NSUTF8StringEncoding];
+
     return [NSURLRequest requestWithURL:[NSURL URLWithString:urlString]];
 }
 
@@ -70,6 +72,7 @@
         [self.delegate willStartConnection:self];
     }
     
+    NSLog(@"request: %@", self.serviceURLRequest);
     NSURLConnection *theConnection = [[NSURLConnection alloc] 
                                       initWithRequest:self.serviceURLRequest
                                       delegate:self 
@@ -113,17 +116,19 @@
     // Check reponse syntax
     NSString *jsonString = [[NSString alloc] initWithData:_responseData 
                                                  encoding:NSUTF8StringEncoding];
-    jsonString = [jsonString substringFromIndex:1]; 
-    jsonString = [jsonString substringToIndex:jsonString.length - 2];
-
-    NSArray *booksRaw = [jsonString JSONValue];
-    
-    // Clean previous books
-    if (_books) [_books release];
-    _books = [[NSMutableArray alloc] initWithCapacity:booksRaw.count];
-    
-    for (NSDictionary *book in booksRaw) {
-        [_books addObject:[[Book alloc] initWithDictionary:book]];
+    if ([jsonString length] > 0) {
+        jsonString = [jsonString substringFromIndex:1]; 
+        jsonString = [jsonString substringToIndex:jsonString.length - 2];
+        
+        NSArray *booksRaw = [jsonString JSONValue];
+        
+        // Clean previous books
+        if (_books) [_books release];
+        _books = [[NSMutableArray alloc] initWithCapacity:booksRaw.count];
+        
+        for (NSDictionary *book in booksRaw) {
+            [_books addObject:[[Book alloc] initWithDictionary:book]];
+        }        
     }
     
     // Clean up data
