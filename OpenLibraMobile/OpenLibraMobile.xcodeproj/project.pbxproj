@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC1E1A2114093FB500FD2E59 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1E1A2014093FB500FD2E59 /* UIKit.framework */; };
+		CC1E1A2314093FB500FD2E59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1E1A2214093FB500FD2E59 /* Foundation.framework */; };
+		CC1E1A2514093FB500FD2E59 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1E1A2414093FB500FD2E59 /* CoreGraphics.framework */; };
+		CC1E1A2B14093FB500FD2E59 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC1E1A2914093FB500FD2E59 /* InfoPlist.strings */; };
+		CC1E1A2D14093FB500FD2E59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1E1A2C14093FB500FD2E59 /* main.m */; };
+		CC1E1A3114093FB500FD2E59 /* OpenLibraMobileAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1E1A3014093FB500FD2E59 /* OpenLibraMobileAppDelegate.m */; };
+		CC1E1A3514093FB500FD2E59 /* OpenLibraMobileAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1E1A3414093FB500FD2E59 /* OpenLibraMobileAppDelegate_iPhone.m */; };
+		CC1E1A3814093FB500FD2E59 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC1E1A3614093FB500FD2E59 /* MainWindow_iPhone.xib */; };
+		CC1E1A3C14093FB500FD2E59 /* OpenLibraMobileAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1E1A3B14093FB500FD2E59 /* OpenLibraMobileAppDelegate_iPad.m */; };
+		CC1E1A3F14093FB500FD2E59 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC1E1A3D14093FB500FD2E59 /* MainWindow_iPad.xib */; };
+		CC1E1A4714093FB500FD2E59 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1E1A4614093FB500FD2E59 /* SenTestingKit.framework */; };
+		CC1E1A4814093FB500FD2E59 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1E1A2014093FB500FD2E59 /* UIKit.framework */; };
+		CC1E1A4914093FB500FD2E59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1E1A2214093FB500FD2E59 /* Foundation.framework */; };
+		CC1E1A4A14093FB500FD2E59 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1E1A2414093FB500FD2E59 /* CoreGraphics.framework */; };
+		CC1E1A5214093FB500FD2E59 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC1E1A5014093FB500FD2E59 /* InfoPlist.strings */; };
+		CC1E1A5414093FB500FD2E59 /* OpenLibraMobileTests.h in Resources */ = {isa = PBXBuildFile; fileRef = CC1E1A5314093FB500FD2E59 /* OpenLibraMobileTests.h */; };
+		CC1E1A5614093FB500FD2E59 /* OpenLibraMobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1E1A5514093FB500FD2E59 /* OpenLibraMobileTests.m */; };
+		CC1E1A6014093FC700FD2E59 /* libOpenLibraClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1E1A5F14093FC700FD2E59 /* libOpenLibraClient.a */; };
+		CC8A6F5D1409BC680032618D /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8A6F5C1409BC680032618D /* NSObject+SBJson.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC1E1A4B14093FB500FD2E59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC1E1A1314093FB500FD2E59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC1E1A1B14093FB500FD2E59;
+			remoteInfo = OpenLibraMobile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CC1E1A1C14093FB500FD2E59 /* OpenLibraMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenLibraMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC1E1A2014093FB500FD2E59 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CC1E1A2214093FB500FD2E59 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CC1E1A2414093FB500FD2E59 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CC1E1A2814093FB500FD2E59 /* OpenLibraMobile-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenLibraMobile-Info.plist"; sourceTree = "<group>"; };
+		CC1E1A2A14093FB500FD2E59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CC1E1A2C14093FB500FD2E59 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CC1E1A2E14093FB500FD2E59 /* OpenLibraMobile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenLibraMobile-Prefix.pch"; sourceTree = "<group>"; };
+		CC1E1A2F14093FB500FD2E59 /* OpenLibraMobileAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenLibraMobileAppDelegate.h; sourceTree = "<group>"; };
+		CC1E1A3014093FB500FD2E59 /* OpenLibraMobileAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenLibraMobileAppDelegate.m; sourceTree = "<group>"; };
+		CC1E1A3314093FB500FD2E59 /* OpenLibraMobileAppDelegate_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OpenLibraMobileAppDelegate_iPhone.h; path = iPhone/OpenLibraMobileAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		CC1E1A3414093FB500FD2E59 /* OpenLibraMobileAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OpenLibraMobileAppDelegate_iPhone.m; path = iPhone/OpenLibraMobileAppDelegate_iPhone.m; sourceTree = "<group>"; };
+		CC1E1A3714093FB500FD2E59 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
+		CC1E1A3A14093FB500FD2E59 /* OpenLibraMobileAppDelegate_iPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OpenLibraMobileAppDelegate_iPad.h; path = iPad/OpenLibraMobileAppDelegate_iPad.h; sourceTree = "<group>"; };
+		CC1E1A3B14093FB500FD2E59 /* OpenLibraMobileAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OpenLibraMobileAppDelegate_iPad.m; path = iPad/OpenLibraMobileAppDelegate_iPad.m; sourceTree = "<group>"; };
+		CC1E1A3E14093FB500FD2E59 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+		CC1E1A4514093FB500FD2E59 /* OpenLibraMobileTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenLibraMobileTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC1E1A4614093FB500FD2E59 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		CC1E1A4F14093FB500FD2E59 /* OpenLibraMobileTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenLibraMobileTests-Info.plist"; sourceTree = "<group>"; };
+		CC1E1A5114093FB500FD2E59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CC1E1A5314093FB500FD2E59 /* OpenLibraMobileTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenLibraMobileTests.h; sourceTree = "<group>"; };
+		CC1E1A5514093FB500FD2E59 /* OpenLibraMobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenLibraMobileTests.m; sourceTree = "<group>"; };
+		CC1E1A5F14093FC700FD2E59 /* libOpenLibraClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOpenLibraClient.a; path = "../OpenLibraClient/build/Release-iphoneos/libOpenLibraClient.a"; sourceTree = "<group>"; };
+		CC1E1A6114093FD800FD2E59 /* OpenLibra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenLibra.h; path = ../OpenLibraClient/OpenLibraClient/OpenLibra.h; sourceTree = "<group>"; };
+		CC8A6F5C1409BC680032618D /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+SBJson.m"; path = "../OpenLibraClient/OpenLibraClient/SBJson/NSObject+SBJson.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC1E1A1914093FB500FD2E59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC1E1A6014093FC700FD2E59 /* libOpenLibraClient.a in Frameworks */,
+				CC1E1A2114093FB500FD2E59 /* UIKit.framework in Frameworks */,
+				CC1E1A2314093FB500FD2E59 /* Foundation.framework in Frameworks */,
+				CC1E1A2514093FB500FD2E59 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC1E1A4114093FB500FD2E59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC1E1A4714093FB500FD2E59 /* SenTestingKit.framework in Frameworks */,
+				CC1E1A4814093FB500FD2E59 /* UIKit.framework in Frameworks */,
+				CC1E1A4914093FB500FD2E59 /* Foundation.framework in Frameworks */,
+				CC1E1A4A14093FB500FD2E59 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC1E1A1114093FB500FD2E59 = {
+			isa = PBXGroup;
+			children = (
+				CC1E1A2614093FB500FD2E59 /* OpenLibraMobile */,
+				CC1E1A4D14093FB500FD2E59 /* OpenLibraMobileTests */,
+				CC1E1A1F14093FB500FD2E59 /* Frameworks */,
+				CC1E1A1D14093FB500FD2E59 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC1E1A1D14093FB500FD2E59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC1E1A1C14093FB500FD2E59 /* OpenLibraMobile.app */,
+				CC1E1A4514093FB500FD2E59 /* OpenLibraMobileTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC1E1A1F14093FB500FD2E59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC1E1A6114093FD800FD2E59 /* OpenLibra.h */,
+				CC8A6F5C1409BC680032618D /* NSObject+SBJson.m */,
+				CC1E1A5F14093FC700FD2E59 /* libOpenLibraClient.a */,
+				CC1E1A2014093FB500FD2E59 /* UIKit.framework */,
+				CC1E1A2214093FB500FD2E59 /* Foundation.framework */,
+				CC1E1A2414093FB500FD2E59 /* CoreGraphics.framework */,
+				CC1E1A4614093FB500FD2E59 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC1E1A2614093FB500FD2E59 /* OpenLibraMobile */ = {
+			isa = PBXGroup;
+			children = (
+				CC1E1A2F14093FB500FD2E59 /* OpenLibraMobileAppDelegate.h */,
+				CC1E1A3014093FB500FD2E59 /* OpenLibraMobileAppDelegate.m */,
+				CC1E1A3214093FB500FD2E59 /* iPhone */,
+				CC1E1A3914093FB500FD2E59 /* iPad */,
+				CC1E1A2714093FB500FD2E59 /* Supporting Files */,
+			);
+			path = OpenLibraMobile;
+			sourceTree = "<group>";
+		};
+		CC1E1A2714093FB500FD2E59 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC1E1A2814093FB500FD2E59 /* OpenLibraMobile-Info.plist */,
+				CC1E1A2914093FB500FD2E59 /* InfoPlist.strings */,
+				CC1E1A2C14093FB500FD2E59 /* main.m */,
+				CC1E1A2E14093FB500FD2E59 /* OpenLibraMobile-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC1E1A3214093FB500FD2E59 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				CC1E1A3314093FB500FD2E59 /* OpenLibraMobileAppDelegate_iPhone.h */,
+				CC1E1A3414093FB500FD2E59 /* OpenLibraMobileAppDelegate_iPhone.m */,
+				CC1E1A3614093FB500FD2E59 /* MainWindow_iPhone.xib */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		CC1E1A3914093FB500FD2E59 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				CC1E1A3A14093FB500FD2E59 /* OpenLibraMobileAppDelegate_iPad.h */,
+				CC1E1A3B14093FB500FD2E59 /* OpenLibraMobileAppDelegate_iPad.m */,
+				CC1E1A3D14093FB500FD2E59 /* MainWindow_iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		CC1E1A4D14093FB500FD2E59 /* OpenLibraMobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC1E1A5314093FB500FD2E59 /* OpenLibraMobileTests.h */,
+				CC1E1A5514093FB500FD2E59 /* OpenLibraMobileTests.m */,
+				CC1E1A4E14093FB500FD2E59 /* Supporting Files */,
+			);
+			path = OpenLibraMobileTests;
+			sourceTree = "<group>";
+		};
+		CC1E1A4E14093FB500FD2E59 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC1E1A4F14093FB500FD2E59 /* OpenLibraMobileTests-Info.plist */,
+				CC1E1A5014093FB500FD2E59 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC1E1A1B14093FB500FD2E59 /* OpenLibraMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC1E1A5914093FB500FD2E59 /* Build configuration list for PBXNativeTarget "OpenLibraMobile" */;
+			buildPhases = (
+				CC1E1A1814093FB500FD2E59 /* Sources */,
+				CC1E1A1914093FB500FD2E59 /* Frameworks */,
+				CC1E1A1A14093FB500FD2E59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenLibraMobile;
+			productName = OpenLibraMobile;
+			productReference = CC1E1A1C14093FB500FD2E59 /* OpenLibraMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC1E1A4414093FB500FD2E59 /* OpenLibraMobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC1E1A5C14093FB500FD2E59 /* Build configuration list for PBXNativeTarget "OpenLibraMobileTests" */;
+			buildPhases = (
+				CC1E1A4014093FB500FD2E59 /* Sources */,
+				CC1E1A4114093FB500FD2E59 /* Frameworks */,
+				CC1E1A4214093FB500FD2E59 /* Resources */,
+				CC1E1A4314093FB500FD2E59 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC1E1A4C14093FB500FD2E59 /* PBXTargetDependency */,
+			);
+			name = OpenLibraMobileTests;
+			productName = OpenLibraMobileTests;
+			productReference = CC1E1A4514093FB500FD2E59 /* OpenLibraMobileTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC1E1A1314093FB500FD2E59 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = CC1E1A1614093FB500FD2E59 /* Build configuration list for PBXProject "OpenLibraMobile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CC1E1A1114093FB500FD2E59;
+			productRefGroup = CC1E1A1D14093FB500FD2E59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC1E1A1B14093FB500FD2E59 /* OpenLibraMobile */,
+				CC1E1A4414093FB500FD2E59 /* OpenLibraMobileTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC1E1A1A14093FB500FD2E59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC1E1A2B14093FB500FD2E59 /* InfoPlist.strings in Resources */,
+				CC1E1A3814093FB500FD2E59 /* MainWindow_iPhone.xib in Resources */,
+				CC1E1A3F14093FB500FD2E59 /* MainWindow_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC1E1A4214093FB500FD2E59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC1E1A5214093FB500FD2E59 /* InfoPlist.strings in Resources */,
+				CC1E1A5414093FB500FD2E59 /* OpenLibraMobileTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CC1E1A4314093FB500FD2E59 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC1E1A1814093FB500FD2E59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC1E1A2D14093FB500FD2E59 /* main.m in Sources */,
+				CC1E1A3114093FB500FD2E59 /* OpenLibraMobileAppDelegate.m in Sources */,
+				CC1E1A3514093FB500FD2E59 /* OpenLibraMobileAppDelegate_iPhone.m in Sources */,
+				CC1E1A3C14093FB500FD2E59 /* OpenLibraMobileAppDelegate_iPad.m in Sources */,
+				CC8A6F5D1409BC680032618D /* NSObject+SBJson.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC1E1A4014093FB500FD2E59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC1E1A5614093FB500FD2E59 /* OpenLibraMobileTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC1E1A4C14093FB500FD2E59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC1E1A1B14093FB500FD2E59 /* OpenLibraMobile */;
+			targetProxy = CC1E1A4B14093FB500FD2E59 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CC1E1A2914093FB500FD2E59 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC1E1A2A14093FB500FD2E59 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CC1E1A3614093FB500FD2E59 /* MainWindow_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC1E1A3714093FB500FD2E59 /* en */,
+			);
+			name = MainWindow_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		CC1E1A3D14093FB500FD2E59 /* MainWindow_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC1E1A3E14093FB500FD2E59 /* en */,
+			);
+			name = MainWindow_iPad.xib;
+			sourceTree = "<group>";
+		};
+		CC1E1A5014093FB500FD2E59 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC1E1A5114093FB500FD2E59 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC1E1A5714093FB500FD2E59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC1E1A5814093FB500FD2E59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC1E1A5A14093FB500FD2E59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenLibraMobile/OpenLibraMobile-Prefix.pch";
+				INFOPLIST_FILE = "OpenLibraMobile/OpenLibraMobile-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CC1E1A5B14093FB500FD2E59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenLibraMobile/OpenLibraMobile-Prefix.pch";
+				INFOPLIST_FILE = "OpenLibraMobile/OpenLibraMobile-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CC1E1A5D14093FB500FD2E59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OpenLibraMobile.app/OpenLibraMobile";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenLibraMobile/OpenLibraMobile-Prefix.pch";
+				INFOPLIST_FILE = "OpenLibraMobileTests/OpenLibraMobileTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		CC1E1A5E14093FB500FD2E59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OpenLibraMobile.app/OpenLibraMobile";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenLibraMobile/OpenLibraMobile-Prefix.pch";
+				INFOPLIST_FILE = "OpenLibraMobileTests/OpenLibraMobileTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC1E1A1614093FB500FD2E59 /* Build configuration list for PBXProject "OpenLibraMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC1E1A5714093FB500FD2E59 /* Debug */,
+				CC1E1A5814093FB500FD2E59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC1E1A5914093FB500FD2E59 /* Build configuration list for PBXNativeTarget "OpenLibraMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC1E1A5A14093FB500FD2E59 /* Debug */,
+				CC1E1A5B14093FB500FD2E59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC1E1A5C14093FB500FD2E59 /* Build configuration list for PBXNativeTarget "OpenLibraMobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC1E1A5D14093FB500FD2E59 /* Debug */,
+				CC1E1A5E14093FB500FD2E59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC1E1A1314093FB500FD2E59 /* Project object */;
+}
