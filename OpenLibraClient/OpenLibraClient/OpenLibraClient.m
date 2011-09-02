@@ -46,6 +46,12 @@
 {
     [self setCriteria:nil];
     
+    [_responseData release];
+    _responseData = nil;
+    
+    [_books release];
+    _books = nil;
+    
     [super dealloc];
 }
 
@@ -114,8 +120,9 @@
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
     // Check reponse syntax
-    NSString *jsonString = [[NSString alloc] initWithData:_responseData 
-                                                 encoding:NSUTF8StringEncoding];
+    NSString *jsonString = [[[NSString alloc] initWithData:_responseData 
+                                                 encoding:NSUTF8StringEncoding] 
+                            autorelease];
     if ([jsonString length] > 0) {
         jsonString = [jsonString substringFromIndex:1]; 
         jsonString = [jsonString substringToIndex:jsonString.length - 2];
@@ -131,16 +138,16 @@
         }        
     }
     
-    // Clean up data
-    [connection release];
-    [_responseData release];
-    _responseData = nil;
-    
     // Send message to delegate
     if ([self.delegate 
          respondsToSelector:@selector(openLibraClientDidFinishLoading:)]) {
         [self.delegate openLibraClientDidFinishLoading:self];
     }
+    
+    // Clean up data
+    [connection release];
+    [_responseData release];
+    _responseData = nil;    
 }
 
 - (void)connection:(NSURLConnection *)connection 
