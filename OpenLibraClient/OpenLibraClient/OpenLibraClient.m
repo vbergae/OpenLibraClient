@@ -45,13 +45,7 @@
 - (void)dealloc
 {
     [self setCriteria:nil];
-    
-    [_responseData release];
-    _responseData = nil;
-    
-    [_books release];
-    _books = nil;
-    
+        
     [super dealloc];
 }
 
@@ -133,8 +127,8 @@
         if (_books) [_books release];
         _books = [[NSMutableArray alloc] initWithCapacity:booksRaw.count];
         
-        for (NSDictionary *book in booksRaw) {
-            [_books addObject:[[Book alloc] initWithDictionary:book]];
+        for (NSDictionary *book in booksRaw) { 
+            [_books addObject:[Book bookWithDictionary:book]];
         }        
     }
     
