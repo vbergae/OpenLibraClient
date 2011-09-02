@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="interface_criteria_07_private_08" kind="class" prot="public">
+    <compoundname>Criteria(Private)</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_criteria_1af3a2812286917a5d4654a16df527982e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * Criteria(Private).addValuesTo:</definition>
+        <argsstring>(NSString *string)</argsstring>
+        <name>addValuesTo:</name>
+        <param>
+          <type>NSString *</type>
+          <declname>string</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.m" line="16"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_criteria_1a1f269d4cd89ecfb7999076134a1fd096" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * Criteria(Private).addOrderTo:</definition>
+        <argsstring>(NSString *string)</argsstring>
+        <name>addOrderTo:</name>
+        <param>
+          <type>NSString *</type>
+          <declname>string</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.m" line="17"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_criteria_1a7a2f966ad0c12e76c58aa44017e8ed32" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * Criteria(Private).addMaxItemsTo:</definition>
+        <argsstring>(NSString *string)</argsstring>
+        <name>addMaxItemsTo:</name>
+        <param>
+          <type>NSString *</type>
+          <declname>string</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.m" line="18"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_criteria_1a32c6b3308cc89690b1a3334137e68e80" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * Criteria(Private).addSinceTo:</definition>
+        <argsstring>(NSString *string)</argsstring>
+        <name>addSinceTo:</name>
+        <param>
+          <type>NSString *</type>
+          <declname>string</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.m" line="19"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_criteria_1aa145b4293955034eb83436d57f07c73e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * Criteria(Private).addCollectionTo:</definition>
+        <argsstring>(NSString *string)</argsstring>
+        <name>addCollectionTo:</name>
+        <param>
+          <type>NSString *</type>
+          <declname>string</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.m" line="20"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="interface_criteria_1a2d36b0ec27433b9bcf6361ef981c81d5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSArray *</type>
+        <definition>NSArray * Criteria(Private).ApiFieldNames</definition>
+        <argsstring>()</argsstring>
+        <name>ApiFieldNames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.m" line="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.m" line="14" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.m" bodystart="14" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_criteria_1aa145b4293955034eb83436d57f07c73e" prot="public" virt="virtual"><scope>Criteria(Private)</scope><name>addCollectionTo:</name></member>
+      <member refid="interface_criteria_1a7a2f966ad0c12e76c58aa44017e8ed32" prot="public" virt="virtual"><scope>Criteria(Private)</scope><name>addMaxItemsTo:</name></member>
+      <member refid="interface_criteria_1a1f269d4cd89ecfb7999076134a1fd096" prot="public" virt="virtual"><scope>Criteria(Private)</scope><name>addOrderTo:</name></member>
+      <member refid="interface_criteria_1a32c6b3308cc89690b1a3334137e68e80" prot="public" virt="virtual"><scope>Criteria(Private)</scope><name>addSinceTo:</name></member>
+      <member refid="interface_criteria_1af3a2812286917a5d4654a16df527982e" prot="public" virt="virtual"><scope>Criteria(Private)</scope><name>addValuesTo:</name></member>
+      <member refid="interface_criteria_1a2d36b0ec27433b9bcf6361ef981c81d5" prot="public" virt="virtual"><scope>Criteria(Private)</scope><name>ApiFieldNames</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

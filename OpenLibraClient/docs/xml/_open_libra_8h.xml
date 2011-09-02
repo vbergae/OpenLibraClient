@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="_open_libra_8h" kind="file">
+    <compoundname>OpenLibra.h</compoundname>
+    <includes refid="_open_libra_client_8h" local="yes">OpenLibraClient.h</includes>
+    <includes refid="_open_libra_client_delegate_8h" local="yes">OpenLibraClientDelegate.h</includes>
+    <includes refid="_criteria_8h" local="yes">Criteria.h</includes>
+    <includes refid="_book_8h" local="yes">Book.h</includes>
+    <incdepgraph>
+      <node id="23">
+        <label>Book.h</label>
+        <link refid="_book_8h_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>OpenLibraClient.h</label>
+        <link refid="_open_libra_client_8h_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>Criteria.h</label>
+        <link refid="_criteria_8h_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>OpenLibra.h</label>
+        <link refid="OpenLibra.h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>OpenLibraClientDelegate.h</label>
+        <link refid="_open_libra_client_delegate_8h_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>Foundation/Foundation.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>OpenLibraClient<sp/>package.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>OpenLibra.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>OpenLibraClient</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>Víctor<sp/>Berga<sp/>on<sp/>23/08/11<sp/>&lt;victor@victorberga.com&gt;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>2011<sp/>Víctor<sp/>Berga.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>For<sp/>the<sp/>full<sp/>copyright<sp/>and<sp/>license<sp/>information,<sp/>please<sp/>view<sp/>the<sp/>LICENSE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>file<sp/>that<sp/>was<sp/>distributed<sp/>with<sp/>this<sp/>source<sp/>code.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&quot;OpenLibraClient.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&quot;OpenLibraClientDelegate.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&quot;Criteria.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&quot;Book.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/OpenLibra.h"/>
+  </compounddef>
+</doxygen>

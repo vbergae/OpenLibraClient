@@ -1,0 +1,169 @@
+\hypertarget{interface_book}{
+\section{Book Class Reference}
+\label{interface_book}\index{Book@{Book}}
+}
+
+
+{\ttfamily \#import $<$Book.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_book_ae4056227c171b77998bee34a1d9c02ee}{initWithDictionary:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_book}{Book} $\ast$) + \hyperlink{interface_book_aba5b6b3d032db273752813c8411627db}{bookWithDictionary:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{interface_book_ade1e6376cdb0417bd207733607f6669a}{id}
+\item 
+NSString $\ast$ \hyperlink{interface_book_a507a4a5b02d5d042f6716316e2e5e293}{title}
+\item 
+NSString $\ast$ \hyperlink{interface_book_a9612be5178b7b2d676b32e77a436580a}{author}
+\item 
+NSString $\ast$ \hyperlink{interface_book_ab50b743487d36dbad67e0c27c2db6d95}{publisher}
+\item 
+int \hyperlink{interface_book_a96ce18e68a2e534ef4d68b2c426d6440}{publisherDate}
+\item 
+int \hyperlink{interface_book_afce3f5159731bc21f6d4eca13f957c98}{pages}
+\item 
+NSString $\ast$ \hyperlink{interface_book_a410185f5b9cba8002f29c7b90efc63fd}{language}
+\item 
+NSString $\ast$ \hyperlink{interface_book_ae922c5937572505b3675a24bacf61c53}{URLDetails}
+\item 
+NSString $\ast$ \hyperlink{interface_book_ac0535b8b5a6b54eacbdb3e36338210e7}{URLDownload}
+\item 
+NSString $\ast$ \hyperlink{interface_book_ab9a2eba00a1c12702737db9f315cb1e8}{cover}
+\item 
+float \hyperlink{interface_book_a8afeec1f31606be6859a1db6d85c2692}{rating}
+\item 
+int \hyperlink{interface_book_a30fb1d5f55bbff0bb59069d8edac6fc5}{numComments}
+\item 
+NSString $\ast$ \hyperlink{interface_book_a5d02b41a17f0bf3da50e4613762d3865}{categories}
+\item 
+NSString $\ast$ \hyperlink{interface_book_a7a8f43ac597fb2a8280a4323157844d3}{tags}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class to represent a \hyperlink{interface_book}{Book} in the OpenLibra service.
+
+Books class stores all properties of a book and some helper methods to download, view or comment the book 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_book_aba5b6b3d032db273752813c8411627db}{
+\index{Book@{Book}!bookWithDictionary:@{bookWithDictionary:}}
+\index{bookWithDictionary:@{bookWithDictionary:}!Book@{Book}}
+\subsubsection[{bookWithDictionary:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf Book} $\ast$) bookWithDictionary: 
+\begin{DoxyParamCaption}
+\item[{dummy(NSDictionary $\ast$)}]{dictionary}
+\end{DoxyParamCaption}
+}}
+\label{interface_book_aba5b6b3d032db273752813c8411627db}
+Creates an autoreleased book using given dictionary
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{interface_book}{Book} Autoreleased book 
+\end{DoxyReturn}
+\hypertarget{interface_book_ae4056227c171b77998bee34a1d9c02ee}{
+\index{Book@{Book}!initWithDictionary:@{initWithDictionary:}}
+\index{initWithDictionary:@{initWithDictionary:}!Book@{Book}}
+\subsubsection[{initWithDictionary:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) initWithDictionary: 
+\begin{DoxyParamCaption}
+\item[{dummy(NSDictionary $\ast$)}]{dictionary}
+\end{DoxyParamCaption}
+}}
+\label{interface_book_ae4056227c171b77998bee34a1d9c02ee}
+Intialices a new \hyperlink{interface_book}{Book} object using given NSDictionary to fill all properties
+
+
+\begin{DoxyParams}{Parameters}
+{\em NSDictionary} & Dictionary with all properties in a key/value format \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{interface_book}{Book} 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_book_a9612be5178b7b2d676b32e77a436580a}{
+\index{Book@{Book}!author@{author}}
+\index{author@{author}!Book@{Book}}
+\subsubsection[{author}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSString$\ast$ Book.)author\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, retain\mbox{]}}}}
+\label{interface_book_a9612be5178b7b2d676b32e77a436580a}
+Book's author \hypertarget{interface_book_a5d02b41a17f0bf3da50e4613762d3865}{
+\index{Book@{Book}!categories@{categories}}
+\index{categories@{categories}!Book@{Book}}
+\subsubsection[{categories}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSString$\ast$ Book.)categories\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, retain\mbox{]}}}}
+\label{interface_book_a5d02b41a17f0bf3da50e4613762d3865}
+Book's categories \hypertarget{interface_book_ab9a2eba00a1c12702737db9f315cb1e8}{
+\index{Book@{Book}!cover@{cover}}
+\index{cover@{cover}!Book@{Book}}
+\subsubsection[{cover}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSString$\ast$ Book.)cover\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, retain\mbox{]}}}}
+\label{interface_book_ab9a2eba00a1c12702737db9f315cb1e8}
+String with url to book's cover \hypertarget{interface_book_ade1e6376cdb0417bd207733607f6669a}{
+\index{Book@{Book}!id@{id}}
+\index{id@{id}!Book@{Book}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int Book.)id\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
+\label{interface_book_ade1e6376cdb0417bd207733607f6669a}
+Unique identifier of the book \hypertarget{interface_book_a410185f5b9cba8002f29c7b90efc63fd}{
+\index{Book@{Book}!language@{language}}
+\index{language@{language}!Book@{Book}}
+\subsubsection[{language}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSString$\ast$ Book.)language\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, retain\mbox{]}}}}
+\label{interface_book_a410185f5b9cba8002f29c7b90efc63fd}
+Book's language \hypertarget{interface_book_a30fb1d5f55bbff0bb59069d8edac6fc5}{
+\index{Book@{Book}!numComments@{numComments}}
+\index{numComments@{numComments}!Book@{Book}}
+\subsubsection[{numComments}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int Book.)numComments\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
+\label{interface_book_a30fb1d5f55bbff0bb59069d8edac6fc5}
+Number of comments about this book \hypertarget{interface_book_afce3f5159731bc21f6d4eca13f957c98}{
+\index{Book@{Book}!pages@{pages}}
+\index{pages@{pages}!Book@{Book}}
+\subsubsection[{pages}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int Book.)pages\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
+\label{interface_book_afce3f5159731bc21f6d4eca13f957c98}
+Book's pages \hypertarget{interface_book_ab50b743487d36dbad67e0c27c2db6d95}{
+\index{Book@{Book}!publisher@{publisher}}
+\index{publisher@{publisher}!Book@{Book}}
+\subsubsection[{publisher}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSString$\ast$ Book.)publisher\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, retain\mbox{]}}}}
+\label{interface_book_ab50b743487d36dbad67e0c27c2db6d95}
+Book's publisher \hypertarget{interface_book_a96ce18e68a2e534ef4d68b2c426d6440}{
+\index{Book@{Book}!publisherDate@{publisherDate}}
+\index{publisherDate@{publisherDate}!Book@{Book}}
+\subsubsection[{publisherDate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int Book.)publisherDate\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
+\label{interface_book_a96ce18e68a2e534ef4d68b2c426d6440}
+Book's publisher date \hypertarget{interface_book_a8afeec1f31606be6859a1db6d85c2692}{
+\index{Book@{Book}!rating@{rating}}
+\index{rating@{rating}!Book@{Book}}
+\subsubsection[{rating}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float Book.)rating\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
+\label{interface_book_a8afeec1f31606be6859a1db6d85c2692}
+Book's rating \hypertarget{interface_book_a7a8f43ac597fb2a8280a4323157844d3}{
+\index{Book@{Book}!tags@{tags}}
+\index{tags@{tags}!Book@{Book}}
+\subsubsection[{tags}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSString$\ast$ Book.)tags\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, retain\mbox{]}}}}
+\label{interface_book_a7a8f43ac597fb2a8280a4323157844d3}
+Book's tags \hypertarget{interface_book_a507a4a5b02d5d042f6716316e2e5e293}{
+\index{Book@{Book}!title@{title}}
+\index{title@{title}!Book@{Book}}
+\subsubsection[{title}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSString$\ast$ Book.)title\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, retain\mbox{]}}}}
+\label{interface_book_a507a4a5b02d5d042f6716316e2e5e293}
+Book's title \hypertarget{interface_book_ae922c5937572505b3675a24bacf61c53}{
+\index{Book@{Book}!URLDetails@{URLDetails}}
+\index{URLDetails@{URLDetails}!Book@{Book}}
+\subsubsection[{URLDetails}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSString$\ast$ Book.)URLDetails\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, retain\mbox{]}}}}
+\label{interface_book_ae922c5937572505b3675a24bacf61c53}
+String with the url to book's details \hypertarget{interface_book_ac0535b8b5a6b54eacbdb3e36338210e7}{
+\index{Book@{Book}!URLDownload@{URLDownload}}
+\index{URLDownload@{URLDownload}!Book@{Book}}
+\subsubsection[{URLDownload}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSString$\ast$ Book.)URLDownload\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, retain\mbox{]}}}}
+\label{interface_book_ac0535b8b5a6b54eacbdb3e36338210e7}
+String with the download url 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Book.h\item 
+Book.m\end{DoxyCompactItemize}

@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="_open_libra_client_delegate_8h" kind="file">
+    <compoundname>OpenLibraClientDelegate.h</compoundname>
+    <includes local="no">Foundation/Foundation.h</includes>
+    <includedby refid="_open_libra_client_8h" local="yes">OpenLibraClient.h</includedby>
+    <includedby refid="_open_libra_8h" local="yes">OpenLibra.h</includedby>
+    <incdepgraph>
+      <node id="40">
+        <label>OpenLibraClientDelegate.h</label>
+        <link refid="OpenLibraClientDelegate.h"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>Foundation/Foundation.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="43">
+        <label>OpenLibraClient.h</label>
+        <link refid="_open_libra_client_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>OpenLibra.h</label>
+        <link refid="_open_libra_8h_source"/>
+      </node>
+      <node id="42">
+        <label>OpenLibraClientDelegate.h</label>
+        <link refid="OpenLibraClientDelegate.h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="protocol_open_libra_delegate-p" prot="public">OpenLibraDelegate-p</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>OpenLibraClient<sp/>package.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>OpenLibraClientDelegate.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>OpenLibraClient</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>Víctor<sp/>Berga<sp/>on<sp/>23/08/11<sp/>&lt;victor@victorberga.com&gt;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>2011<sp/>Víctor<sp/>Berga.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>For<sp/>the<sp/>full<sp/>copyright<sp/>and<sp/>license<sp/>information,<sp/>please<sp/>view<sp/>the<sp/>LICENSE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>file<sp/>that<sp/>was<sp/>distributed<sp/>with<sp/>this<sp/>source<sp/>code.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;Foundation/Foundation.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">@class</highlight><highlight class="normal"><sp/><ref refid="interface_open_libra_client" kindref="compound">OpenLibraClient</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="protocol_open_libra_delegate-p" refkind="compound"><highlight class="keyword">@protocol<sp/></highlight><highlight class="normal"><ref refid="protocol_open_libra_delegate-p" kindref="compound">OpenLibraDelegate</ref><sp/>&lt;NSObject&gt;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">-<sp/>(void)willStartConnection:(<ref refid="interface_open_libra_client" kindref="compound">OpenLibraClient</ref><sp/>*)client;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">-<sp/>(void)openLibraClient:(<ref refid="interface_open_libra_client" kindref="compound">OpenLibraClient</ref><sp/>*)client</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>didStartConnection:(NSURLConnection<sp/>*)connection;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">-<sp/>(void)openLibraClient:(<ref refid="interface_open_libra_client" kindref="compound">OpenLibraClient</ref><sp/>*)client</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">didFailConnectionWithError:(NSError<sp/>*)error;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">-<sp/>(void)openLibraClientDidFinishLoading:(<ref refid="interface_open_libra_client" kindref="compound">OpenLibraClient</ref><sp/>*)client;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">@end</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/OpenLibraClientDelegate.h"/>
+  </compounddef>
+</doxygen>

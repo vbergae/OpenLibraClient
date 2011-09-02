@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="protocol_open_libra_delegate-p" kind="protocol" prot="public">
+    <compoundname>OpenLibraDelegate-p</compoundname>
+    <includes refid="_open_libra_client_delegate_8h" local="no">OpenLibraClientDelegate.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="protocol_open_libra_delegate-p_1aece69a1f2ae2e8c51940f16944f4e591" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void OpenLibraDelegate-p.willStartConnection:</definition>
+        <argsstring>(OpenLibraClient *client)</argsstring>
+        <name>willStartConnection:</name>
+        <param>
+          <type><ref refid="interface_open_libra_client" kindref="compound">OpenLibraClient</ref> *</type>
+          <declname>client</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sent when <ref refid="interface_open_libra_client" kindref="compound">OpenLibraClient</ref> will start a connection to service</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="interface_open_libra_client" kindref="compound">OpenLibraClient</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sender </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/OpenLibraClientDelegate.h" line="27"/>
+      </memberdef>
+      <memberdef kind="function" id="protocol_open_libra_delegate-p_1aa94bd8b4a5c416d7a1da07dceb6463d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void OpenLibraDelegate-p.openLibraClient:didStartConnection:</definition>
+        <argsstring>(OpenLibraClient *client,[didStartConnection] NSURLConnection *connection)</argsstring>
+        <name>openLibraClient:didStartConnection:</name>
+        <param>
+          <type><ref refid="interface_open_libra_client" kindref="compound">OpenLibraClient</ref> *</type>
+          <declname>client</declname>
+        </param>
+        <param>
+          <attributes>[didStartConnection]</attributes>
+          <type>NSURLConnection *</type>
+          <declname>connection</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sent when <ref refid="interface_open_libra_client" kindref="compound">OpenLibraClient</ref> did start a connection to service</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="interface_open_libra_client" kindref="compound">OpenLibraClient</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sender </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NSURLConnection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connection object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/OpenLibraClientDelegate.h" line="36"/>
+      </memberdef>
+      <memberdef kind="function" id="protocol_open_libra_delegate-p_1ac29b069870f33c7037b7616e18dc4964" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void OpenLibraDelegate-p.openLibraClient:didFailConnectionWithError:</definition>
+        <argsstring>(OpenLibraClient *client,[didFailConnectionWithError] NSError *error)</argsstring>
+        <name>openLibraClient:didFailConnectionWithError:</name>
+        <param>
+          <type><ref refid="interface_open_libra_client" kindref="compound">OpenLibraClient</ref> *</type>
+          <declname>client</declname>
+        </param>
+        <param>
+          <attributes>[didFailConnectionWithError]</attributes>
+          <type>NSError *</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sent when the request fails</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="interface_open_libra_client" kindref="compound">OpenLibraClient</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sender </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NSError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Encapsulates error information </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/OpenLibraClientDelegate.h" line="45"/>
+      </memberdef>
+      <memberdef kind="function" id="protocol_open_libra_delegate-p_1a29fca4a65b31657321a091bb07641a2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void OpenLibraDelegate-p.openLibraClientDidFinishLoading:</definition>
+        <argsstring>(OpenLibraClient *client)</argsstring>
+        <name>openLibraClientDidFinishLoading:</name>
+        <param>
+          <type><ref refid="interface_open_libra_client" kindref="compound">OpenLibraClient</ref> *</type>
+          <declname>client</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sent when <ref refid="interface_open_libra_client" kindref="compound">OpenLibraClient</ref> did finish to fetch the request</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="interface_open_libra_client" kindref="compound">OpenLibraClient</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sender </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NSArray</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>All books returned by the service </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/OpenLibraClientDelegate.h" line="53"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Messages sent to delegate while OpenLibreClient proccess the request to API </para>    </detaileddescription>
+    <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/OpenLibraClientDelegate.h" line="20" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/OpenLibraClientDelegate.h" bodystart="20" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="protocol_open_libra_delegate-p_1ac29b069870f33c7037b7616e18dc4964" prot="public" virt="virtual"><scope>OpenLibraDelegate-p</scope><name>openLibraClient:didFailConnectionWithError:</name></member>
+      <member refid="protocol_open_libra_delegate-p_1aa94bd8b4a5c416d7a1da07dceb6463d7" prot="public" virt="virtual"><scope>OpenLibraDelegate-p</scope><name>openLibraClient:didStartConnection:</name></member>
+      <member refid="protocol_open_libra_delegate-p_1a29fca4a65b31657321a091bb07641a2b" prot="public" virt="virtual"><scope>OpenLibraDelegate-p</scope><name>openLibraClientDidFinishLoading:</name></member>
+      <member refid="protocol_open_libra_delegate-p_1aece69a1f2ae2e8c51940f16944f4e591" prot="public" virt="virtual"><scope>OpenLibraDelegate-p</scope><name>willStartConnection:</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

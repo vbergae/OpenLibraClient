@@ -1,0 +1,73 @@
+.TH "OpenLibraDelegate-p" 3 "Sat Sep 3 2011" "Version 1.0.0" "OpenLibra Client" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+OpenLibraDelegate-p \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#import <OpenLibraClientDelegate.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "(void) - \fBwillStartConnection:\fP"
+.br
+.ti -1c
+.RI "(void) - \fBopenLibraClient:didStartConnection:\fP"
+.br
+.ti -1c
+.RI "(void) - \fBopenLibraClient:didFailConnectionWithError:\fP"
+.br
+.ti -1c
+.RI "(void) - \fBopenLibraClientDidFinishLoading:\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Messages sent to delegate while OpenLibreClient proccess the request to API 
+.SH "Member Function Documentation"
+.PP 
+.SS "- (void \fBOpenLibraDelegate\fP-p.)openLibraClient: (\fBOpenLibraClient\fP *)client(NSError *)error"Sent when the request fails
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fBOpenLibraClient\fP\fP Sender 
+.br
+\fINSError\fP Encapsulates error information 
+.RE
+.PP
+
+.SS "- (void \fBOpenLibraDelegate\fP-p.)openLibraClient: (\fBOpenLibraClient\fP *)client(NSURLConnection *)connection"Sent when \fBOpenLibraClient\fP did start a connection to service
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fBOpenLibraClient\fP\fP Sender 
+.br
+\fINSURLConnection\fP Connection object 
+.RE
+.PP
+
+.SS "- (void \fBOpenLibraDelegate\fP-p.)openLibraClientDidFinishLoading: (\fBOpenLibraClient\fP *)client"Sent when \fBOpenLibraClient\fP did finish to fetch the request
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fBOpenLibraClient\fP\fP Sender 
+.br
+\fINSArray\fP All books returned by the service 
+.RE
+.PP
+
+.SS "- (void \fBOpenLibraDelegate\fP-p.)willStartConnection: (\fBOpenLibraClient\fP *)client"Sent when \fBOpenLibraClient\fP will start a connection to service
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fBOpenLibraClient\fP\fP Sender 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for OpenLibra Client from the source code.

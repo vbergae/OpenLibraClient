@@ -1,0 +1,112 @@
+.TH "Criteria" 3 "Sat Sep 3 2011" "Version 1.0.0" "OpenLibra Client" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Criteria \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#import <Criteria.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "(void) - \fBsetField:withValue:\fP"
+.br
+.ti -1c
+.RI "(void) - \fBresetField:\fP"
+.br
+.ti -1c
+.RI "(void) - \fBresetAllFields\fP"
+.br
+.ti -1c
+.RI "(NSString *) - \fBrequestParameters\fP"
+.br
+.ti -1c
+.RI "(NSString *) - \fBaddValuesTo:\fP"
+.br
+.ti -1c
+.RI "(NSString *) - \fBaddOrderTo:\fP"
+.br
+.ti -1c
+.RI "(NSString *) - \fBaddMaxItemsTo:\fP"
+.br
+.ti -1c
+.RI "(NSString *) - \fBaddSinceTo:\fP"
+.br
+.ti -1c
+.RI "(NSString *) - \fBaddCollectionTo:\fP"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "(NSArray *) + \fBApiFieldNames\fP"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "int \fBmaxItems\fP"
+.br
+.ti -1c
+.RI "Order \fBorder\fP"
+.br
+.ti -1c
+.RI "Since \fBsince\fP"
+.br
+.ti -1c
+.RI "Collection \fBcollection\fP"
+.br
+.ti -1c
+.RI "NSArray * \fBvalues\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBCriteria\fP class.
+.PP
+Defines the criteria searchs to make the request to OpenLibra API. 
+.SH "Member Function Documentation"
+.PP 
+.SS "- (NSString *) requestParameters "Creates the string for the request url.
+.PP
+\fBReturns:\fP
+.RS 4
+NSString String to use in the url request to api 
+.RE
+.PP
+
+.SS "- (void) resetAllFields "Resets all fields. 
+.SS "- (void) resetField: (Field)field"Resets the value of the given field to null.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIField\fP Field to reset 
+.RE
+.PP
+
+.SS "- (void) setField: (Field)field(NSString *)value"Sets a value for the given field.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIField\fP Field to set 
+.br
+\fINSString\fP Value for the field 
+.RE
+.PP
+
+.SH "Property Documentation"
+.PP 
+.SS "- (Collection Criteria.)collection\fC [read, write, assign]\fP"Type of collection to create 
+.SS "- (int Criteria.)maxItems\fC [read, write, assign]\fP"Number of items to show in the response 
+.SS "- (Order Criteria.)order\fC [read, write, assign]\fP"Order to sort the response 
+.SS "- (Since Criteria.)since\fC [read, write, assign]\fP"Since when a book is available 
+.SS "- (NSArray* Criteria.)values\fC [read, assign]\fP"Array with all the values of the fields 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for OpenLibra Client from the source code.

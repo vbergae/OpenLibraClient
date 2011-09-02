@@ -1,0 +1,303 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="_book_8h" kind="file">
+    <compoundname>Book.h</compoundname>
+    <includes local="no">Foundation/Foundation.h</includes>
+    <includedby refid="_book_8m" local="yes">Book.m</includedby>
+    <includedby refid="_open_libra_client_8h" local="yes">OpenLibraClient.h</includedby>
+    <includedby refid="_open_libra_8h" local="yes">OpenLibra.h</includedby>
+    <incdepgraph>
+      <node id="0">
+        <label>Book.h</label>
+        <link refid="Book.h"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Foundation/Foundation.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>Book.h</label>
+        <link refid="Book.h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>OpenLibraClient.h</label>
+        <link refid="_open_libra_client_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>OpenLibra.h</label>
+        <link refid="_open_libra_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="interface_book" prot="public">Book</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_book_8h_1adfc5c44eb85683b85a22cddc367d5adf" prot="public" static="no" mutable="no">
+        <type>NSString *const</type>
+        <definition>NSString* const kIdKey</definition>
+        <argsstring></argsstring>
+        <name>kIdKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This constants must be used as key of dictionary with book properties </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="17" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.m" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_book_8h_1a8ee8134de984b12dc8f01f9691074cb0" prot="public" static="no" mutable="no">
+        <type>NSString *const</type>
+        <definition>NSString* const kTitleKey</definition>
+        <argsstring></argsstring>
+        <name>kTitleKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="18" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.m" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_book_8h_1a8573c1a025911e4a9b4e89c3f5b885bd" prot="public" static="no" mutable="no">
+        <type>NSString *const</type>
+        <definition>NSString* const kAuthorKey</definition>
+        <argsstring></argsstring>
+        <name>kAuthorKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="19" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.m" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_book_8h_1af28b985c2b478fe71af369a88af8c63a" prot="public" static="no" mutable="no">
+        <type>NSString *const</type>
+        <definition>NSString* const kPublisherKey</definition>
+        <argsstring></argsstring>
+        <name>kPublisherKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="20" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.m" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_book_8h_1aaac414d5c41c55bb7dd8af0dcb46e39f" prot="public" static="no" mutable="no">
+        <type>NSString *const</type>
+        <definition>NSString* const kPublisherDateKey</definition>
+        <argsstring></argsstring>
+        <name>kPublisherDateKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="21" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.m" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_book_8h_1abcac711f490b21fd92e50ddb23f4be1b" prot="public" static="no" mutable="no">
+        <type>NSString *const</type>
+        <definition>NSString* const kPagesKey</definition>
+        <argsstring></argsstring>
+        <name>kPagesKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="22" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.m" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_book_8h_1a408fee3e58c4580a88677f7425449712" prot="public" static="no" mutable="no">
+        <type>NSString *const</type>
+        <definition>NSString* const kLanguageKey</definition>
+        <argsstring></argsstring>
+        <name>kLanguageKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="23" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.m" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_book_8h_1a972fd87b80a9a53325584136b53d3bc9" prot="public" static="no" mutable="no">
+        <type>NSString *const</type>
+        <definition>NSString* const kURLDetailsKey</definition>
+        <argsstring></argsstring>
+        <name>kURLDetailsKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="24" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.m" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_book_8h_1a6968e68c33a115385f0dee3807b793a1" prot="public" static="no" mutable="no">
+        <type>NSString *const</type>
+        <definition>NSString* const kURLDownloadKey</definition>
+        <argsstring></argsstring>
+        <name>kURLDownloadKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="25" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.m" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_book_8h_1a3157d2479f8d794144f10d3fa2fd5a0e" prot="public" static="no" mutable="no">
+        <type>NSString *const</type>
+        <definition>NSString* const kCoverKey</definition>
+        <argsstring></argsstring>
+        <name>kCoverKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="26" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.m" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_book_8h_1a8083efd92f7e4ed3adb5422a4ca9aae6" prot="public" static="no" mutable="no">
+        <type>NSString *const</type>
+        <definition>NSString* const kRatingKey</definition>
+        <argsstring></argsstring>
+        <name>kRatingKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="27" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.m" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_book_8h_1a8f4c0b464af835b4b948affc44705c8c" prot="public" static="no" mutable="no">
+        <type>NSString *const</type>
+        <definition>NSString* const kNumCommentsKey</definition>
+        <argsstring></argsstring>
+        <name>kNumCommentsKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="28" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.m" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_book_8h_1a7ddd1e2452cee00ce30e37aa7c5e4f43" prot="public" static="no" mutable="no">
+        <type>NSString *const</type>
+        <definition>NSString* const kCategoriesKey</definition>
+        <argsstring></argsstring>
+        <name>kCategoriesKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="29" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.m" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_book_8h_1ac9dcf65f331f73d40e240d017920a88f" prot="public" static="no" mutable="no">
+        <type>NSString *const</type>
+        <definition>NSString* const kTagsKey</definition>
+        <argsstring></argsstring>
+        <name>kTagsKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="30" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.m" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>OpenLibraClient<sp/>package.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Book.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>OpenLibraClient</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>Víctor<sp/>Berga<sp/>on<sp/>21/08/11<sp/>&lt;victor@victorberga.com&gt;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>2011<sp/>Víctor<sp/>Berga.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>For<sp/>the<sp/>full<sp/>copyright<sp/>and<sp/>license<sp/>information,<sp/>please<sp/>view<sp/>the<sp/>LICENSE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>file<sp/>that<sp/>was<sp/>distributed<sp/>with<sp/>this<sp/>source<sp/>code.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;Foundation/Foundation.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NSString<sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kIdKey;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NSString<sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kTitleKey;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NSString<sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kAuthorKey;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NSString<sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kPublisherKey;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NSString<sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kPublisherDateKey;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NSString<sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kPagesKey;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NSString<sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kLanguageKey;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NSString<sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kURLDetailsKey;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NSString<sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kURLDownloadKey;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NSString<sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kCoverKey;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NSString<sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kRatingKey;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NSString<sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kNumCommentsKey;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NSString<sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kCategoriesKey;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NSString<sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kTagsKey;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="interface_book" refkind="compound"><highlight class="keyword">@interface<sp/></highlight><highlight class="normal"><ref refid="interface_book" kindref="compound">Book</ref><sp/>:<sp/>NSObject<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">@private</highlight><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_id;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>NSString<sp/>*_title;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>NSString<sp/>*_author;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>NSString<sp/>*_publisher;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_publisherDate;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_pages;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>NSString<sp/>*_language;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>NSString<sp/>*_URLDetails;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>NSString<sp/>*_URLDownload;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>NSString<sp/>*_cover;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_rating;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_numComments;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>NSString<sp/>*_categories;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>NSString<sp/>*_tags;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59" refid="interface_book_1ade1e6376cdb0417bd207733607f6669a" refkind="member"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>assign)<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63" refid="interface_book_1a507a4a5b02d5d042f6716316e2e5e293" refkind="member"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain)<sp/>NSString<sp/>*title;</highlight></codeline>
+<codeline lineno="67" refid="interface_book_1a9612be5178b7b2d676b32e77a436580a" refkind="member"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain)<sp/>NSString<sp/>*author;</highlight></codeline>
+<codeline lineno="71" refid="interface_book_1ab50b743487d36dbad67e0c27c2db6d95" refkind="member"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain)<sp/>NSString<sp/>*publisher;</highlight></codeline>
+<codeline lineno="75" refid="interface_book_1a96ce18e68a2e534ef4d68b2c426d6440" refkind="member"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>assign)<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>publisherDate;</highlight></codeline>
+<codeline lineno="79" refid="interface_book_1afce3f5159731bc21f6d4eca13f957c98" refkind="member"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>assign)<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pages;</highlight></codeline>
+<codeline lineno="83" refid="interface_book_1a410185f5b9cba8002f29c7b90efc63fd" refkind="member"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain)<sp/>NSString<sp/>*language;</highlight></codeline>
+<codeline lineno="87" refid="interface_book_1ae922c5937572505b3675a24bacf61c53" refkind="member"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain)<sp/>NSString<sp/>*URLDetails;</highlight></codeline>
+<codeline lineno="91" refid="interface_book_1ac0535b8b5a6b54eacbdb3e36338210e7" refkind="member"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain)<sp/>NSString<sp/>*URLDownload;</highlight></codeline>
+<codeline lineno="95" refid="interface_book_1ab9a2eba00a1c12702737db9f315cb1e8" refkind="member"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain)<sp/>NSString<sp/>*cover;</highlight></codeline>
+<codeline lineno="99" refid="interface_book_1a8afeec1f31606be6859a1db6d85c2692" refkind="member"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>assign)<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>rating;</highlight></codeline>
+<codeline lineno="103" refid="interface_book_1a30fb1d5f55bbff0bb59069d8edac6fc5" refkind="member"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>assign)<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numComments;</highlight></codeline>
+<codeline lineno="107" refid="interface_book_1a5d02b41a17f0bf3da50e4613762d3865" refkind="member"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain)<sp/>NSString<sp/>*categories;</highlight></codeline>
+<codeline lineno="111" refid="interface_book_1a7a8f43ac597fb2a8280a4323157844d3" refkind="member"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain)<sp/>NSString<sp/>*tags;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal">-<sp/>(id)initWithDictionary:(NSDictionary<sp/>*)dictionary;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>mark<sp/>-</highlight></codeline>
+<codeline lineno="124"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#pragma<sp/>mark<sp/>Class<sp/>Methods</highlight></codeline>
+<codeline lineno="125"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal">+<sp/>(<ref refid="interface_book" kindref="compound">Book</ref><sp/>*)bookWithDictionary:(NSDictionary<sp/>*)dictionary;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="keyword">@end</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h"/>
+  </compounddef>
+</doxygen>

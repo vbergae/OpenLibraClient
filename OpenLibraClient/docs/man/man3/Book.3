@@ -1,0 +1,118 @@
+.TH "Book" 3 "Sat Sep 3 2011" "Version 1.0.0" "OpenLibra Client" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Book \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#import <Book.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "(id) - \fBinitWithDictionary:\fP"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "(\fBBook\fP *) + \fBbookWithDictionary:\fP"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "int \fBid\fP"
+.br
+.ti -1c
+.RI "NSString * \fBtitle\fP"
+.br
+.ti -1c
+.RI "NSString * \fBauthor\fP"
+.br
+.ti -1c
+.RI "NSString * \fBpublisher\fP"
+.br
+.ti -1c
+.RI "int \fBpublisherDate\fP"
+.br
+.ti -1c
+.RI "int \fBpages\fP"
+.br
+.ti -1c
+.RI "NSString * \fBlanguage\fP"
+.br
+.ti -1c
+.RI "NSString * \fBURLDetails\fP"
+.br
+.ti -1c
+.RI "NSString * \fBURLDownload\fP"
+.br
+.ti -1c
+.RI "NSString * \fBcover\fP"
+.br
+.ti -1c
+.RI "float \fBrating\fP"
+.br
+.ti -1c
+.RI "int \fBnumComments\fP"
+.br
+.ti -1c
+.RI "NSString * \fBcategories\fP"
+.br
+.ti -1c
+.RI "NSString * \fBtags\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Class to represent a \fBBook\fP in the OpenLibra service.
+.PP
+Books class stores all properties of a book and some helper methods to download, view or comment the book 
+.SH "Member Function Documentation"
+.PP 
+.SS "+ (\fBBook\fP *) bookWithDictionary: (NSDictionary *)dictionary"Creates an autoreleased book using given dictionary
+.PP
+\fBReturns:\fP
+.RS 4
+\fBBook\fP Autoreleased book 
+.RE
+.PP
+
+.SS "- (id) initWithDictionary: (NSDictionary *)dictionary"Intialices a new \fBBook\fP object using given NSDictionary to fill all properties
+.PP
+\fBParameters:\fP
+.RS 4
+\fINSDictionary\fP Dictionary with all properties in a key/value format 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBBook\fP 
+.RE
+.PP
+
+.SH "Property Documentation"
+.PP 
+.SS "- (NSString* Book.)author\fC [read, write, retain]\fP"Book's author 
+.SS "- (NSString* Book.)categories\fC [read, write, retain]\fP"Book's categories 
+.SS "- (NSString* Book.)cover\fC [read, write, retain]\fP"String with url to book's cover 
+.SS "- (int Book.)id\fC [read, write, assign]\fP"Unique identifier of the book 
+.SS "- (NSString* Book.)language\fC [read, write, retain]\fP"Book's language 
+.SS "- (int Book.)numComments\fC [read, write, assign]\fP"Number of comments about this book 
+.SS "- (int Book.)pages\fC [read, write, assign]\fP"Book's pages 
+.SS "- (NSString* Book.)publisher\fC [read, write, retain]\fP"Book's publisher 
+.SS "- (int Book.)publisherDate\fC [read, write, assign]\fP"Book's publisher date 
+.SS "- (float Book.)rating\fC [read, write, assign]\fP"Book's rating 
+.SS "- (NSString* Book.)tags\fC [read, write, retain]\fP"Book's tags 
+.SS "- (NSString* Book.)title\fC [read, write, retain]\fP"Book's title 
+.SS "- (NSString* Book.)URLDetails\fC [read, write, retain]\fP"String with the url to book's details 
+.SS "- (NSString* Book.)URLDownload\fC [read, write, retain]\fP"String with the download url 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for OpenLibra Client from the source code.

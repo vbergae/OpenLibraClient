@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="_open_libra_client_8h" kind="file">
+    <compoundname>OpenLibraClient.h</compoundname>
+    <includes local="no">Foundation/Foundation.h</includes>
+    <includes refid="_open_libra_client_delegate_8h" local="yes">OpenLibraClientDelegate.h</includes>
+    <includes refid="_criteria_8h" local="yes">Criteria.h</includes>
+    <includes refid="_book_8h" local="yes">Book.h</includes>
+    <includedby refid="_open_libra_8h" local="yes">OpenLibra.h</includedby>
+    <includedby refid="_open_libra_client_8m" local="yes">OpenLibraClient.m</includedby>
+    <incdepgraph>
+      <node id="29">
+        <label>Book.h</label>
+        <link refid="_book_8h_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>OpenLibraClient.h</label>
+        <link refid="OpenLibraClient.h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>Criteria.h</label>
+        <link refid="_criteria_8h_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>OpenLibraClientDelegate.h</label>
+        <link refid="_open_libra_client_delegate_8h_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>Foundation/Foundation.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="30">
+        <label>OpenLibraClient.h</label>
+        <link refid="OpenLibraClient.h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>OpenLibra.h</label>
+        <link refid="_open_libra_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="interface_open_libra_client" prot="public">OpenLibraClient</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_open_libra_client_8h_1a583b0748ee647a56a2e607bfe09d13dd" prot="public" static="no">
+        <name>API_HOST</name>
+        <initializer>@&quot;openlibra.com&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/OpenLibraClient.h" line="18" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/OpenLibraClient.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_open_libra_client_8h_1a0d556653d65cb3f7519ae098abb0d420" prot="public" static="no">
+        <name>API_PATH</name>
+        <initializer>@&quot;/api/v1/get/?&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/OpenLibraClient.h" line="19" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/OpenLibraClient.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>OpenLibraClient<sp/>package.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>OpenLibraClient.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>OpenLibraClient</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>Víctor<sp/>Berga<sp/>on<sp/>21/08/11<sp/>&lt;victor@victorberga.com&gt;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>2011<sp/>Víctor<sp/>Berga.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>For<sp/>the<sp/>full<sp/>copyright<sp/>and<sp/>license<sp/>information,<sp/>please<sp/>view<sp/>the<sp/>LICENSE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>file<sp/>that<sp/>was<sp/>distributed<sp/>with<sp/>this<sp/>source<sp/>code.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;Foundation/Foundation.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&quot;OpenLibraClientDelegate.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&quot;Criteria.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&quot;Book.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>API_HOST<sp/><sp/><sp/><sp/>@&quot;openlibra.com&quot;</highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>API_PATH<sp/><sp/><sp/><sp/>@&quot;/api/v1/get/?&quot;</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="24" refid="interface_open_libra_client" refkind="compound"><highlight class="keyword">@interface<sp/></highlight><highlight class="normal"><ref refid="interface_open_libra_client" kindref="compound">OpenLibraClient</ref><sp/>:<sp/>NSObject<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">@private</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_criteria" kindref="compound">Criteria</ref><sp/>*_criteria;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>NSMutableData<sp/>*_responseData;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>NSMutableArray<sp/>*_books;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>id&lt;OpenLibraDelegate&gt;<sp/>_delegate;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="interface_open_libra_client_1afe8b3b6e59856c494c05b2967a0dffd2" refkind="member"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain)<sp/><ref refid="interface_criteria" kindref="compound">Criteria</ref><sp/>*criteria;</highlight></codeline>
+<codeline lineno="39" refid="interface_open_libra_client_1a56a391d011a068a6b4c1369a1860b198" refkind="member"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>readonly)<sp/>NSArray<sp/>*books;</highlight></codeline>
+<codeline lineno="43" refid="interface_open_libra_client_1a4d0bb75196cc3cdb9631372a3a09434f" refkind="member"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>assign)<sp/>id&lt;OpenLibraDelegate&gt;<sp/>delegate;</highlight></codeline>
+<codeline lineno="47" refid="interface_open_libra_client_1ab1edd647861203cf4455c9a3711cdd41" refkind="member"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>readonly)<sp/>NSURLRequest<sp/>*serviceURLRequest;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal">-<sp/>(id)initWithCriteria:(<ref refid="interface_criteria" kindref="compound">Criteria</ref><sp/>*)criteria;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>mark<sp/>-</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#pragma<sp/>mark<sp/>Instance<sp/>Methods</highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal">-<sp/>(void)fetchRequest;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">@end</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/OpenLibraClient.h"/>
+  </compounddef>
+</doxygen>

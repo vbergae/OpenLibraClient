@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="interface_open_libra_client" kind="class" prot="public">
+    <compoundname>OpenLibraClient</compoundname>
+    <includes refid="_open_libra_client_8h" local="no">OpenLibraClient.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="interface_open_libra_client_1aac570f065db1ada64cb2b2ff8116cf98" prot="private" static="no" mutable="no">
+        <type><ref refid="interface_criteria" kindref="compound">Criteria</ref> *</type>
+        <definition>Criteria* OpenLibraClient._criteria</definition>
+        <argsstring></argsstring>
+        <name>_criteria</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/OpenLibraClient.h" line="26" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/OpenLibraClient.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_open_libra_client_1a69e6f5813583072e9875791390b8f4d2" prot="private" static="no" mutable="no">
+        <type>NSMutableData *</type>
+        <definition>NSMutableData* OpenLibraClient._responseData</definition>
+        <argsstring></argsstring>
+        <name>_responseData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/OpenLibraClient.h" line="27" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/OpenLibraClient.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_open_libra_client_1a909b97b9a87b96f48f19d7be7db4e4aa" prot="private" static="no" mutable="no">
+        <type>NSMutableArray *</type>
+        <definition>NSMutableArray* OpenLibraClient._books</definition>
+        <argsstring></argsstring>
+        <name>_books</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/OpenLibraClient.h" line="28" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/OpenLibraClient.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_open_libra_client_1a49cf2d73fd6dc2d29d3c73f4417b8548" prot="private" static="no" mutable="no">
+        <type>id&lt; <ref refid="protocol_open_libra_delegate-p" kindref="compound">OpenLibraDelegate</ref> &gt;</type>
+        <definition>id&lt;OpenLibraDelegate&gt; OpenLibraClient._delegate</definition>
+        <argsstring></argsstring>
+        <name>_delegate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/OpenLibraClient.h" line="29" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/OpenLibraClient.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interface_open_libra_client_1afe8b3b6e59856c494c05b2967a0dffd2" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type><ref refid="interface_criteria" kindref="compound">Criteria</ref> *</type>
+        <definition>Criteria* OpenLibraClient.criteria</definition>
+        <argsstring></argsstring>
+        <name>criteria</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="interface_criteria" kindref="compound">Criteria</ref> to make a request to OpenLibra service. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/OpenLibraClient.h" line="35" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/OpenLibraClient.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_open_libra_client_1a56a391d011a068a6b4c1369a1860b198" prot="public" static="no" readable="yes" writable="no" gettable="no" settable="no" accessor="assign">
+        <type>NSArray *</type>
+        <definition>NSArray* OpenLibraClient.books</definition>
+        <argsstring></argsstring>
+        <name>books</name>
+        <read></read>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array with all books returned by the service </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/OpenLibraClient.h" line="39" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/OpenLibraClient.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_open_libra_client_1a4d0bb75196cc3cdb9631372a3a09434f" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>id&lt; <ref refid="protocol_open_libra_delegate-p" kindref="compound">OpenLibraDelegate</ref> &gt;</type>
+        <definition>id&lt;OpenLibraDelegate&gt; OpenLibraClient.delegate</definition>
+        <argsstring></argsstring>
+        <name>delegate</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate object which implements <ref refid="protocol_open_libra_delegate-p" kindref="compound">OpenLibraDelegate</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/OpenLibraClient.h" line="43" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/OpenLibraClient.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_open_libra_client_1ab1edd647861203cf4455c9a3711cdd41" prot="public" static="no" readable="yes" writable="no" gettable="no" settable="no" accessor="assign">
+        <type>NSURLRequest *</type>
+        <definition>NSURLRequest * OpenLibraClient::serviceURLRequest</definition>
+        <argsstring></argsstring>
+        <name>serviceURLRequest</name>
+        <read></read>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns generated NSURLRequest object using <ref refid="interface_criteria" kindref="compound">Criteria</ref> values. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/OpenLibraClient.h" line="47" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/OpenLibraClient.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_open_libra_client_1ad146dbb3fa49dc728f9b586d107801f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id OpenLibraClient::initWithCriteria:</definition>
+        <argsstring>(Criteria *criteria)</argsstring>
+        <name>initWithCriteria:</name>
+        <param>
+          <type><ref refid="interface_criteria" kindref="compound">Criteria</ref> *</type>
+          <declname>criteria</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializer. Creates an instance of <ref refid="interface_open_libra_client" kindref="compound">OpenLibraClient</ref> with the given <ref refid="interface_criteria" kindref="compound">Criteria</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="interface_criteria" kindref="compound">Criteria</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Search criterium </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>OpenLibraclient Initialized client </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/OpenLibraClient.h" line="56" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/OpenLibraClient.m" bodystart="32" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_open_libra_client_1a4aa51fabaa299898e53c77ef33f5b1a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void OpenLibraClient::fetchRequest</definition>
+        <argsstring>()</argsstring>
+        <name>fetchRequest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send an asyncrhonous request to the OpenLibra Service. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/OpenLibraClient.h" line="64" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/OpenLibraClient.m" bodystart="69" bodyend="99"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="interface_open_libra_client" kindref="compound">OpenLibraClient</ref> is the main class to fetch requests to OpenLibra Service. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="7">
+        <label>OpenLibraClient</label>
+        <link refid="interface_open_libra_client"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>_criteria</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Criteria</label>
+        <link refid="interface_criteria"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/OpenLibraClient.h" line="24" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/OpenLibraClient.h" bodystart="24" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_open_libra_client_1a909b97b9a87b96f48f19d7be7db4e4aa" prot="private" virt="non-virtual"><scope>OpenLibraClient</scope><name>_books</name></member>
+      <member refid="interface_open_libra_client_1aac570f065db1ada64cb2b2ff8116cf98" prot="private" virt="non-virtual"><scope>OpenLibraClient</scope><name>_criteria</name></member>
+      <member refid="interface_open_libra_client_1a49cf2d73fd6dc2d29d3c73f4417b8548" prot="private" virt="non-virtual"><scope>OpenLibraClient</scope><name>_delegate</name></member>
+      <member refid="interface_open_libra_client_1a69e6f5813583072e9875791390b8f4d2" prot="private" virt="non-virtual"><scope>OpenLibraClient</scope><name>_responseData</name></member>
+      <member refid="interface_open_libra_client_1a56a391d011a068a6b4c1369a1860b198" prot="public" virt="non-virtual"><scope>OpenLibraClient</scope><name>books</name></member>
+      <member refid="interface_open_libra_client_1afe8b3b6e59856c494c05b2967a0dffd2" prot="public" virt="non-virtual"><scope>OpenLibraClient</scope><name>criteria</name></member>
+      <member refid="interface_open_libra_client_1a4d0bb75196cc3cdb9631372a3a09434f" prot="public" virt="non-virtual"><scope>OpenLibraClient</scope><name>delegate</name></member>
+      <member refid="interface_open_libra_client_1a4aa51fabaa299898e53c77ef33f5b1a6" prot="public" virt="virtual"><scope>OpenLibraClient</scope><name>fetchRequest</name></member>
+      <member refid="interface_open_libra_client_1ad146dbb3fa49dc728f9b586d107801f7" prot="public" virt="virtual"><scope>OpenLibraClient</scope><name>initWithCriteria:</name></member>
+      <member refid="interface_open_libra_client_1ab1edd647861203cf4455c9a3711cdd41" prot="public" virt="non-virtual"><scope>OpenLibraClient</scope><name>serviceURLRequest</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,368 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="interface_criteria" kind="class" prot="public">
+    <compoundname>Criteria</compoundname>
+    <includes refid="_criteria_8h" local="no">Criteria.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="interface_criteria_1a7ecef0741110039314b7b8f96fb6e86b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Criteria._maxItems</definition>
+        <argsstring></argsstring>
+        <name>_maxItems</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" line="93" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_criteria_1a6899dda0be8f1187474bce113342fcc7" prot="private" static="no" mutable="no">
+        <type>Order</type>
+        <definition>Order Criteria._order</definition>
+        <argsstring></argsstring>
+        <name>_order</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" line="94" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_criteria_1a596b04d94b14c0e0ce636560c8673b03" prot="private" static="no" mutable="no">
+        <type>Since</type>
+        <definition>Since Criteria._since</definition>
+        <argsstring></argsstring>
+        <name>_since</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" line="95" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_criteria_1a38d7ab91d539d0b7ebd30fa4d5e5b47e" prot="private" static="no" mutable="no">
+        <type>Collection</type>
+        <definition>Collection Criteria._collection</definition>
+        <argsstring></argsstring>
+        <name>_collection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" line="96" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_criteria_1a0654cb22e2aa07bf28fff3258eef5663" prot="private" static="no" mutable="no">
+        <type>NSMutableArray *</type>
+        <definition>NSMutableArray* Criteria._values</definition>
+        <argsstring></argsstring>
+        <name>_values</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" line="97" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interface_criteria_1a7de2a86a0167151d57ab63fa45e186c3" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>int</type>
+        <definition>int Criteria.maxItems</definition>
+        <argsstring></argsstring>
+        <name>maxItems</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of items to show in the response </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" line="103" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_criteria_1af6652c36b822dbeda4ef46002149a7bc" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>Order</type>
+        <definition>Order Criteria.order</definition>
+        <argsstring></argsstring>
+        <name>order</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Order to sort the response </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" line="107" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_criteria_1a9d2c4c96b4c91226f0d0aac9bce08a4f" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>Since</type>
+        <definition>Since Criteria.since</definition>
+        <argsstring></argsstring>
+        <name>since</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Since when a book is available </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" line="111" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_criteria_1a52906da275ae0744abeba6007790553f" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>Collection</type>
+        <definition>Collection Criteria.collection</definition>
+        <argsstring></argsstring>
+        <name>collection</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type of collection to create </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" line="115" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_criteria_1a7278bbc86d128209a3661199fc61ffd9" prot="public" static="no" readable="yes" writable="no" gettable="no" settable="no" accessor="assign">
+        <type>NSArray *</type>
+        <definition>NSArray* Criteria.values</definition>
+        <argsstring></argsstring>
+        <name>values</name>
+        <read></read>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array with all the values of the fields </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" line="119" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_criteria_1a1afe868a36269a5e59538a860df0f635" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Criteria::setField:withValue:</definition>
+        <argsstring>(Field field,[withValue] NSString *value)</argsstring>
+        <name>setField:withValue:</name>
+        <param>
+          <type>Field</type>
+          <declname>field</declname>
+        </param>
+        <param>
+          <attributes>[withValue]</attributes>
+          <type>NSString *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets a value for the given field.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Field to set </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NSString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value for the field </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" line="127" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.m" bodystart="175" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_criteria_1ae40b2aab089ce071f0a65c2c304323e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Criteria::resetField:</definition>
+        <argsstring>(Field field)</argsstring>
+        <name>resetField:</name>
+        <param>
+          <type>Field</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resets the value of the given field to null.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Field to reset </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" line="134" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.m" bodystart="183" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_criteria_1af045a3a1a4dc50fa8b50daa15d206f0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Criteria::resetAllFields</definition>
+        <argsstring>()</argsstring>
+        <name>resetAllFields</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resets all fields. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" line="139" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.m" bodystart="190" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_criteria_1a68d80bcd8c9abb4793c3bd28451ea3af" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * Criteria::requestParameters</definition>
+        <argsstring>()</argsstring>
+        <name>requestParameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates the string for the request url.</para><para><simplesect kind="return"><para>NSString String to use in the url request to api </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" line="146" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.m" bodystart="197" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_criteria_1af3a2812286917a5d4654a16df527982e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * Criteria(Private).addValuesTo:</definition>
+        <argsstring>(NSString *string)</argsstring>
+        <name>addValuesTo:</name>
+        <param>
+          <type>NSString *</type>
+          <declname>string</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.m" line="16"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_criteria_1a1f269d4cd89ecfb7999076134a1fd096" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * Criteria(Private).addOrderTo:</definition>
+        <argsstring>(NSString *string)</argsstring>
+        <name>addOrderTo:</name>
+        <param>
+          <type>NSString *</type>
+          <declname>string</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.m" line="17"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_criteria_1a7a2f966ad0c12e76c58aa44017e8ed32" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * Criteria(Private).addMaxItemsTo:</definition>
+        <argsstring>(NSString *string)</argsstring>
+        <name>addMaxItemsTo:</name>
+        <param>
+          <type>NSString *</type>
+          <declname>string</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.m" line="18"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_criteria_1a32c6b3308cc89690b1a3334137e68e80" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * Criteria(Private).addSinceTo:</definition>
+        <argsstring>(NSString *string)</argsstring>
+        <name>addSinceTo:</name>
+        <param>
+          <type>NSString *</type>
+          <declname>string</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.m" line="19"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_criteria_1aa145b4293955034eb83436d57f07c73e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * Criteria(Private).addCollectionTo:</definition>
+        <argsstring>(NSString *string)</argsstring>
+        <name>addCollectionTo:</name>
+        <param>
+          <type>NSString *</type>
+          <declname>string</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.m" line="20"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="interface_criteria_1a2d36b0ec27433b9bcf6361ef981c81d5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSArray *</type>
+        <definition>NSArray * Criteria(Private).ApiFieldNames</definition>
+        <argsstring>()</argsstring>
+        <name>ApiFieldNames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.m" line="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="interface_criteria" kindref="compound">Criteria</ref> class.</para><para>Defines the criteria searchs to make the request to OpenLibra API. </para>    </detaileddescription>
+    <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" line="91" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" bodystart="91" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_criteria_1a38d7ab91d539d0b7ebd30fa4d5e5b47e" prot="private" virt="non-virtual"><scope>Criteria</scope><name>_collection</name></member>
+      <member refid="interface_criteria_1a7ecef0741110039314b7b8f96fb6e86b" prot="private" virt="non-virtual"><scope>Criteria</scope><name>_maxItems</name></member>
+      <member refid="interface_criteria_1a6899dda0be8f1187474bce113342fcc7" prot="private" virt="non-virtual"><scope>Criteria</scope><name>_order</name></member>
+      <member refid="interface_criteria_1a596b04d94b14c0e0ce636560c8673b03" prot="private" virt="non-virtual"><scope>Criteria</scope><name>_since</name></member>
+      <member refid="interface_criteria_1a0654cb22e2aa07bf28fff3258eef5663" prot="private" virt="non-virtual"><scope>Criteria</scope><name>_values</name></member>
+      <member refid="interface_criteria_1aa145b4293955034eb83436d57f07c73e" prot="public" virt="virtual"><scope>Criteria</scope><name>addCollectionTo:</name></member>
+      <member refid="interface_criteria_1a7a2f966ad0c12e76c58aa44017e8ed32" prot="public" virt="virtual"><scope>Criteria</scope><name>addMaxItemsTo:</name></member>
+      <member refid="interface_criteria_1a1f269d4cd89ecfb7999076134a1fd096" prot="public" virt="virtual"><scope>Criteria</scope><name>addOrderTo:</name></member>
+      <member refid="interface_criteria_1a32c6b3308cc89690b1a3334137e68e80" prot="public" virt="virtual"><scope>Criteria</scope><name>addSinceTo:</name></member>
+      <member refid="interface_criteria_1af3a2812286917a5d4654a16df527982e" prot="public" virt="virtual"><scope>Criteria</scope><name>addValuesTo:</name></member>
+      <member refid="interface_criteria_1a2d36b0ec27433b9bcf6361ef981c81d5" prot="public" virt="virtual"><scope>Criteria</scope><name>ApiFieldNames</name></member>
+      <member refid="interface_criteria_1a52906da275ae0744abeba6007790553f" prot="public" virt="non-virtual"><scope>Criteria</scope><name>collection</name></member>
+      <member refid="interface_criteria_1a7de2a86a0167151d57ab63fa45e186c3" prot="public" virt="non-virtual"><scope>Criteria</scope><name>maxItems</name></member>
+      <member refid="interface_criteria_1af6652c36b822dbeda4ef46002149a7bc" prot="public" virt="non-virtual"><scope>Criteria</scope><name>order</name></member>
+      <member refid="interface_criteria_1a68d80bcd8c9abb4793c3bd28451ea3af" prot="public" virt="virtual"><scope>Criteria</scope><name>requestParameters</name></member>
+      <member refid="interface_criteria_1af045a3a1a4dc50fa8b50daa15d206f0d" prot="public" virt="virtual"><scope>Criteria</scope><name>resetAllFields</name></member>
+      <member refid="interface_criteria_1ae40b2aab089ce071f0a65c2c304323e9" prot="public" virt="virtual"><scope>Criteria</scope><name>resetField:</name></member>
+      <member refid="interface_criteria_1a1afe868a36269a5e59538a860df0f635" prot="public" virt="virtual"><scope>Criteria</scope><name>setField:withValue:</name></member>
+      <member refid="interface_criteria_1a9d2c4c96b4c91226f0d0aac9bce08a4f" prot="public" virt="non-virtual"><scope>Criteria</scope><name>since</name></member>
+      <member refid="interface_criteria_1a7278bbc86d128209a3661199fc61ffd9" prot="public" virt="non-virtual"><scope>Criteria</scope><name>values</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,488 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="interface_book" kind="class" prot="public">
+    <compoundname>Book</compoundname>
+    <includes refid="_book_8h" local="no">Book.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="interface_book_1a7cd9d7d35cd8d08fbb323968cc44c1ce" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Book._id</definition>
+        <argsstring></argsstring>
+        <name>_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="40" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_book_1aec03d01c98ea71952046cc83ffe9c32e" prot="private" static="no" mutable="no">
+        <type>NSString *</type>
+        <definition>NSString* Book._title</definition>
+        <argsstring></argsstring>
+        <name>_title</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="41" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_book_1aa6f9285566774603b17cb5fb57525484" prot="private" static="no" mutable="no">
+        <type>NSString *</type>
+        <definition>NSString* Book._author</definition>
+        <argsstring></argsstring>
+        <name>_author</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="42" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_book_1ae9af6229615a0bd217bf17bdd02c6c7b" prot="private" static="no" mutable="no">
+        <type>NSString *</type>
+        <definition>NSString* Book._publisher</definition>
+        <argsstring></argsstring>
+        <name>_publisher</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="43" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_book_1ad0bc73650e7aef01453d921b918d00f3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Book._publisherDate</definition>
+        <argsstring></argsstring>
+        <name>_publisherDate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="44" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_book_1a722d4d1d9de3dd5f2bfa00b077c207c6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Book._pages</definition>
+        <argsstring></argsstring>
+        <name>_pages</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="45" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_book_1a38a1d4db9833d6861fba2a7b6127d722" prot="private" static="no" mutable="no">
+        <type>NSString *</type>
+        <definition>NSString* Book._language</definition>
+        <argsstring></argsstring>
+        <name>_language</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="46" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_book_1ab99e076240feb4fafdb8972cadb7a037" prot="private" static="no" mutable="no">
+        <type>NSString *</type>
+        <definition>NSString* Book._URLDetails</definition>
+        <argsstring></argsstring>
+        <name>_URLDetails</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="47" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_book_1add003979c12e376d5fe1d7891b3e8392" prot="private" static="no" mutable="no">
+        <type>NSString *</type>
+        <definition>NSString* Book._URLDownload</definition>
+        <argsstring></argsstring>
+        <name>_URLDownload</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="48" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_book_1ab10dc51d93a6b8cb2bd5db2b88baae7e" prot="private" static="no" mutable="no">
+        <type>NSString *</type>
+        <definition>NSString* Book._cover</definition>
+        <argsstring></argsstring>
+        <name>_cover</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="49" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_book_1ab58ea286f5716175456ab655677780da" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Book._rating</definition>
+        <argsstring></argsstring>
+        <name>_rating</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="50" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_book_1ad8fc45c691ab6c013312b0fb06b03eb0" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Book._numComments</definition>
+        <argsstring></argsstring>
+        <name>_numComments</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="51" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_book_1a5213368c246145966f47a8916ca402b2" prot="private" static="no" mutable="no">
+        <type>NSString *</type>
+        <definition>NSString* Book._categories</definition>
+        <argsstring></argsstring>
+        <name>_categories</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="52" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_book_1a897a00182017e26a694faaaeeccfa043" prot="private" static="no" mutable="no">
+        <type>NSString *</type>
+        <definition>NSString* Book._tags</definition>
+        <argsstring></argsstring>
+        <name>_tags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="53" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interface_book_1ade1e6376cdb0417bd207733607f6669a" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>int</type>
+        <definition>int Book.id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Unique identifier of the book </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="59" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_book_1a507a4a5b02d5d042f6716316e2e5e293" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>NSString *</type>
+        <definition>NSString* Book.title</definition>
+        <argsstring></argsstring>
+        <name>title</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Book&apos;s title </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="63" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_book_1a9612be5178b7b2d676b32e77a436580a" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>NSString *</type>
+        <definition>NSString* Book.author</definition>
+        <argsstring></argsstring>
+        <name>author</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Book&apos;s author </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="67" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_book_1ab50b743487d36dbad67e0c27c2db6d95" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>NSString *</type>
+        <definition>NSString* Book.publisher</definition>
+        <argsstring></argsstring>
+        <name>publisher</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Book&apos;s publisher </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="71" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_book_1a96ce18e68a2e534ef4d68b2c426d6440" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>int</type>
+        <definition>int Book.publisherDate</definition>
+        <argsstring></argsstring>
+        <name>publisherDate</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Book&apos;s publisher date </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="75" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_book_1afce3f5159731bc21f6d4eca13f957c98" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>int</type>
+        <definition>int Book.pages</definition>
+        <argsstring></argsstring>
+        <name>pages</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Book&apos;s pages </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="79" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_book_1a410185f5b9cba8002f29c7b90efc63fd" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>NSString *</type>
+        <definition>NSString* Book.language</definition>
+        <argsstring></argsstring>
+        <name>language</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Book&apos;s language </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="83" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_book_1ae922c5937572505b3675a24bacf61c53" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>NSString *</type>
+        <definition>NSString* Book.URLDetails</definition>
+        <argsstring></argsstring>
+        <name>URLDetails</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>String with the url to book&apos;s details </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="87" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_book_1ac0535b8b5a6b54eacbdb3e36338210e7" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>NSString *</type>
+        <definition>NSString* Book.URLDownload</definition>
+        <argsstring></argsstring>
+        <name>URLDownload</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>String with the download url </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="91" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_book_1ab9a2eba00a1c12702737db9f315cb1e8" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>NSString *</type>
+        <definition>NSString* Book.cover</definition>
+        <argsstring></argsstring>
+        <name>cover</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>String with url to book&apos;s cover </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="95" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_book_1a8afeec1f31606be6859a1db6d85c2692" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>float</type>
+        <definition>float Book.rating</definition>
+        <argsstring></argsstring>
+        <name>rating</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Book&apos;s rating </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="99" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_book_1a30fb1d5f55bbff0bb59069d8edac6fc5" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>int</type>
+        <definition>int Book.numComments</definition>
+        <argsstring></argsstring>
+        <name>numComments</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of comments about this book </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="103" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_book_1a5d02b41a17f0bf3da50e4613762d3865" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>NSString *</type>
+        <definition>NSString* Book.categories</definition>
+        <argsstring></argsstring>
+        <name>categories</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Book&apos;s categories </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="107" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_book_1a7a8f43ac597fb2a8280a4323157844d3" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>NSString *</type>
+        <definition>NSString* Book.tags</definition>
+        <argsstring></argsstring>
+        <name>tags</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Book&apos;s tags </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="111" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_book_1ae4056227c171b77998bee34a1d9c02ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id Book::initWithDictionary:</definition>
+        <argsstring>(NSDictionary *dictionary)</argsstring>
+        <name>initWithDictionary:</name>
+        <param>
+          <type>NSDictionary *</type>
+          <declname>dictionary</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Intialices a new <ref refid="interface_book" kindref="compound">Book</ref> object using given NSDictionary to fill all properties</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NSDictionary</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dictionary with all properties in a key/value format </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="interface_book" kindref="compound">Book</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="121" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.m" bodystart="47" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="interface_book_1aba5b6b3d032db273752813c8411627db" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="interface_book" kindref="compound">Book</ref> *</type>
+        <definition>Book * Book::bookWithDictionary:</definition>
+        <argsstring>(NSDictionary *dictionary)</argsstring>
+        <name>bookWithDictionary:</name>
+        <param>
+          <type>NSDictionary *</type>
+          <declname>dictionary</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates an autoreleased book using given dictionary</para><para><simplesect kind="return"><para><ref refid="interface_book" kindref="compound">Book</ref> Autoreleased book </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="131" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.m" bodystart="96" bodyend="99"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Class to represent a <ref refid="interface_book" kindref="compound">Book</ref> in the OpenLibra service.</para><para>Books class stores all properties of a book and some helper methods to download, view or comment the book </para>    </detaileddescription>
+    <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" line="38" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Book.h" bodystart="38" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_book_1aa6f9285566774603b17cb5fb57525484" prot="private" virt="non-virtual"><scope>Book</scope><name>_author</name></member>
+      <member refid="interface_book_1a5213368c246145966f47a8916ca402b2" prot="private" virt="non-virtual"><scope>Book</scope><name>_categories</name></member>
+      <member refid="interface_book_1ab10dc51d93a6b8cb2bd5db2b88baae7e" prot="private" virt="non-virtual"><scope>Book</scope><name>_cover</name></member>
+      <member refid="interface_book_1a7cd9d7d35cd8d08fbb323968cc44c1ce" prot="private" virt="non-virtual"><scope>Book</scope><name>_id</name></member>
+      <member refid="interface_book_1a38a1d4db9833d6861fba2a7b6127d722" prot="private" virt="non-virtual"><scope>Book</scope><name>_language</name></member>
+      <member refid="interface_book_1ad8fc45c691ab6c013312b0fb06b03eb0" prot="private" virt="non-virtual"><scope>Book</scope><name>_numComments</name></member>
+      <member refid="interface_book_1a722d4d1d9de3dd5f2bfa00b077c207c6" prot="private" virt="non-virtual"><scope>Book</scope><name>_pages</name></member>
+      <member refid="interface_book_1ae9af6229615a0bd217bf17bdd02c6c7b" prot="private" virt="non-virtual"><scope>Book</scope><name>_publisher</name></member>
+      <member refid="interface_book_1ad0bc73650e7aef01453d921b918d00f3" prot="private" virt="non-virtual"><scope>Book</scope><name>_publisherDate</name></member>
+      <member refid="interface_book_1ab58ea286f5716175456ab655677780da" prot="private" virt="non-virtual"><scope>Book</scope><name>_rating</name></member>
+      <member refid="interface_book_1a897a00182017e26a694faaaeeccfa043" prot="private" virt="non-virtual"><scope>Book</scope><name>_tags</name></member>
+      <member refid="interface_book_1aec03d01c98ea71952046cc83ffe9c32e" prot="private" virt="non-virtual"><scope>Book</scope><name>_title</name></member>
+      <member refid="interface_book_1ab99e076240feb4fafdb8972cadb7a037" prot="private" virt="non-virtual"><scope>Book</scope><name>_URLDetails</name></member>
+      <member refid="interface_book_1add003979c12e376d5fe1d7891b3e8392" prot="private" virt="non-virtual"><scope>Book</scope><name>_URLDownload</name></member>
+      <member refid="interface_book_1a9612be5178b7b2d676b32e77a436580a" prot="public" virt="non-virtual"><scope>Book</scope><name>author</name></member>
+      <member refid="interface_book_1aba5b6b3d032db273752813c8411627db" prot="public" virt="virtual"><scope>Book</scope><name>bookWithDictionary:</name></member>
+      <member refid="interface_book_1a5d02b41a17f0bf3da50e4613762d3865" prot="public" virt="non-virtual"><scope>Book</scope><name>categories</name></member>
+      <member refid="interface_book_1ab9a2eba00a1c12702737db9f315cb1e8" prot="public" virt="non-virtual"><scope>Book</scope><name>cover</name></member>
+      <member refid="interface_book_1ade1e6376cdb0417bd207733607f6669a" prot="public" virt="non-virtual"><scope>Book</scope><name>id</name></member>
+      <member refid="interface_book_1ae4056227c171b77998bee34a1d9c02ee" prot="public" virt="virtual"><scope>Book</scope><name>initWithDictionary:</name></member>
+      <member refid="interface_book_1a410185f5b9cba8002f29c7b90efc63fd" prot="public" virt="non-virtual"><scope>Book</scope><name>language</name></member>
+      <member refid="interface_book_1a30fb1d5f55bbff0bb59069d8edac6fc5" prot="public" virt="non-virtual"><scope>Book</scope><name>numComments</name></member>
+      <member refid="interface_book_1afce3f5159731bc21f6d4eca13f957c98" prot="public" virt="non-virtual"><scope>Book</scope><name>pages</name></member>
+      <member refid="interface_book_1ab50b743487d36dbad67e0c27c2db6d95" prot="public" virt="non-virtual"><scope>Book</scope><name>publisher</name></member>
+      <member refid="interface_book_1a96ce18e68a2e534ef4d68b2c426d6440" prot="public" virt="non-virtual"><scope>Book</scope><name>publisherDate</name></member>
+      <member refid="interface_book_1a8afeec1f31606be6859a1db6d85c2692" prot="public" virt="non-virtual"><scope>Book</scope><name>rating</name></member>
+      <member refid="interface_book_1a7a8f43ac597fb2a8280a4323157844d3" prot="public" virt="non-virtual"><scope>Book</scope><name>tags</name></member>
+      <member refid="interface_book_1a507a4a5b02d5d042f6716316e2e5e293" prot="public" virt="non-virtual"><scope>Book</scope><name>title</name></member>
+      <member refid="interface_book_1ae922c5937572505b3675a24bacf61c53" prot="public" virt="non-virtual"><scope>Book</scope><name>URLDetails</name></member>
+      <member refid="interface_book_1ac0535b8b5a6b54eacbdb3e36338210e7" prot="public" virt="non-virtual"><scope>Book</scope><name>URLDownload</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,165 @@
+\hypertarget{interface_criteria}{
+\section{Criteria Class Reference}
+\label{interface_criteria}\index{Criteria@{Criteria}}
+}
+
+
+{\ttfamily \#import $<$Criteria.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_criteria_a1afe868a36269a5e59538a860df0f635}{setField:withValue:}
+\item 
+(void) -\/ \hyperlink{interface_criteria_ae40b2aab089ce071f0a65c2c304323e9}{resetField:}
+\item 
+(void) -\/ \hyperlink{interface_criteria_af045a3a1a4dc50fa8b50daa15d206f0d}{resetAllFields}
+\item 
+(NSString $\ast$) -\/ \hyperlink{interface_criteria_a68d80bcd8c9abb4793c3bd28451ea3af}{requestParameters}
+\item 
+\hypertarget{interface_criteria_af3a2812286917a5d4654a16df527982e}{
+(NSString $\ast$) -\/ {\bfseries addValuesTo:}}
+\label{interface_criteria_af3a2812286917a5d4654a16df527982e}
+
+\item 
+\hypertarget{interface_criteria_a1f269d4cd89ecfb7999076134a1fd096}{
+(NSString $\ast$) -\/ {\bfseries addOrderTo:}}
+\label{interface_criteria_a1f269d4cd89ecfb7999076134a1fd096}
+
+\item 
+\hypertarget{interface_criteria_a7a2f966ad0c12e76c58aa44017e8ed32}{
+(NSString $\ast$) -\/ {\bfseries addMaxItemsTo:}}
+\label{interface_criteria_a7a2f966ad0c12e76c58aa44017e8ed32}
+
+\item 
+\hypertarget{interface_criteria_a32c6b3308cc89690b1a3334137e68e80}{
+(NSString $\ast$) -\/ {\bfseries addSinceTo:}}
+\label{interface_criteria_a32c6b3308cc89690b1a3334137e68e80}
+
+\item 
+\hypertarget{interface_criteria_aa145b4293955034eb83436d57f07c73e}{
+(NSString $\ast$) -\/ {\bfseries addCollectionTo:}}
+\label{interface_criteria_aa145b4293955034eb83436d57f07c73e}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_criteria_a2d36b0ec27433b9bcf6361ef981c81d5}{
+(NSArray $\ast$) + {\bfseries ApiFieldNames}}
+\label{interface_criteria_a2d36b0ec27433b9bcf6361ef981c81d5}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{interface_criteria_a7de2a86a0167151d57ab63fa45e186c3}{maxItems}
+\item 
+Order \hyperlink{interface_criteria_af6652c36b822dbeda4ef46002149a7bc}{order}
+\item 
+Since \hyperlink{interface_criteria_a9d2c4c96b4c91226f0d0aac9bce08a4f}{since}
+\item 
+Collection \hyperlink{interface_criteria_a52906da275ae0744abeba6007790553f}{collection}
+\item 
+NSArray $\ast$ \hyperlink{interface_criteria_a7278bbc86d128209a3661199fc61ffd9}{values}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_criteria}{Criteria} class.
+
+Defines the criteria searchs to make the request to OpenLibra API. 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_criteria_a68d80bcd8c9abb4793c3bd28451ea3af}{
+\index{Criteria@{Criteria}!requestParameters@{requestParameters}}
+\index{requestParameters@{requestParameters}!Criteria@{Criteria}}
+\subsubsection[{requestParameters}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSString $\ast$) requestParameters 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_criteria_a68d80bcd8c9abb4793c3bd28451ea3af}
+Creates the string for the request url.
+
+\begin{DoxyReturn}{Returns}
+NSString String to use in the url request to api 
+\end{DoxyReturn}
+\hypertarget{interface_criteria_af045a3a1a4dc50fa8b50daa15d206f0d}{
+\index{Criteria@{Criteria}!resetAllFields@{resetAllFields}}
+\index{resetAllFields@{resetAllFields}!Criteria@{Criteria}}
+\subsubsection[{resetAllFields}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) resetAllFields 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_criteria_af045a3a1a4dc50fa8b50daa15d206f0d}
+Resets all fields. \hypertarget{interface_criteria_ae40b2aab089ce071f0a65c2c304323e9}{
+\index{Criteria@{Criteria}!resetField:@{resetField:}}
+\index{resetField:@{resetField:}!Criteria@{Criteria}}
+\subsubsection[{resetField:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) resetField: 
+\begin{DoxyParamCaption}
+\item[{dummy(Field)}]{field}
+\end{DoxyParamCaption}
+}}
+\label{interface_criteria_ae40b2aab089ce071f0a65c2c304323e9}
+Resets the value of the given field to null.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Field} & Field to reset \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_criteria_a1afe868a36269a5e59538a860df0f635}{
+\index{Criteria@{Criteria}!setField:withValue:@{setField:withValue:}}
+\index{setField:withValue:@{setField:withValue:}!Criteria@{Criteria}}
+\subsubsection[{setField:withValue:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) setField: 
+\begin{DoxyParamCaption}
+\item[{dummy(Field)}]{field}
+\item[{withValue:(NSString $\ast$)}]{value}
+\end{DoxyParamCaption}
+}}
+\label{interface_criteria_a1afe868a36269a5e59538a860df0f635}
+Sets a value for the given field.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Field} & Field to set \\
+\hline
+{\em NSString} & Value for the field \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_criteria_a52906da275ae0744abeba6007790553f}{
+\index{Criteria@{Criteria}!collection@{collection}}
+\index{collection@{collection}!Criteria@{Criteria}}
+\subsubsection[{collection}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (Collection Criteria.)collection\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
+\label{interface_criteria_a52906da275ae0744abeba6007790553f}
+Type of collection to create \hypertarget{interface_criteria_a7de2a86a0167151d57ab63fa45e186c3}{
+\index{Criteria@{Criteria}!maxItems@{maxItems}}
+\index{maxItems@{maxItems}!Criteria@{Criteria}}
+\subsubsection[{maxItems}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int Criteria.)maxItems\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
+\label{interface_criteria_a7de2a86a0167151d57ab63fa45e186c3}
+Number of items to show in the response \hypertarget{interface_criteria_af6652c36b822dbeda4ef46002149a7bc}{
+\index{Criteria@{Criteria}!order@{order}}
+\index{order@{order}!Criteria@{Criteria}}
+\subsubsection[{order}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (Order Criteria.)order\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
+\label{interface_criteria_af6652c36b822dbeda4ef46002149a7bc}
+Order to sort the response \hypertarget{interface_criteria_a9d2c4c96b4c91226f0d0aac9bce08a4f}{
+\index{Criteria@{Criteria}!since@{since}}
+\index{since@{since}!Criteria@{Criteria}}
+\subsubsection[{since}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (Since Criteria.)since\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
+\label{interface_criteria_a9d2c4c96b4c91226f0d0aac9bce08a4f}
+Since when a book is available \hypertarget{interface_criteria_a7278bbc86d128209a3661199fc61ffd9}{
+\index{Criteria@{Criteria}!values@{values}}
+\index{values@{values}!Criteria@{Criteria}}
+\subsubsection[{values}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSArray$\ast$ Criteria.)values\hspace{0.3cm}{\ttfamily  \mbox{[}read, assign\mbox{]}}}}
+\label{interface_criteria_a7278bbc86d128209a3661199fc61ffd9}
+Array with all the values of the fields 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Criteria.h\item 
+Criteria.m\end{DoxyCompactItemize}

@@ -1,0 +1,437 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="_criteria_8h" kind="file">
+    <compoundname>Criteria.h</compoundname>
+    <includes local="no">Foundation/Foundation.h</includes>
+    <includedby refid="_criteria_8m" local="yes">Criteria.m</includedby>
+    <includedby refid="_open_libra_client_8h" local="yes">OpenLibraClient.h</includedby>
+    <includedby refid="_open_libra_8h" local="yes">OpenLibra.h</includedby>
+    <incdepgraph>
+      <node id="9">
+        <label>Criteria.h</label>
+        <link refid="Criteria.h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Foundation/Foundation.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="12">
+        <label>OpenLibraClient.h</label>
+        <link refid="_open_libra_client_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Criteria.h</label>
+        <link refid="Criteria.h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>OpenLibra.h</label>
+        <link refid="_open_libra_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="interface_criteria" prot="public">Criteria</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_criteria_8h_1a99961d59b61191b196be5437c7c8ec27" prot="public" static="no">
+        <name>FIELDS_COUNT</name>
+        <initializer>13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current number fields wicht <ref refid="interface_criteria" kindref="compound">Criteria</ref> supports </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" line="17" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_criteria_8h_1a722278b65e86384d922e40e25caaf929" prot="public" static="no">
+        <name>DEFAULT_MAX_ITEMS</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default max results </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" line="21" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_criteria_8h_1a889a1c08592b6ef9195889a2baec9c78" prot="public" static="no">
+        <name>DEFAULT_ORDER</name>
+        <initializer>OrderAsc</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default order </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" line="25" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_criteria_8h_1abeeae13aea41d929bc9085ceb7f36c26" prot="public" static="no">
+        <name>DEFAULT_SINCE</name>
+        <initializer>SinceNone</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default since </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" line="29" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_criteria_8h_1a1e35064f4b70226adc63b8fe1af7ddf8" prot="public" static="no">
+        <name>Field</name>
+        <enumvalue id="_criteria_8h_1a1e35064f4b70226adc63b8fe1af7ddf8aabbfbbba927db4de80881908b7e9cfc2" prot="public">
+          <name>FieldId</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_criteria_8h_1a1e35064f4b70226adc63b8fe1af7ddf8a0b6ad550ddf4aa1e967c241beffebca8" prot="public">
+          <name>FieldTitle</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_criteria_8h_1a1e35064f4b70226adc63b8fe1af7ddf8a7c1f73bfded023782d948b0e3642b9c9" prot="public">
+          <name>FieldAuthor</name>
+          <initializer> 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_criteria_8h_1a1e35064f4b70226adc63b8fe1af7ddf8a3fe683e635305a631d91e31168a615bf" prot="public">
+          <name>FieldPublisher</name>
+          <initializer> 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_criteria_8h_1a1e35064f4b70226adc63b8fe1af7ddf8afe5e245c5133ec06d3e162f030e7f8c5" prot="public">
+          <name>FieldPublisherDate</name>
+          <initializer> 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_criteria_8h_1a1e35064f4b70226adc63b8fe1af7ddf8a3141bf3753ef3c0a289b5e542c840e14" prot="public">
+          <name>FieldLang</name>
+          <initializer> 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_criteria_8h_1a1e35064f4b70226adc63b8fe1af7ddf8a79575022e36929be9e062edd83264de6" prot="public">
+          <name>FieldKeyworkd</name>
+          <initializer> 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_criteria_8h_1a1e35064f4b70226adc63b8fe1af7ddf8af0f64ef9eefec56914e3f7a13f9387a4" prot="public">
+          <name>FieldCategory</name>
+          <initializer> 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_criteria_8h_1a1e35064f4b70226adc63b8fe1af7ddf8a80ee3461800aca1ef0561d32e3318302" prot="public">
+          <name>FieldCategoryId</name>
+          <initializer> 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_criteria_8h_1a1e35064f4b70226adc63b8fe1af7ddf8a2af9c137133a943258d72df5cf4688a4" prot="public">
+          <name>FieldSubcategory</name>
+          <initializer> 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_criteria_8h_1a1e35064f4b70226adc63b8fe1af7ddf8a01f06b6f14c0e4bf7364ebd93b5dfb86" prot="public">
+          <name>FieldSubcategoryId</name>
+          <initializer> 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_criteria_8h_1a1e35064f4b70226adc63b8fe1af7ddf8a897f826e3b0d9ed107fb1bac08a7ff2f" prot="public">
+          <name>FieldCriteria</name>
+          <initializer> 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_criteria_8h_1a1e35064f4b70226adc63b8fe1af7ddf8a51159d1b5e2658e8c8be892d55fcb2d3" prot="public">
+          <name>FieldTag</name>
+          <initializer> 12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Field names. Enum with the fields names </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" line="35" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" bodystart="35" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="enum" id="_criteria_8h_1afbb7a18945a0832b5189bbe768dd0c51" prot="public" static="no">
+        <name>Order</name>
+        <enumvalue id="_criteria_8h_1afbb7a18945a0832b5189bbe768dd0c51ac2b330326398e3b41218d4b57530176f" prot="public">
+          <name>OrderAsc</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_criteria_8h_1afbb7a18945a0832b5189bbe768dd0c51a548c647f679f52aa46831eb7f52a2b39" prot="public">
+          <name>OrderDesc</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_criteria_8h_1afbb7a18945a0832b5189bbe768dd0c51a10bff8b02b5c3d972f1c4a860acb46f1" prot="public">
+          <name>OrderNewest</name>
+          <initializer> 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_criteria_8h_1afbb7a18945a0832b5189bbe768dd0c51abac0e6a8d34179cff8f4b3bfc25e34bd" prot="public">
+          <name>OrderOldest</name>
+          <initializer> 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Order types. Enum with the types of orders. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" line="55" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" bodystart="55" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="enum" id="_criteria_8h_1add67762fa07f239f6bc4a5557f5259b2" prot="public" static="no">
+        <name>Since</name>
+        <enumvalue id="_criteria_8h_1add67762fa07f239f6bc4a5557f5259b2a3350c798a142fe29b8fb7fb8c4d78574" prot="public">
+          <name>SinceNone</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_criteria_8h_1add67762fa07f239f6bc4a5557f5259b2a0727ffdcd01615e086d70a18e94448a6" prot="public">
+          <name>SinceToday</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_criteria_8h_1add67762fa07f239f6bc4a5557f5259b2ade44ced768da6aa5578546e4ce97b296" prot="public">
+          <name>SinceLastWeek</name>
+          <initializer> 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_criteria_8h_1add67762fa07f239f6bc4a5557f5259b2ad45b4f462456d111737230db90c08996" prot="public">
+          <name>SinceLastMonth</name>
+          <initializer> 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_criteria_8h_1add67762fa07f239f6bc4a5557f5259b2ac523f4320a1b0f24b00f6462fb123ffb" prot="public">
+          <name>SinceLastYear</name>
+          <initializer> 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sinze posibilities. Enum with the Sinze posibilities. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" line="66" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" bodystart="66" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="enum" id="_criteria_8h_1a446b20fec3b67fa1645ae438d5ee8392" prot="public" static="no">
+        <name>Collection</name>
+        <enumvalue id="_criteria_8h_1a446b20fec3b67fa1645ae438d5ee8392afa155c98c6b26f49948004625008b49c" prot="public">
+          <name>CollectionNone</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_criteria_8h_1a446b20fec3b67fa1645ae438d5ee8392ab54fc88a06231d493e0238df751fa736" prot="public">
+          <name>CollectionMostViewed</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_criteria_8h_1a446b20fec3b67fa1645ae438d5ee8392a8a49e1fb7c72a913672d6d7423152dba" prot="public">
+          <name>CollectionMostCommented</name>
+          <initializer> 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_criteria_8h_1a446b20fec3b67fa1645ae438d5ee8392a29128c51ed4df1f33b698642c5b38977" prot="public">
+          <name>CollectionMostVoted</name>
+          <initializer> 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_criteria_8h_1a446b20fec3b67fa1645ae438d5ee8392a672d719cc321dd2a2cb4ed33ce563b36" prot="public">
+          <name>CollectionMostScored</name>
+          <initializer> 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type of collection to create. Enum with differents types of collections to create </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" line="78" bodyfile="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h" bodystart="78" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>OpenLibraClient<sp/>package.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Criteria.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>OpenLibraClient</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>Víctor<sp/>Berga<sp/>on<sp/>21/08/11<sp/>&lt;victor@victorberga.com&gt;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>2011<sp/>Víctor<sp/>Berga.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>For<sp/>the<sp/>full<sp/>copyright<sp/>and<sp/>license<sp/>information,<sp/>please<sp/>view<sp/>the<sp/>LICENSE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>file<sp/>that<sp/>was<sp/>distributed<sp/>with<sp/>this<sp/>source<sp/>code.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;Foundation/Foundation.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor">#define<sp/>FIELDS_COUNT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>13</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor">#define<sp/>DEFAULT_MAX_ITEMS<sp/><sp/><sp/>10</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor">#define<sp/>DEFAULT_ORDER<sp/><sp/><sp/><sp/><sp/><sp/><sp/>OrderAsc</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor">#define<sp/>DEFAULT_SINCE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>SinceNone</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="35"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>FieldId<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>FieldTitle<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>FieldAuthor<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>FieldPublisher<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>FieldPublisherDate<sp/><sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>FieldLang<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>5,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>FieldKeyworkd<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>6,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>FieldCategory<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>7,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>FieldCategoryId<sp/><sp/><sp/><sp/><sp/>=<sp/>8,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>FieldSubcategory<sp/><sp/><sp/><sp/>=<sp/>9,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>FieldSubcategoryId<sp/><sp/>=<sp/>10,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>FieldCriteria<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>11,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>FieldTag<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>12</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}<sp/>Field;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>OrderAsc<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>OrderDesc<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>OrderNewest<sp/><sp/><sp/><sp/><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>OrderOldest<sp/><sp/><sp/><sp/><sp/>=<sp/>3</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}<sp/>Order;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>SinceNone<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>SinceToday<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>SinceLastWeek<sp/><sp/><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>SinceLastMonth<sp/><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>SinceLastYear<sp/><sp/><sp/>=<sp/>4</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}<sp/>Since;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>CollectionNone<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>CollectionMostViewed<sp/><sp/><sp/><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>CollectionMostCommented<sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>CollectionMostVoted<sp/><sp/><sp/><sp/><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>CollectionMostScored<sp/><sp/><sp/><sp/>=<sp/>4</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}<sp/>Collection;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="interface_criteria" refkind="compound"><highlight class="keyword">@interface<sp/></highlight><highlight class="normal"><ref refid="interface_criteria" kindref="compound">Criteria</ref><sp/>:<sp/>NSObject<sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keyword">@private</highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_maxItems;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>Order<sp/>_order;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>Since<sp/>_since;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>Collection<sp/>_collection;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>NSMutableArray<sp/>*_values;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="interface_criteria_1a7de2a86a0167151d57ab63fa45e186c3" refkind="member"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>assign)<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxItems;</highlight></codeline>
+<codeline lineno="107" refid="interface_criteria_1af6652c36b822dbeda4ef46002149a7bc" refkind="member"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>assign)<sp/>Order<sp/>order;</highlight></codeline>
+<codeline lineno="111" refid="interface_criteria_1a9d2c4c96b4c91226f0d0aac9bce08a4f" refkind="member"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>assign)<sp/>Since<sp/>since;</highlight></codeline>
+<codeline lineno="115" refid="interface_criteria_1a52906da275ae0744abeba6007790553f" refkind="member"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>assign)<sp/>Collection<sp/>collection;</highlight></codeline>
+<codeline lineno="119" refid="interface_criteria_1a7278bbc86d128209a3661199fc61ffd9" refkind="member"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>readonly)<sp/>NSArray<sp/>*values;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal">-<sp/>(void)setField:(Field)field<sp/>withValue:(NSString<sp/>*)value;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal">-<sp/>(void)resetField:(Field)field;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal">-<sp/>(void)resetAllFields;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal">-<sp/>(NSString<sp/>*)requestParameters;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="keyword">@end</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/vbergae/Documents/Cocoa/OpenLibraClient/OpenLibraClient/OpenLibraClient/Criteria.h"/>
+  </compounddef>
+</doxygen>

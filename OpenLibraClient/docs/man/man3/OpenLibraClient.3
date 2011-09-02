@@ -1,0 +1,65 @@
+.TH "OpenLibraClient" 3 "Sat Sep 3 2011" "Version 1.0.0" "OpenLibra Client" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+OpenLibraClient \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#import <OpenLibraClient.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "(id) - \fBinitWithCriteria:\fP"
+.br
+.ti -1c
+.RI "(void) - \fBfetchRequest\fP"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "\fBCriteria\fP * \fBcriteria\fP"
+.br
+.ti -1c
+.RI "NSArray * \fBbooks\fP"
+.br
+.ti -1c
+.RI "id< \fBOpenLibraDelegate\fP > \fBdelegate\fP"
+.br
+.ti -1c
+.RI "NSURLRequest * \fBserviceURLRequest\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBOpenLibraClient\fP is the main class to fetch requests to OpenLibra Service. 
+.SH "Member Function Documentation"
+.PP 
+.SS "- (void) fetchRequest "Send an asyncrhonous request to the OpenLibra Service. 
+.SS "- (id) initWithCriteria: (\fBCriteria\fP *)criteria"Initializer. Creates an instance of \fBOpenLibraClient\fP with the given \fBCriteria\fP.
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fBCriteria\fP\fP Search criterium 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+OpenLibraclient Initialized client 
+.RE
+.PP
+
+.SH "Property Documentation"
+.PP 
+.SS "- (NSArray* OpenLibraClient.)books\fC [read, assign]\fP"Array with all books returned by the service 
+.SS "- (\fBCriteria\fP* OpenLibraClient.)criteria\fC [read, write, retain]\fP"\fBCriteria\fP to make a request to OpenLibra service. 
+.SS "- (id<\fBOpenLibraDelegate\fP> OpenLibraClient.)delegate\fC [read, write, assign]\fP"Delegate object which implements \fBOpenLibraDelegate\fP 
+.SS "- (NSURLRequest *) serviceURLRequest\fC [read, assign]\fP"Returns generated NSURLRequest object using \fBCriteria\fP values. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for OpenLibra Client from the source code.

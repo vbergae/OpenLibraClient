@@ -1,0 +1,89 @@
+\hypertarget{interface_open_libra_client}{
+\section{OpenLibraClient Class Reference}
+\label{interface_open_libra_client}\index{OpenLibraClient@{OpenLibraClient}}
+}
+
+
+{\ttfamily \#import $<$OpenLibraClient.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_open_libra_client_ad146dbb3fa49dc728f9b586d107801f7}{initWithCriteria:}
+\item 
+(void) -\/ \hyperlink{interface_open_libra_client_a4aa51fabaa299898e53c77ef33f5b1a6}{fetchRequest}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_criteria}{Criteria} $\ast$ \hyperlink{interface_open_libra_client_afe8b3b6e59856c494c05b2967a0dffd2}{criteria}
+\item 
+NSArray $\ast$ \hyperlink{interface_open_libra_client_a56a391d011a068a6b4c1369a1860b198}{books}
+\item 
+id$<$ \hyperlink{protocol_open_libra_delegate-p}{OpenLibraDelegate} $>$ \hyperlink{interface_open_libra_client_a4d0bb75196cc3cdb9631372a3a09434f}{delegate}
+\item 
+NSURLRequest $\ast$ \hyperlink{interface_open_libra_client_ab1edd647861203cf4455c9a3711cdd41}{serviceURLRequest}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_open_libra_client}{OpenLibraClient} is the main class to fetch requests to OpenLibra Service. 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_open_libra_client_a4aa51fabaa299898e53c77ef33f5b1a6}{
+\index{OpenLibraClient@{OpenLibraClient}!fetchRequest@{fetchRequest}}
+\index{fetchRequest@{fetchRequest}!OpenLibraClient@{OpenLibraClient}}
+\subsubsection[{fetchRequest}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) fetchRequest 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_open_libra_client_a4aa51fabaa299898e53c77ef33f5b1a6}
+Send an asyncrhonous request to the OpenLibra Service. \hypertarget{interface_open_libra_client_ad146dbb3fa49dc728f9b586d107801f7}{
+\index{OpenLibraClient@{OpenLibraClient}!initWithCriteria:@{initWithCriteria:}}
+\index{initWithCriteria:@{initWithCriteria:}!OpenLibraClient@{OpenLibraClient}}
+\subsubsection[{initWithCriteria:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) initWithCriteria: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf Criteria} $\ast$)}]{criteria}
+\end{DoxyParamCaption}
+}}
+\label{interface_open_libra_client_ad146dbb3fa49dc728f9b586d107801f7}
+Initializer. Creates an instance of \hyperlink{interface_open_libra_client}{OpenLibraClient} with the given \hyperlink{interface_criteria}{Criteria}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{interface_criteria}{Criteria}} & Search criterium \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OpenLibraclient Initialized client 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_open_libra_client_a56a391d011a068a6b4c1369a1860b198}{
+\index{OpenLibraClient@{OpenLibraClient}!books@{books}}
+\index{books@{books}!OpenLibraClient@{OpenLibraClient}}
+\subsubsection[{books}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSArray$\ast$ OpenLibraClient.)books\hspace{0.3cm}{\ttfamily  \mbox{[}read, assign\mbox{]}}}}
+\label{interface_open_libra_client_a56a391d011a068a6b4c1369a1860b198}
+Array with all books returned by the service \hypertarget{interface_open_libra_client_afe8b3b6e59856c494c05b2967a0dffd2}{
+\index{OpenLibraClient@{OpenLibraClient}!criteria@{criteria}}
+\index{criteria@{criteria}!OpenLibraClient@{OpenLibraClient}}
+\subsubsection[{criteria}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Criteria}$\ast$ OpenLibraClient.)criteria\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, retain\mbox{]}}}}
+\label{interface_open_libra_client_afe8b3b6e59856c494c05b2967a0dffd2}
+\hyperlink{interface_criteria}{Criteria} to make a request to OpenLibra service. \hypertarget{interface_open_libra_client_a4d0bb75196cc3cdb9631372a3a09434f}{
+\index{OpenLibraClient@{OpenLibraClient}!delegate@{delegate}}
+\index{delegate@{delegate}!OpenLibraClient@{OpenLibraClient}}
+\subsubsection[{delegate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id$<${\bf OpenLibraDelegate}$>$ OpenLibraClient.)delegate\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}
+\label{interface_open_libra_client_a4d0bb75196cc3cdb9631372a3a09434f}
+Delegate object which implements \hyperlink{protocol_open_libra_delegate-p}{OpenLibraDelegate} \hypertarget{interface_open_libra_client_ab1edd647861203cf4455c9a3711cdd41}{
+\index{OpenLibraClient@{OpenLibraClient}!serviceURLRequest@{serviceURLRequest}}
+\index{serviceURLRequest@{serviceURLRequest}!OpenLibraClient@{OpenLibraClient}}
+\subsubsection[{serviceURLRequest}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSURLRequest $\ast$) serviceURLRequest\hspace{0.3cm}{\ttfamily  \mbox{[}read, assign\mbox{]}}}}
+\label{interface_open_libra_client_ab1edd647861203cf4455c9a3711cdd41}
+Returns generated NSURLRequest object using \hyperlink{interface_criteria}{Criteria} values. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+OpenLibraClient.h\item 
+OpenLibraClient.m\end{DoxyCompactItemize}

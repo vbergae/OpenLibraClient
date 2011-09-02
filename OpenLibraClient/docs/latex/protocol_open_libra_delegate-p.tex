@@ -1,0 +1,102 @@
+\hypertarget{protocol_open_libra_delegate-p}{
+\section{$<$OpenLibraDelegate$>$ Protocol Reference}
+\label{protocol_open_libra_delegate-p}\index{OpenLibraDelegate-\/p@{OpenLibraDelegate-\/p}}
+}
+
+
+{\ttfamily \#import $<$OpenLibraClientDelegate.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_open_libra_delegate-p_aece69a1f2ae2e8c51940f16944f4e591}{willStartConnection:}
+\item 
+(void) -\/ \hyperlink{protocol_open_libra_delegate-p_aa94bd8b4a5c416d7a1da07dceb6463d7}{openLibraClient:didStartConnection:}
+\item 
+(void) -\/ \hyperlink{protocol_open_libra_delegate-p_ac29b069870f33c7037b7616e18dc4964}{openLibraClient:didFailConnectionWithError:}
+\item 
+(void) -\/ \hyperlink{protocol_open_libra_delegate-p_a29fca4a65b31657321a091bb07641a2b}{openLibraClientDidFinishLoading:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Messages sent to delegate while OpenLibreClient proccess the request to API 
+
+\subsection{Member Function Documentation}
+\hypertarget{protocol_open_libra_delegate-p_ac29b069870f33c7037b7616e18dc4964}{
+\index{OpenLibraDelegate-\/p@{OpenLibraDelegate-\/p}!openLibraClient:didFailConnectionWithError:@{openLibraClient:didFailConnectionWithError:}}
+\index{openLibraClient:didFailConnectionWithError:@{openLibraClient:didFailConnectionWithError:}!OpenLibraDelegate-p@{OpenLibraDelegate-\/p}}
+\subsubsection[{openLibraClient:didFailConnectionWithError:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void {\bf OpenLibraDelegate}-\/p.)openLibraClient: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf OpenLibraClient} $\ast$)}]{client}
+\item[{didFailConnectionWithError:(NSError $\ast$)}]{error}
+\end{DoxyParamCaption}
+}}
+\label{protocol_open_libra_delegate-p_ac29b069870f33c7037b7616e18dc4964}
+Sent when the request fails
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{interface_open_libra_client}{OpenLibraClient}} & Sender \\
+\hline
+{\em NSError} & Encapsulates error information \\
+\hline
+\end{DoxyParams}
+\hypertarget{protocol_open_libra_delegate-p_aa94bd8b4a5c416d7a1da07dceb6463d7}{
+\index{OpenLibraDelegate-\/p@{OpenLibraDelegate-\/p}!openLibraClient:didStartConnection:@{openLibraClient:didStartConnection:}}
+\index{openLibraClient:didStartConnection:@{openLibraClient:didStartConnection:}!OpenLibraDelegate-p@{OpenLibraDelegate-\/p}}
+\subsubsection[{openLibraClient:didStartConnection:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void {\bf OpenLibraDelegate}-\/p.)openLibraClient: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf OpenLibraClient} $\ast$)}]{client}
+\item[{didStartConnection:(NSURLConnection $\ast$)}]{connection}
+\end{DoxyParamCaption}
+}}
+\label{protocol_open_libra_delegate-p_aa94bd8b4a5c416d7a1da07dceb6463d7}
+Sent when \hyperlink{interface_open_libra_client}{OpenLibraClient} did start a connection to service
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{interface_open_libra_client}{OpenLibraClient}} & Sender \\
+\hline
+{\em NSURLConnection} & Connection object \\
+\hline
+\end{DoxyParams}
+\hypertarget{protocol_open_libra_delegate-p_a29fca4a65b31657321a091bb07641a2b}{
+\index{OpenLibraDelegate-\/p@{OpenLibraDelegate-\/p}!openLibraClientDidFinishLoading:@{openLibraClientDidFinishLoading:}}
+\index{openLibraClientDidFinishLoading:@{openLibraClientDidFinishLoading:}!OpenLibraDelegate-p@{OpenLibraDelegate-\/p}}
+\subsubsection[{openLibraClientDidFinishLoading:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void {\bf OpenLibraDelegate}-\/p.)openLibraClientDidFinishLoading: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf OpenLibraClient} $\ast$)}]{client}
+\end{DoxyParamCaption}
+}}
+\label{protocol_open_libra_delegate-p_a29fca4a65b31657321a091bb07641a2b}
+Sent when \hyperlink{interface_open_libra_client}{OpenLibraClient} did finish to fetch the request
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{interface_open_libra_client}{OpenLibraClient}} & Sender \\
+\hline
+{\em NSArray} & All books returned by the service \\
+\hline
+\end{DoxyParams}
+\hypertarget{protocol_open_libra_delegate-p_aece69a1f2ae2e8c51940f16944f4e591}{
+\index{OpenLibraDelegate-\/p@{OpenLibraDelegate-\/p}!willStartConnection:@{willStartConnection:}}
+\index{willStartConnection:@{willStartConnection:}!OpenLibraDelegate-p@{OpenLibraDelegate-\/p}}
+\subsubsection[{willStartConnection:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void {\bf OpenLibraDelegate}-\/p.)willStartConnection: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf OpenLibraClient} $\ast$)}]{client}
+\end{DoxyParamCaption}
+}}
+\label{protocol_open_libra_delegate-p_aece69a1f2ae2e8c51940f16944f4e591}
+Sent when \hyperlink{interface_open_libra_client}{OpenLibraClient} will start a connection to service
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{interface_open_libra_client}{OpenLibraClient}} & Sender \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+OpenLibraClientDelegate.h\end{DoxyCompactItemize}
