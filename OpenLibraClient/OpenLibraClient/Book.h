@@ -11,9 +11,23 @@
 
 #import <Foundation/Foundation.h>
 
-#define ID_KEY          @"ID"
-#define TITLE_KEY       @"title"
-#define AUTHOR_KEY      @"author"
+/**
+ This constants must be used as key of dictionary with book properties
+ */ 
+extern NSString * const kIdKey;
+extern NSString * const kTitleKey;
+extern NSString * const kAuthorKey;
+extern NSString * const kPublisherKey;
+extern NSString * const kPublisherDateKey;
+extern NSString * const kPagesKey;
+extern NSString * const kLanguageKey;
+extern NSString * const kURLDetailsKey;
+extern NSString * const kURLDownloadKey;
+extern NSString * const kCoverKey;
+extern NSString * const kRatingKey;
+extern NSString * const kNumCommentsKey;
+extern NSString * const kCategoriesKey;
+extern NSString * const kTagsKey;
 
 /**
  Class to represent a Book in the OpenLibra service.
@@ -26,6 +40,17 @@
     int _id;
     NSString *_title;
     NSString *_author;
+    NSString *_publisher;
+    int _publisherDate;
+    int _pages;
+    NSString *_language;
+    NSString *_URLDetails;
+    NSString *_URLDownload;
+    NSString *_cover;
+    float _rating;
+    int _numComments;
+    NSString *_categories;
+    NSString *_tags;
 }
     
 /**
@@ -40,7 +65,59 @@
  Book's author
  */
 @property (nonatomic, retain) NSString *author;
+/**
+ Book's publisher
+ */
+@property (nonatomic, retain) NSString *publisher;
+/**
+ Book's publisher date
+ */
+@property (nonatomic, assign) int publisherDate;
+/**
+ Book's pages
+ */
+@property (nonatomic, assign) int pages;
+/**
+ Book's language
+ */
+@property (nonatomic, retain) NSString *language;
+/**
+ String with the url to book's details
+ */
+@property (nonatomic, retain) NSString *URLDetails;
+/**
+ String with the download url
+ */
+@property (nonatomic, retain) NSString *URLDownload;
+/**
+ String with url to book's cover
+ */
+@property (nonatomic, retain) NSString *cover;
+/**
+ Book's rating
+ */
+@property (nonatomic, assign) float rating;
+/**
+ Number of comments about this book
+ */
+@property (nonatomic, assign) int numComments;
+/**
+ Book's categories
+ */
+@property (nonatomic, retain) NSString *categories;
+/**
+ Book's tags
+ */
+@property (nonatomic, retain) NSString *tags;
 
+
+/**
+ Intialices a new Book object using given NSDictionary to fill all
+ properties
+ 
+ @param NSDictionary Dictionary with all properties in a key/value format
+ @return Book
+ */
 - (id)initWithDictionary:(NSDictionary *)dictionary;
 
 #pragma mark -
