@@ -72,6 +72,18 @@ typedef enum {
 } Since;
 
 /**
+ Type of collection to create.
+ Enum with differents types of collections to create
+ */
+typedef enum {
+    CollectionNone          = 0,
+    CollectionMostViewed    = 1,
+    CollectionMostCommented = 2,
+    CollectionMostVoted     = 3,
+    CollectionMostScored    = 4
+} Collection;
+
+/**
  Criteria class.
  
  Defines the criteria searchs to make the request to OpenLibra API.
@@ -81,6 +93,7 @@ typedef enum {
     int _maxItems;
     Order _order;
     Since _since;
+    Collection _collection;
     NSMutableArray *_values;
 }
 
@@ -96,6 +109,10 @@ typedef enum {
  Since when a book is available
  */
 @property (nonatomic, assign) Since since;
+/**
+ Type of collection to create
+ */
+@property (nonatomic, assign) Collection collection;
 /**
  Array with all the values of the fields
  */

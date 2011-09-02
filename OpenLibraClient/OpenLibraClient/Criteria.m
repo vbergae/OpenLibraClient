@@ -17,6 +17,7 @@
 - (NSString *)addOrderTo:(NSString *)string;
 - (NSString *)addMaxItemsTo:(NSString *)string;
 - (NSString *)addSinceTo:(NSString *)string;
+- (NSString *)addCollectionTo:(NSString *)string;
 + (NSArray *)ApiFieldNames;
 
 @end
@@ -26,6 +27,7 @@
 @synthesize maxItems    = _maxItems;
 @synthesize order       = _order;
 @synthesize since       = _since;
+@synthesize collection  = _collection;
 @synthesize values      = _values;
 
 - (id)init
@@ -134,6 +136,34 @@
         }
         
         string = [string stringByAppendingFormat:@"&since=%@", since]; 
+    }
+    
+    return string;
+}
+
+- (NSString *)addCollectionTo:(NSString *)string
+{
+    if (self.collection != CollectionNone) {
+        NSString *collection;
+        
+        switch (self.collection) {
+            case CollectionMostViewed:
+                collection = @"most_viewed";
+                break;
+            case CollectionMostCommented:
+                collection = @"most_commented";
+                break;
+            case CollectionMostVoted:
+                collection = @"most_voted";
+                break;
+            case CollectionMostScored:
+                collection = @"most_scored";
+                break;
+            default:
+                break;
+        }
+        
+        string = [string stringByAppendingFormat:@"&criteria=%@", collection];
     }
     
     return string;
