@@ -11,6 +11,11 @@
 
 #import "Criteria.h"
 
+int const kFieldsCount      = 13;
+int const kDefaultMaxItems  = 10;
+Order const kDefaultOrder   = OrderAsc;
+Since const kDefaultSince   = SinceNone;
+
 @interface Criteria(Private)
 
 - (NSString *)addValuesTo:(NSString *)string;
@@ -35,13 +40,13 @@
     self = [super init];
     if (self) {
         // Setup initial values
-        [self setMaxItems:DEFAULT_MAX_ITEMS];
-        [self setOrder:DEFAULT_ORDER];
-        [self setSince:DEFAULT_SINCE];
+        [self setMaxItems:kDefaultMaxItems];
+        [self setOrder:kDefaultOrder];
+        [self setSince:kDefaultSince];
         
         // Setup initial field values
-        _values = [[NSMutableArray alloc] initWithCapacity:FIELDS_COUNT];
-        for (int i = 0; i < FIELDS_COUNT; i++) {
+        _values = [[NSMutableArray alloc] initWithCapacity:kFieldsCount];
+        for (int i = 0; i < kFieldsCount; i++) {
             [_values insertObject:[NSNull null] 
                           atIndex:i];
         }
@@ -67,7 +72,7 @@
 - (NSString *)addValuesTo:(NSString *)string
 {
     id value;
-    for (int i = 0; i < FIELDS_COUNT; ++i) {
+    for (int i = 0; i < kFieldsCount; ++i) {
         value = [_values objectAtIndex:i];
         
         if (value != [NSNull null]) {
@@ -174,7 +179,7 @@
 
 - (void)setField:(Field)field withValue:(NSString *)value
 {
-    NSAssert(field <= FIELDS_COUNT || field >= 0, 
+    NSAssert(field <= kFieldsCount || field >= 0, 
              @"Field out of range");
     
     [_values replaceObjectAtIndex:field withObject:value];
@@ -182,7 +187,7 @@
 
 - (void)resetField:(Field)field
 {
-    NSAssert(field <= FIELDS_COUNT || field >= 0, 
+    NSAssert(field <= kFieldsCount || field >= 0, 
              @"Field out of range");
     [_values replaceObjectAtIndex:field withObject:[NSNull null]];
 }
@@ -212,9 +217,9 @@
 
 + (NSArray *)ApiFieldNames
 {
-    NSMutableArray *fields = [NSMutableArray arrayWithCapacity:FIELDS_COUNT];
+    NSMutableArray *fields = [NSMutableArray arrayWithCapacity:kFieldsCount];
     
-    for (int i = 0; i < FIELDS_COUNT; ++i) {
+    for (int i = 0; i < kFieldsCount; ++i) {
         switch (i) {
             case FieldId:
                 [fields insertObject:@"id" atIndex:i];

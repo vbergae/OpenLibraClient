@@ -12,23 +12,6 @@
 #import <Foundation/Foundation.h>
 
 /**
- Current number fields wicht Criteria supports
- */
-#define FIELDS_COUNT        13
-/**
- Default max results
- */
-#define DEFAULT_MAX_ITEMS   10
-/**
- Default order
- */
-#define DEFAULT_ORDER       OrderAsc
-/**
- Default since
- */
-#define DEFAULT_SINCE       SinceNone
-
-/**
  Field names.
  Enum with the fields names
  */
@@ -82,6 +65,24 @@ typedef enum {
     CollectionMostVoted     = 3,
     CollectionMostScored    = 4
 } Collection;
+
+/**
+ Current number fields wicht Criteria supports
+ */
+extern int const kFieldsCount;
+/**
+ Default max results
+ */
+extern int const kDefaultMaxItems;
+/**
+ Default order
+ */
+extern Order const kDefaultOrder;
+/**
+ Default since
+ */
+extern Since const kDefaultSince;
+
 
 /**
  Criteria class.

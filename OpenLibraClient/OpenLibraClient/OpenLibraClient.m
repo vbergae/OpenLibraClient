@@ -12,6 +12,9 @@
 #import "OpenLibraClient.h"
 #import "SBJson.h"
 
+NSString * const kApiHost   = @"openlibra.com";
+NSString * const kApiPath   = @"/api/v1/get/?";
+
 @implementation OpenLibraClient
 
 @synthesize criteria    = _criteria;
@@ -55,7 +58,7 @@
 - (NSURLRequest *)serviceURLRequest
 {
     NSString *urlString = [[NSString stringWithFormat:@"http://%@%@%@",
-                           API_HOST, API_PATH, 
+                           kApiHost, kApiPath, 
                            [self.criteria requestParameters]] 
                            stringByAddingPercentEscapesUsingEncoding:
                            NSUTF8StringEncoding];

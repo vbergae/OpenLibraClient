@@ -15,8 +15,8 @@
 #import "Criteria.h"
 #import "Book.h"
 
-#define API_HOST    @"openlibra.com"
-#define API_PATH    @"/api/v1/get/?"
+extern NSString * const kApiHost;
+extern NSString * const kApiPath;
 
 /**
  OpenLibraClient is the main class to fetch requests to OpenLibra Service.
