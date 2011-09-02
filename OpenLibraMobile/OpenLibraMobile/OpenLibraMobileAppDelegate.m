@@ -18,8 +18,21 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     OpenLibraClient *client = [[[OpenLibraClient alloc] init] autorelease];
     [client setDelegate:self];
+    
+    // Example: 10 Last books added
     [client.criteria setOrder:OrderNewest];
     [client.criteria setMaxItems:10];
+    
+    // Example: Book with id: 589
+    // [client.criteria setField:FieldId withValue:@"589"];
+
+    // Example: All books of author: Rebecca Murphey
+    // [client.criteria setField:FieldAuthor withValue:@"Rebecca Murphey"];
+    
+    // Example: 20 most viewed books
+    // [client.criteria setCollection:CollectionMostViewed];
+    // [client.criteria setMaxItems:20];
+    
     [client fetchRequest];
     
     // Override point for customization after application launch.
