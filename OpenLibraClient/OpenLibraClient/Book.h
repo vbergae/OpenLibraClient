@@ -43,4 +43,14 @@
 
 - (id)initWithDictionary:(NSDictionary *)dictionary;
 
+#pragma mark -
+#pragma mark Class Methods
+
+/**
+ Creates an autoreleased book using given dictionary
+ 
+ @return Book Autoreleased book
+ */
++ (Book *)bookWithDictionary:(NSDictionary *)dictionary;
+
 @end

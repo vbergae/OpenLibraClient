@@ -42,6 +42,14 @@
 }
 
 #pragma mark -
+#pragma mark Class Methods
+
++ (Book *)bookWithDictionary:(NSDictionary *)dictionary
+{
+    return [[[Book alloc] initWithDictionary:dictionary] autorelease];
+}
+
+#pragma mark -
 #pragma mark Debug methods
 
 - (NSString *)description
