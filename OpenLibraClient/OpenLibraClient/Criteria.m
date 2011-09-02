@@ -216,6 +216,8 @@
             case FieldSubcategory:
                 [fields insertObject:@"subcategory" atIndex:i];
                 break;
+            case FieldSubcategoryId:
+                [fields insertObject:@"subcategory_id" atIndex:i];
             case FieldCriteria:
                 [fields insertObject:@"criteria" atIndex:i];
                 break;
