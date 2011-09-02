@@ -218,7 +218,9 @@
                 break;
             case FieldCriteria:
                 [fields insertObject:@"criteria" atIndex:i];
-                break; 
+                break;
+            case FieldTag:
+                [fields insertObject:@"any_tags" atIndex:i];
             default:
                 break;
         }

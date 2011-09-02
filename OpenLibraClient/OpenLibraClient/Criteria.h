@@ -14,7 +14,7 @@
 /**
  Current number fields wicht Criteria supports
  */
-#define FIELDS_COUNT        11
+#define FIELDS_COUNT        12
 /**
  Default max results
  */
@@ -43,7 +43,8 @@ typedef enum {
     FieldCategory       = 7,
     FieldCategoryId     = 8,
     FieldSubcategory    = 9,
-    FieldCriteria       = 10
+    FieldCriteria       = 10,
+    FieldTag            = 11
 } Field;
 
 /**
