@@ -190,10 +190,10 @@
                 [fields insertObject:@"id" atIndex:i];
                 break;                
             case FieldTitle:
-                [fields insertObject:@"title" atIndex:i];
+                [fields insertObject:@"book_title" atIndex:i];
                 break;                
             case FieldAuthor:
-                [fields insertObject:@"author" atIndex:i];
+                [fields insertObject:@"book_author" atIndex:i];
                 break;
             case FieldPublisher:
                 [fields insertObject:@"publisher" atIndex:i];
