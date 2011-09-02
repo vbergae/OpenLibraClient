@@ -34,7 +34,8 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
     // [client.criteria setMaxItems:20];
     
     [client fetchRequest];
-    
+
+    NSLog(@"[0]client rc: %d", [client retainCount]);    
     // Override point for customization after application launch.
     [self.window makeKeyAndVisible];
     return YES;
@@ -55,18 +56,28 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 - (void)willStartConnection:(OpenLibraClient *)client
 {
     NSLog(@"OpenLibraClient will start connection", nil);
+    NSLog(@"[10]client rc: %d", [client retainCount]);   
 }
 
 - (void)openLibraClient:(OpenLibraClient *)client 
      didStartConnection:(NSURLConnection *)connection
 {
     NSLog(@"OpenLibraClient did start connection", nil);
+    NSLog(@"[20]client rc: %d", [client retainCount]);   
+    
+    [self.window setBackgroundColor:[UIColor lightGrayColor]];
 }
 
 - (void)openLibraClient:(OpenLibraClient *)client 
 didFailConnectionWithError:(NSError *)error
 {
     NSLog(@"OpenLibraClient did fail with error: %@", error);    
+    
+    NSLog(@"[30]client rc: %d", [client retainCount]);    
+    [client release];
+    NSLog(@"[40]client rc: %d", [client retainCount]);    
+    
+    [self.window setBackgroundColor:[UIColor redColor]];
 }
 
 - (void)openLibraClientDidFinishLoading:(OpenLibraClient *)client
@@ -82,6 +93,8 @@ didFailConnectionWithError:(NSError *)error
               client.criteria.requestParameters);
     }
 
+    NSLog(@"[50]client rc: %d", [client retainCount]);    
+    [self.window setBackgroundColor:[UIColor greenColor]];
 }
 
 #pragma mark -
