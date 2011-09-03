@@ -217,51 +217,13 @@ Since const kDefaultSince   = SinceNone;
 
 + (NSArray *)ApiFieldNames
 {
-    NSMutableArray *fields = [NSMutableArray arrayWithCapacity:kFieldsCount];
+    static NSArray *fields = nil;
     
-    for (int i = 0; i < kFieldsCount; ++i) {
-        switch (i) {
-            case FieldId:
-                [fields insertObject:@"id" atIndex:i];
-                break;                
-            case FieldTitle:
-                [fields insertObject:@"book_title" atIndex:i];
-                break;                
-            case FieldAuthor:
-                [fields insertObject:@"book_author" atIndex:i];
-                break;
-            case FieldPublisher:
-                [fields insertObject:@"publisher" atIndex:i];
-                break;
-            case FieldPublisherDate:
-                [fields insertObject:@"publisher_date" atIndex:i];
-                break;
-            case FieldLang:
-                [fields insertObject:@"lang" atIndex:i];
-                break;
-            case FieldKeyworkd:
-                [fields insertObject:@"keywork" atIndex:i];
-                break;
-            case FieldCategory:
-                [fields insertObject:@"category" atIndex:i];
-                break;
-            case FieldCategoryId:
-                [fields insertObject:@"category_id" atIndex:i];
-                break;
-            case FieldSubcategory:
-                [fields insertObject:@"subcategory" atIndex:i];
-                break;
-            case FieldSubcategoryId:
-                [fields insertObject:@"subcategory_id" atIndex:i];
-                break;
-            case FieldCriteria:
-                [fields insertObject:@"criteria" atIndex:i];
-                break;
-            case FieldTag:
-                [fields insertObject:@"any_tags" atIndex:i];
-            default:
-                break;
-        }
+    if (!fields) {
+        fields = [NSArray arrayWithObjects:@"id", @"book_title", @"book_author",
+                  @"publisher", @"publisher_date", @"lang", @"keyword",
+                  @"category", @"category_id", @"subcategory",
+                  @"subcategory_id", @"criteria", @"any_tags", nil];
     }
     
     return fields;
