@@ -194,7 +194,7 @@ Since const kDefaultSince   = SinceNone;
 
 - (void)resetAllFields
 {
-    for (int i = 0; i < [_values count]; ++i) {
+    for (int i = 0; i < kFieldsCount; ++i) {
         [self resetField:i];
     }
 }
@@ -253,6 +253,7 @@ Since const kDefaultSince   = SinceNone;
                 break;
             case FieldSubcategoryId:
                 [fields insertObject:@"subcategory_id" atIndex:i];
+                break;
             case FieldCriteria:
                 [fields insertObject:@"criteria" atIndex:i];
                 break;
