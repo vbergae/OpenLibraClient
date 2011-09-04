@@ -18,11 +18,11 @@
     _criteria = [[Criteria alloc] init];
     STAssertNotNil(_criteria, @"Criteria intantation fails");
     
-    STAssertTrue([_criteria maxItems] == DEFAULT_MAX_ITEMS, 
+    STAssertTrue([_criteria maxItems] == kDefaultMaxItems, 
                  @"Setting initial max items fails");
-    STAssertTrue([_criteria order] == DEFAULT_ORDER, 
+    STAssertTrue([_criteria order] == kDefaultOrder, 
                  @"Setting initial order fails");
-    STAssertTrue([_criteria since] == DEFAULT_SINCE,
+    STAssertTrue([_criteria since] == kDefaultSince,
                  @"Setting initial since fails");
     
     for (id parameter in _criteria.values) {
