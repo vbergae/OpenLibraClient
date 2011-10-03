@@ -28,8 +28,8 @@
 	<true/>
 	<key>NSMainNibFile</key>
 	<string>MainWindow_iPhone</string>
-	<key>NSMainNibFile~ipad</key>
-	<string>MainWindow_iPad</string>
+	<key>UIMainStoryboardFile~ipad</key>
+	<string>Storyboard</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

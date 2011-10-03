@@ -65,7 +65,7 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
     NSLog(@"OpenLibraClient did start connection", nil);
     NSLog(@"[20]client rc: %d", [client retainCount]);   
     
-    [self.window setBackgroundColor:[UIColor lightGrayColor]];
+    //[self.window setBackgroundColor:[UIColor lightGrayColor]];
 }
 
 - (void)openLibraClient:(OpenLibraClient *)client 

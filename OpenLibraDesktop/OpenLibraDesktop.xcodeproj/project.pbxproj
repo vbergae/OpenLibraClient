@@ -206,6 +206,9 @@
 /* Begin PBXProject section */
 		CC16BD7A140154B5004AC387 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = CC16BD7D140154B5004AC387 /* Build configuration list for PBXProject "OpenLibraDesktop" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;

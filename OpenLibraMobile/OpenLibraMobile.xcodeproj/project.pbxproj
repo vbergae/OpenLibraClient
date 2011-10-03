@@ -26,6 +26,7 @@
 		CC1E1A5614093FB500FD2E59 /* OpenLibraMobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1E1A5514093FB500FD2E59 /* OpenLibraMobileTests.m */; };
 		CC1E1A6014093FC700FD2E59 /* libOpenLibraClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1E1A5F14093FC700FD2E59 /* libOpenLibraClient.a */; };
 		CC8A6F5D1409BC680032618D /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8A6F5C1409BC680032618D /* NSObject+SBJson.m */; };
+		CC9FDBA814212EC200DCD514 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC9FDBA714212EC200DCD514 /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		CC1E1A5F14093FC700FD2E59 /* libOpenLibraClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOpenLibraClient.a; path = "../OpenLibraClient/build/Release-iphoneos/libOpenLibraClient.a"; sourceTree = "<group>"; };
 		CC1E1A6114093FD800FD2E59 /* OpenLibra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenLibra.h; path = ../OpenLibraClient/OpenLibraClient/OpenLibra.h; sourceTree = "<group>"; };
 		CC8A6F5C1409BC680032618D /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+SBJson.m"; path = "../OpenLibraClient/OpenLibraClient/SBJson/NSObject+SBJson.m"; sourceTree = "<group>"; };
+		CC9FDBA714212EC200DCD514 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 				CC1E1A3A14093FB500FD2E59 /* OpenLibraMobileAppDelegate_iPad.h */,
 				CC1E1A3B14093FB500FD2E59 /* OpenLibraMobileAppDelegate_iPad.m */,
 				CC1E1A3D14093FB500FD2E59 /* MainWindow_iPad.xib */,
+				CC9FDBA714212EC200DCD514 /* Storyboard.storyboard */,
 			);
 			name = iPad;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				CC1E1A2B14093FB500FD2E59 /* InfoPlist.strings in Resources */,
 				CC1E1A3814093FB500FD2E59 /* MainWindow_iPhone.xib in Resources */,
 				CC1E1A3F14093FB500FD2E59 /* MainWindow_iPad.xib in Resources */,
+				CC9FDBA814212EC200DCD514 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
