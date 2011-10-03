@@ -37,26 +37,30 @@ extern NSString * const kTagsKey;
  */
 @interface Book : NSObject {
 @private   
-    int _id;
+    int _ID;
     NSString *_title;
     NSString *_author;
     NSString *_publisher;
-    int _publisherDate;
+    int _publisher_date;
     int _pages;
     NSString *_language;
-    NSString *_URLDetails;
-    NSString *_URLDownload;
+    NSString *_url_Details;
+    NSString *_url_Download;
     NSString *_cover;
     float _rating;
-    int _numComments;
+    int _num_comments;
     NSString *_categories;
     NSString *_tags;
 }
-    
+ 
+/**
+ Returns all attributes inside NSDictionary
+ */
+@property (nonatomic, readonly) NSDictionary *attributes;
 /**
  Unique identifier of the book
  */
-@property (nonatomic, assign) int id;
+@property (nonatomic, assign) int ID;
 /**
  Book's title
  */
@@ -84,11 +88,11 @@ extern NSString * const kTagsKey;
 /**
  String with the url to book's details
  */
-@property (nonatomic, retain) NSString *URLDetails;
+@property (nonatomic, retain) NSString *url_details;
 /**
  String with the download url
  */
-@property (nonatomic, retain) NSString *URLDownload;
+@property (nonatomic, retain) NSString *url_download;
 /**
  String with url to book's cover
  */
@@ -100,7 +104,7 @@ extern NSString * const kTagsKey;
 /**
  Number of comments about this book
  */
-@property (nonatomic, assign) int numComments;
+@property (nonatomic, assign) int num_comments;
 /**
  Book's categories
  */

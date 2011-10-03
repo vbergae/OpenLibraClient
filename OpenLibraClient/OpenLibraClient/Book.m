@@ -25,43 +25,61 @@ NSString * const kRatingKey         = @"rating";
 NSString * const kNumCommentsKey    = @"num_comments";
 NSString * const kCategoriesKey     = @"categories";
 NSString * const kTagsKey           = @"tags";
-
+static NSDictionary *kDefaults;
 
 @implementation Book
 
-@synthesize id              = _id;
+@dynamic attributes;
+@synthesize ID              = _ID;
 @synthesize title           = _title;
 @synthesize author          = _author;
 @synthesize publisher       = _publisher;
-@synthesize publisherDate   = _publisherDate;
+@synthesize publisherDate   = _publisher_date;
 @synthesize pages           = _pages;
 @synthesize language        = _language;
-@synthesize URLDetails      = _URLDetails;
-@synthesize URLDownload     = _URLDownload;
+@synthesize url_details     = _url_Details;
+@synthesize url_download    = _url_Download;
 @synthesize cover           = _cover;
 @synthesize rating          = _rating;
-@synthesize numComments     = _numComments;
+@synthesize num_comments    = _num_comments;
 @synthesize categories      = _categories;
 @synthesize tags            = _tags;
 
++ (void)initialize
+{
+    kDefaults = [NSDictionary dictionaryWithObjectsAndKeys:
+                [NSNumber numberWithInt:0], kIdKey,
+                [NSNull null], kTitleKey,
+                [NSNull null], kAuthorKey, 
+                [NSNull null], kPublisherKey,
+                [NSNumber numberWithInt:0], kPublisherDateKey, 
+                [NSNumber numberWithInt:0], kPagesKey,
+                [NSNull null], kLanguageKey,
+                [NSNull null], kURLDetailsKey,
+                [NSNull null], kURLDownloadKey,
+                [NSNull null], kCoverKey,
+                [NSNumber numberWithFloat:0.0], kRatingKey,
+                [NSNumber numberWithInt:0], kNumCommentsKey,
+                [NSNull null], kCategoriesKey,
+                [NSNull null], kTagsKey,
+                nil];
+}
+
+- (id)init
+{
+    return [self initWithDictionary:kDefaults];
+}
+
 - (id)initWithDictionary:(NSDictionary *)dictionary
 {
+    if (!dictionary) return nil;
+    
     self = [super init];
     if (self) {
-        _id             = [[dictionary valueForKey:kIdKey] intValue];
-        _title          = [dictionary valueForKey:kTitleKey];
-        _author         = [dictionary valueForKey:kAuthorKey];
-        _publisher      = [dictionary valueForKey:kPublisherKey];
-        _publisherDate  = [[dictionary valueForKey:kPublisherDateKey] intValue];
-        _pages          = [[dictionary valueForKey:kPagesKey] intValue];
-        _language       = [dictionary valueForKey:kLanguageKey];
-        _URLDetails     = [dictionary valueForKey:kURLDetailsKey];
-        _URLDownload    = [dictionary valueForKey:kURLDownloadKey];
-        _cover          = [dictionary valueForKey:kCoverKey];
-        _rating         = [[dictionary valueForKey:kRatingKey] floatValue];
-        _numComments    = [[dictionary valueForKey:kNumCommentsKey] intValue];
-        _categories     = [dictionary valueForKey:kCategoriesKey];
-        _tags           = [dictionary valueForKey:kTagsKey];
+        for (NSString *key in dictionary) {
+            [self setValue:[dictionary valueForKey:key]
+                    forKey:key];
+        }
     }
     
     return self;
@@ -72,22 +90,34 @@ NSString * const kTagsKey           = @"tags";
 
 - (void)dealloc
 {
-    [self setId:0];
+    [self setID:0];
     [self setTitle:nil];
     [self setAuthor:nil];
     [self setPublisher:nil];
     [self setPublisherDate:0];
     [self setPages:0];
     [self setLanguage:nil];
-    [self setURLDetails:nil];
-    [self setURLDownload:nil];
+    [self setUrl_details:nil];
+    [self setUrl_download:nil];
     [self setCover:nil];
     [self setRating:0.0];
-    [self setNumComments:0];
+    [self setNum_comments:0];
     [self setCategories:nil];
     [self setTags:nil];
     
     [super dealloc];
+}
+
+#pragma mark -
+#pragma mark Dynamic Properties
+
+- (NSDictionary *)attributes
+{
+    return [self dictionaryWithValuesForKeys:
+            [NSArray arrayWithObjects:kIdKey, kTitleKey, kAuthorKey,
+             kPublisherKey, kPublisherDateKey, kPagesKey, kLanguageKey,
+             kURLDetailsKey, kURLDownloadKey, kCoverKey, kRatingKey,
+             kNumCommentsKey, kCategoriesKey, kTagsKey, nil]];
 }
 
 #pragma mark -
@@ -117,9 +147,9 @@ NSString * const kTagsKey           = @"tags";
             num_comments: %d \
             categories: %@ \
             tags: %@",
-            self.id, self.title, self.author, self.publisher, 
-            self.publisherDate, self.pages, self.URLDetails,
-            self.URLDownload, self.cover, self.rating, self.numComments,
+            self.ID, self.title, self.author, self.publisher, 
+            self.publisherDate, self.pages, self.url_details,
+            self.url_download, self.cover, self.rating, self.num_comments,
             self.categories, self.tags];
 }
 
