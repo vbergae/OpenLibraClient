@@ -28,6 +28,7 @@
 		CC16BD7314015407004AC387 /* Criteria.h in Headers */ = {isa = PBXBuildFile; fileRef = CC16BD15140106FC004AC387 /* Criteria.h */; settings = {ATTRIBUTES = (); }; };
 		CC16BD741401540F004AC387 /* Book.h in Headers */ = {isa = PBXBuildFile; fileRef = CC16BD1914010708004AC387 /* Book.h */; settings = {ATTRIBUTES = (); }; };
 		CC16BD771401543D004AC387 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC16BCEB140106D7004AC387 /* Foundation.framework */; };
+		CC3B4C2D143A5FA9007FE250 /* TestCriteria.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3B4C2C143A5FA9007FE250 /* TestCriteria.m */; };
 		CC76C1FB14328236000903F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC76C1FA14328236000903F9 /* UIKit.framework */; };
 		CC76C1FC14328236000903F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC16BCEB140106D7004AC387 /* Foundation.framework */; };
 		CC76C1FE14328236000903F9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC76C1FD14328236000903F9 /* CoreGraphics.framework */; };
@@ -124,6 +125,7 @@
 		CC16BD1E14010B8E004AC387 /* CirteriaTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CirteriaTests.h; sourceTree = "<group>"; };
 		CC16BD1F14010B8E004AC387 /* CirteriaTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CirteriaTests.m; sourceTree = "<group>"; };
 		CC16BD5414015396004AC387 /* MacOpenLibraClient.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = MacOpenLibraClient.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC3B4C2C143A5FA9007FE250 /* TestCriteria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCriteria.m; sourceTree = "<group>"; };
 		CC76C1F814328236000903F9 /* OpenLibraClientGHTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenLibraClientGHTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC76C1FA14328236000903F9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CC76C1FD14328236000903F9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -327,6 +329,7 @@
 			children = (
 				CC76C20014328236000903F9 /* Supporting Files */,
 				CCFAFEBB1436442A005AF66E /* TestBook.m */,
+				CC3B4C2C143A5FA9007FE250 /* TestCriteria.m */,
 			);
 			path = OpenLibraClientGHTests;
 			sourceTree = "<group>";
@@ -589,6 +592,7 @@
 			files = (
 				CC76C20614328236000903F9 /* main.m in Sources */,
 				CCFAFEBC1436442A005AF66E /* TestBook.m in Sources */,
+				CC3B4C2D143A5FA9007FE250 /* TestCriteria.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
