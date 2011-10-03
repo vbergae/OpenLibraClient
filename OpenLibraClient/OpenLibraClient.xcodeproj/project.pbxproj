@@ -28,6 +28,12 @@
 		CC16BD7314015407004AC387 /* Criteria.h in Headers */ = {isa = PBXBuildFile; fileRef = CC16BD15140106FC004AC387 /* Criteria.h */; settings = {ATTRIBUTES = (); }; };
 		CC16BD741401540F004AC387 /* Book.h in Headers */ = {isa = PBXBuildFile; fileRef = CC16BD1914010708004AC387 /* Book.h */; settings = {ATTRIBUTES = (); }; };
 		CC16BD771401543D004AC387 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC16BCEB140106D7004AC387 /* Foundation.framework */; };
+		CC76C1FB14328236000903F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC76C1FA14328236000903F9 /* UIKit.framework */; };
+		CC76C1FC14328236000903F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC16BCEB140106D7004AC387 /* Foundation.framework */; };
+		CC76C1FE14328236000903F9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC76C1FD14328236000903F9 /* CoreGraphics.framework */; };
+		CC76C20414328236000903F9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC76C20214328236000903F9 /* InfoPlist.strings */; };
+		CC76C20614328236000903F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC76C20514328236000903F9 /* main.m */; };
+		CC76C210143282CB000903F9 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC76C20F143282CB000903F9 /* GHUnitIOS.framework */; };
 		CCA099A8140440BF0069F761 /* OpenLibra.h in Headers */ = {isa = PBXBuildFile; fileRef = CCA099A7140440BF0069F761 /* OpenLibra.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CCA099A9140440BF0069F761 /* OpenLibra.h in Headers */ = {isa = PBXBuildFile; fileRef = CCA099A7140440BF0069F761 /* OpenLibra.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CCA099BC1404467A0069F761 /* OpenLibraClientDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = CCA099BB1404467A0069F761 /* OpenLibraClientDelegate.h */; };
@@ -78,10 +84,19 @@
 		CCA09A0114044A500069F761 /* SBJsonWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = CCA099D414044A500069F761 /* SBJsonWriter.h */; };
 		CCA09A0214044A500069F761 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA099D514044A500069F761 /* SBJsonWriter.m */; };
 		CCA09A0314044A500069F761 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA099D514044A500069F761 /* SBJsonWriter.m */; };
+		CCFAFEBC1436442A005AF66E /* TestBook.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFAFEBB1436442A005AF66E /* TestBook.m */; };
+		CCFAFEC0143646E8005AF66E /* libOpenLibraClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC16BCE8140106D7004AC387 /* libOpenLibraClient.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		CC16BD00140106D7004AC387 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC16BCDF140106D7004AC387 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC16BCE7140106D7004AC387;
+			remoteInfo = OpenLibraClient;
+		};
+		CCFAFEBE14364616005AF66E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CC16BCDF140106D7004AC387 /* Project object */;
 			proxyType = 1;
@@ -109,6 +124,14 @@
 		CC16BD1E14010B8E004AC387 /* CirteriaTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CirteriaTests.h; sourceTree = "<group>"; };
 		CC16BD1F14010B8E004AC387 /* CirteriaTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CirteriaTests.m; sourceTree = "<group>"; };
 		CC16BD5414015396004AC387 /* MacOpenLibraClient.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = MacOpenLibraClient.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC76C1F814328236000903F9 /* OpenLibraClientGHTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenLibraClientGHTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC76C1FA14328236000903F9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CC76C1FD14328236000903F9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CC76C20114328236000903F9 /* OpenLibraClientGHTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenLibraClientGHTests-Info.plist"; sourceTree = "<group>"; };
+		CC76C20314328236000903F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CC76C20514328236000903F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CC76C20714328236000903F9 /* OpenLibraClientGHTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenLibraClientGHTests-Prefix.pch"; sourceTree = "<group>"; };
+		CC76C20F143282CB000903F9 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = ../../../../Downloads/GHUnitIOS.framework; sourceTree = "<group>"; };
 		CCA099A7140440BF0069F761 /* OpenLibra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenLibra.h; sourceTree = "<group>"; };
 		CCA099BB1404467A0069F761 /* OpenLibraClientDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenLibraClientDelegate.h; sourceTree = "<group>"; };
 		CCA099BF14044A500069F761 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+SBJson.h"; path = "SBJson/NSObject+SBJson.h"; sourceTree = "<group>"; };
@@ -134,6 +157,7 @@
 		CCA099D314044A500069F761 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonUTF8Stream.m; path = SBJson/SBJsonUTF8Stream.m; sourceTree = "<group>"; };
 		CCA099D414044A500069F761 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonWriter.h; path = SBJson/SBJsonWriter.h; sourceTree = "<group>"; };
 		CCA099D514044A500069F761 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonWriter.m; path = SBJson/SBJsonWriter.m; sourceTree = "<group>"; };
+		CCFAFEBB1436442A005AF66E /* TestBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestBook.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,14 +187,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CC76C1F514328236000903F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC76C1FB14328236000903F9 /* UIKit.framework in Frameworks */,
+				CC76C1FC14328236000903F9 /* Foundation.framework in Frameworks */,
+				CC76C1FE14328236000903F9 /* CoreGraphics.framework in Frameworks */,
+				CC76C210143282CB000903F9 /* GHUnitIOS.framework in Frameworks */,
+				CCFAFEC0143646E8005AF66E /* libOpenLibraClient.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		CC16BCDD140106D7004AC387 = {
 			isa = PBXGroup;
 			children = (
+				CC76C20F143282CB000903F9 /* GHUnitIOS.framework */,
 				CC16BCED140106D7004AC387 /* Classes */,
 				CC16BD03140106D7004AC387 /* Tests */,
+				CC76C1FF14328236000903F9 /* OpenLibraClientGHTests */,
 				CC16BCEA140106D7004AC387 /* Frameworks */,
 				CC16BCE9140106D7004AC387 /* Products */,
 			);
@@ -182,6 +220,7 @@
 				CC16BCE8140106D7004AC387 /* libOpenLibraClient.a */,
 				CC16BCF8140106D7004AC387 /* OpenLibraClientTests.octest */,
 				CC16BD5414015396004AC387 /* MacOpenLibraClient.dylib */,
+				CC76C1F814328236000903F9 /* OpenLibraClientGHTests.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -191,6 +230,8 @@
 			children = (
 				CC16BCEB140106D7004AC387 /* Foundation.framework */,
 				CC16BCF9140106D7004AC387 /* SenTestingKit.framework */,
+				CC76C1FA14328236000903F9 /* UIKit.framework */,
+				CC76C1FD14328236000903F9 /* CoreGraphics.framework */,
 				CC16BD5714015396004AC387 /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -279,6 +320,26 @@
 			children = (
 			);
 			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		CC76C1FF14328236000903F9 /* OpenLibraClientGHTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC76C20014328236000903F9 /* Supporting Files */,
+				CCFAFEBB1436442A005AF66E /* TestBook.m */,
+			);
+			path = OpenLibraClientGHTests;
+			sourceTree = "<group>";
+		};
+		CC76C20014328236000903F9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC76C20114328236000903F9 /* OpenLibraClientGHTests-Info.plist */,
+				CC76C20214328236000903F9 /* InfoPlist.strings */,
+				CC76C20514328236000903F9 /* main.m */,
+				CC76C20714328236000903F9 /* OpenLibraClientGHTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -388,11 +449,32 @@
 			productReference = CC16BD5414015396004AC387 /* MacOpenLibraClient.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
+		CC76C1F714328236000903F9 /* OpenLibraClientGHTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC76C20D14328236000903F9 /* Build configuration list for PBXNativeTarget "OpenLibraClientGHTests" */;
+			buildPhases = (
+				CC76C1F414328236000903F9 /* Sources */,
+				CC76C1F514328236000903F9 /* Frameworks */,
+				CC76C1F614328236000903F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCFAFEBF14364616005AF66E /* PBXTargetDependency */,
+			);
+			name = OpenLibraClientGHTests;
+			productName = OpenLibraClientGHTests;
+			productReference = CC76C1F814328236000903F9 /* OpenLibraClientGHTests.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		CC16BCDF140106D7004AC387 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = CC16BCE2140106D7004AC387 /* Build configuration list for PBXProject "OpenLibraClient" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -408,6 +490,7 @@
 				CC16BCE7140106D7004AC387 /* OpenLibraClient */,
 				CC16BCF7140106D7004AC387 /* OpenLibraClientTests */,
 				CC16BD5314015396004AC387 /* MacOpenLibraClient */,
+				CC76C1F714328236000903F9 /* OpenLibraClientGHTests */,
 			);
 		};
 /* End PBXProject section */
@@ -419,6 +502,14 @@
 			files = (
 				CC16BD08140106D7004AC387 /* InfoPlist.strings in Resources */,
 				CC16BD0A140106D7004AC387 /* OpenLibraClientTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC76C1F614328236000903F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC76C20414328236000903F9 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +583,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CC76C1F414328236000903F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC76C20614328236000903F9 /* main.m in Sources */,
+				CCFAFEBC1436442A005AF66E /* TestBook.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -500,6 +600,11 @@
 			target = CC16BCE7140106D7004AC387 /* OpenLibraClient */;
 			targetProxy = CC16BD00140106D7004AC387 /* PBXContainerItemProxy */;
 		};
+		CCFAFEBF14364616005AF66E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC16BCE7140106D7004AC387 /* OpenLibraClient */;
+			targetProxy = CCFAFEBE14364616005AF66E /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -507,6 +612,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				CC16BD07140106D7004AC387 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CC76C20214328236000903F9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC76C20314328236000903F9 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -654,6 +767,53 @@
 			};
 			name = Release;
 		};
+		CC76C20B14328236000903F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Downloads\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenLibraClientGHTests/OpenLibraClientGHTests-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "OpenLibraClientGHTests/OpenLibraClientGHTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CC76C20C14328236000903F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Downloads\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenLibraClientGHTests/OpenLibraClientGHTests-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "OpenLibraClientGHTests/OpenLibraClientGHTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -689,6 +849,15 @@
 			buildConfigurations = (
 				CC16BD6214015396004AC387 /* Debug */,
 				CC16BD6314015396004AC387 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC76C20D14328236000903F9 /* Build configuration list for PBXNativeTarget "OpenLibraClientGHTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC76C20B14328236000903F9 /* Debug */,
+				CC76C20C14328236000903F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
