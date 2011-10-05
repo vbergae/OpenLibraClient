@@ -19,8 +19,6 @@
 
 - (void)testInit
 {
-    GHAssertTrue(false, @"Jenginks test - EXPECTED");
-    
     Book *book = nil;
     NSDictionary *dict = nil;
     
