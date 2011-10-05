@@ -126,6 +126,8 @@
 		CC16BD1F14010B8E004AC387 /* CirteriaTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CirteriaTests.m; sourceTree = "<group>"; };
 		CC16BD5414015396004AC387 /* MacOpenLibraClient.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = MacOpenLibraClient.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC3B4C2C143A5FA9007FE250 /* TestCriteria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCriteria.m; sourceTree = "<group>"; };
+		CC3BB4A7143CDC7D00E83975 /* RunTests.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = RunTests.sh; sourceTree = SOURCE_ROOT; };
+		CC3BB4A9143CDC9500E83975 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		CC76C1F814328236000903F9 /* OpenLibraClientGHTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenLibraClientGHTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC76C1FA14328236000903F9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CC76C1FD14328236000903F9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -207,6 +209,7 @@
 		CC16BCDD140106D7004AC387 = {
 			isa = PBXGroup;
 			children = (
+				CC3BB4A9143CDC9500E83975 /* Makefile */,
 				CC76C20F143282CB000903F9 /* GHUnitIOS.framework */,
 				CC16BCED140106D7004AC387 /* Classes */,
 				CC16BD03140106D7004AC387 /* Tests */,
@@ -327,9 +330,10 @@
 		CC76C1FF14328236000903F9 /* OpenLibraClientGHTests */ = {
 			isa = PBXGroup;
 			children = (
-				CC76C20014328236000903F9 /* Supporting Files */,
+				CC3BB4A7143CDC7D00E83975 /* RunTests.sh */,
 				CCFAFEBB1436442A005AF66E /* TestBook.m */,
 				CC3B4C2C143A5FA9007FE250 /* TestCriteria.m */,
+				CC76C20014328236000903F9 /* Supporting Files */,
 			);
 			path = OpenLibraClientGHTests;
 			sourceTree = "<group>";
@@ -459,6 +463,7 @@
 				CC76C1F414328236000903F9 /* Sources */,
 				CC76C1F514328236000903F9 /* Frameworks */,
 				CC76C1F614328236000903F9 /* Resources */,
+				CC3BB4AC143CE45400E83975 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -531,6 +536,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		CC3BB4AC143CE45400E83975 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh RunTests.sh";
 		};
 /* End PBXShellScriptBuildPhase section */
 
