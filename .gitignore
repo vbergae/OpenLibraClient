@@ -4,3 +4,5 @@ OpenLibraClient/OpenLibraClient.xcodeproj/xcuserdata/
 OpenLibraDesktop/OpenLibraDesktop.xcodeproj/xcuserdata/
 OpenLibraMobile/OpenLibraMobile.xcodeproj/xcuserdata/vbergae.xcuserdatad/
 .DS_Store
+OpenLibraClient/build/
+OpenLibraClient/build/
